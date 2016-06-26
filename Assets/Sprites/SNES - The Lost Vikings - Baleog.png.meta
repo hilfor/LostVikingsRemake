@@ -1,0 +1,1383 @@
+fileFormatVersion: 2
+guid: bf45be7821a7a724b8d3419666b97a11
+timeCreated: 1466811350
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SNES - The Lost Vikings - Baleog_0
+    21300002: SNES - The Lost Vikings - Baleog_1
+    21300004: SNES - The Lost Vikings - Baleog_2
+    21300006: SNES - The Lost Vikings - Baleog_3
+    21300008: SNES - The Lost Vikings - Baleog_4
+    21300010: SNES - The Lost Vikings - Baleog_5
+    21300012: SNES - The Lost Vikings - Baleog_6
+    21300014: SNES - The Lost Vikings - Baleog_7
+    21300016: SNES - The Lost Vikings - Baleog_8
+    21300018: SNES - The Lost Vikings - Baleog_9
+    21300020: SNES - The Lost Vikings - Baleog_10
+    21300022: SNES - The Lost Vikings - Baleog_11
+    21300024: SNES - The Lost Vikings - Baleog_12
+    21300026: SNES - The Lost Vikings - Baleog_13
+    21300028: SNES - The Lost Vikings - Baleog_14
+    21300030: SNES - The Lost Vikings - Baleog_16
+    21300032: SNES - The Lost Vikings - Baleog_17
+    21300034: SNES - The Lost Vikings - Baleog_18
+    21300036: SNES - The Lost Vikings - Baleog_19
+    21300038: SNES - The Lost Vikings - Baleog_20
+    21300040: SNES - The Lost Vikings - Baleog_21
+    21300042: SNES - The Lost Vikings - Baleog_22
+    21300044: SNES - The Lost Vikings - Baleog_23
+    21300046: SNES - The Lost Vikings - Baleog_24
+    21300048: SNES - The Lost Vikings - Baleog_25
+    21300050: SNES - The Lost Vikings - Baleog_26
+    21300052: SNES - The Lost Vikings - Baleog_27
+    21300054: SNES - The Lost Vikings - Baleog_28
+    21300056: SNES - The Lost Vikings - Baleog_29
+    21300058: SNES - The Lost Vikings - Baleog_30
+    21300060: SNES - The Lost Vikings - Baleog_31
+    21300062: SNES - The Lost Vikings - Baleog_32
+    21300064: SNES - The Lost Vikings - Baleog_33
+    21300066: SNES - The Lost Vikings - Baleog_34
+    21300068: SNES - The Lost Vikings - Baleog_35
+    21300070: SNES - The Lost Vikings - Baleog_36
+    21300072: SNES - The Lost Vikings - Baleog_37
+    21300074: SNES - The Lost Vikings - Baleog_38
+    21300076: SNES - The Lost Vikings - Baleog_39
+    21300078: SNES - The Lost Vikings - Baleog_40
+    21300080: SNES - The Lost Vikings - Baleog_41
+    21300082: SNES - The Lost Vikings - Baleog_42
+    21300084: SNES - The Lost Vikings - Baleog_43
+    21300086: SNES - The Lost Vikings - Baleog_44
+    21300088: SNES - The Lost Vikings - Baleog_45
+    21300090: SNES - The Lost Vikings - Baleog_46
+    21300092: SNES - The Lost Vikings - Baleog_47
+    21300094: SNES - The Lost Vikings - Baleog_48
+    21300096: SNES - The Lost Vikings - Baleog_49
+    21300098: SNES - The Lost Vikings - Baleog_50
+    21300100: SNES - The Lost Vikings - Baleog_51
+    21300102: SNES - The Lost Vikings - Baleog_52
+    21300104: SNES - The Lost Vikings - Baleog_53
+    21300106: SNES - The Lost Vikings - Baleog_54
+    21300108: SNES - The Lost Vikings - Baleog_55
+    21300110: SNES - The Lost Vikings - Baleog_56
+    21300112: SNES - The Lost Vikings - Baleog_57
+    21300114: SNES - The Lost Vikings - Baleog_58
+    21300116: SNES - The Lost Vikings - Baleog_59
+    21300118: SNES - The Lost Vikings - Baleog_60
+    21300120: SNES - The Lost Vikings - Baleog_61
+    21300122: SNES - The Lost Vikings - Baleog_62
+    21300124: SNES - The Lost Vikings - Baleog_63
+    21300126: SNES - The Lost Vikings - Baleog_64
+    21300128: SNES - The Lost Vikings - Baleog_65
+    21300130: SNES - The Lost Vikings - Baleog_66
+    21300132: SNES - The Lost Vikings - Baleog_67
+    21300134: SNES - The Lost Vikings - Baleog_68
+    21300136: SNES - The Lost Vikings - Baleog_69
+    21300138: SNES - The Lost Vikings - Baleog_70
+    21300140: SNES - The Lost Vikings - Baleog_71
+    21300142: SNES - The Lost Vikings - Baleog_72
+    21300144: SNES - The Lost Vikings - Baleog_73
+    21300146: SNES - The Lost Vikings - Baleog_74
+    21300148: SNES - The Lost Vikings - Baleog_75
+    21300150: SNES - The Lost Vikings - Baleog_76
+    21300152: SNES - The Lost Vikings - Baleog_77
+    21300154: SNES - The Lost Vikings - Baleog_78
+    21300156: SNES - The Lost Vikings - Baleog_79
+    21300158: SNES - The Lost Vikings - Baleog_80
+    21300160: SNES - The Lost Vikings - Baleog_81
+    21300162: SNES - The Lost Vikings - Baleog_82
+    21300164: SNES - The Lost Vikings - Baleog_83
+    21300166: SNES - The Lost Vikings - Baleog_84
+    21300168: SNES - The Lost Vikings - Baleog_85
+    21300170: SNES - The Lost Vikings - Baleog_86
+    21300172: SNES - The Lost Vikings - Baleog_87
+    21300174: SNES - The Lost Vikings - Baleog_88
+    21300176: SNES - The Lost Vikings - Baleog_89
+    21300178: SNES - The Lost Vikings - Baleog_90
+    21300180: SNES - The Lost Vikings - Baleog_91
+    21300182: SNES - The Lost Vikings - Baleog_92
+    21300184: SNES - The Lost Vikings - Baleog_93
+    21300186: SNES - The Lost Vikings - Baleog_94
+    21300188: SNES - The Lost Vikings - Baleog_95
+    21300190: SNES - The Lost Vikings - Baleog_96
+    21300192: SNES - The Lost Vikings - Baleog_97
+    21300194: SNES - The Lost Vikings - Baleog_98
+    21300196: SNES - The Lost Vikings - Baleog_101
+    21300198: SNES - The Lost Vikings - Baleog_102
+    21300200: SNES - The Lost Vikings - Baleog_103
+    21300202: SNES - The Lost Vikings - Baleog_104
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: SNES - The Lost Vikings - Baleog_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 591
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 591
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_2
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 595
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_3
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 594
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_4
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 594
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_5
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 594
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_6
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 594
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_7
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 594
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_8
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 594
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_9
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 594
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_10
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 555
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_11
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 555
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_12
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 549
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_13
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 549
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_14
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 549
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_16
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 549
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_17
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 516
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_18
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 516
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 516
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_20
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 516
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_21
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 515
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_22
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 515
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_23
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 515
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_24
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 515
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_25
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 508
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -15}
+        - {x: -13, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: SNES - The Lost Vikings - Baleog_26
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 508
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_27
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 475
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 11, y: -16}
+        - {x: 16, y: -9}
+    - name: SNES - The Lost Vikings - Baleog_28
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 475
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -16, y: 7}
+        - {x: -16, y: -16}
+        - {x: 12, y: -16}
+        - {x: 16, y: -14}
+        - {x: 16, y: 16}
+    - name: SNES - The Lost Vikings - Baleog_29
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 475
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 13}
+        - {x: -16, y: -16}
+        - {x: 15, y: -16}
+        - {x: 16, y: -12}
+        - {x: 16, y: 16}
+    - name: SNES - The Lost Vikings - Baleog_30
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 475
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 16}
+        - {x: -16, y: 12}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -11}
+        - {x: 16, y: 13}
+        - {x: 12, y: 16}
+    - name: SNES - The Lost Vikings - Baleog_31
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 475
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 16}
+        - {x: -12, y: 16}
+        - {x: -16, y: 13}
+        - {x: -16, y: -16}
+        - {x: 11, y: -16}
+        - {x: 16, y: -8}
+        - {x: 16, y: 10}
+    - name: SNES - The Lost Vikings - Baleog_32
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 475
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 16}
+        - {x: -16, y: 12}
+        - {x: -16, y: -16}
+        - {x: 14, y: -16}
+        - {x: 16, y: -13}
+        - {x: 16, y: 16}
+    - name: SNES - The Lost Vikings - Baleog_33
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 475
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 16}
+        - {x: -16, y: 12}
+        - {x: -16, y: -16}
+        - {x: 11, y: -16}
+        - {x: 16, y: -11}
+        - {x: 16, y: 16}
+    - name: SNES - The Lost Vikings - Baleog_34
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 475
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 16}
+        - {x: -16, y: 12}
+        - {x: -16, y: -16}
+        - {x: 11, y: -16}
+        - {x: 16, y: -11}
+        - {x: 16, y: 16}
+    - name: SNES - The Lost Vikings - Baleog_35
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 468
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: SNES - The Lost Vikings - Baleog_36
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 468
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_40
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 437
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_41
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 437
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 12, y: -16}
+        - {x: 16, y: -9}
+        - {x: 16, y: 4}
+        - {x: 1, y: 16}
+    - name: SNES - The Lost Vikings - Baleog_42
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 437
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 16}
+        - {x: -16, y: 12}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 3}
+        - {x: 2, y: 16}
+    - name: SNES - The Lost Vikings - Baleog_43
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 437
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -16, y: 7}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 3}
+        - {x: 1, y: 16}
+    - name: SNES - The Lost Vikings - Baleog_44
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 431
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_45
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 431
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_46
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 431
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_47
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 400
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_48
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 400
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -14}
+        - {x: 16, y: 11}
+        - {x: 12, y: 16}
+    - name: SNES - The Lost Vikings - Baleog_49
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 400
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_50
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 400
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_51
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 391
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_52
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 391
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_53
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 360
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_54
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 360
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_55
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 360
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_56
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 360
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_57
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 361
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_58
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 373
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_59
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 350
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_60
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 350
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_61
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 323
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_62
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 350
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_63
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 314
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_64
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 314
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 8}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 3}
+        - {x: 15, y: 16}
+        - {x: -12, y: 16}
+        - {x: -15, y: 11}
+    - name: SNES - The Lost Vikings - Baleog_65
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 314
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_66
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 331
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_67
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 287
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_68
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 287
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 16}
+        - {x: -16, y: 10}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: SNES - The Lost Vikings - Baleog_69
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 273
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_70
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 273
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_71
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 273
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_72
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 250
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_73
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 250
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_74
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 250
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_75
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 250
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_76
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 250
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_77
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 231
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_78
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 231
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_79
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 231
+        width: 9
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_80
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 211
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_81
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 211
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_82
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 171
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_83
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 171
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_84
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 171
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_85
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 171
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_86
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 21
+        width: 151
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 73.5, y: 79.5}
+        - {x: -71.5, y: 79.5}
+        - {x: -74.5, y: 75.5}
+        - {x: -75.5, y: 74.5}
+        - {x: -75.5, y: -74.5}
+        - {x: -73.5, y: -79.5}
+        - {x: 71.5, y: -79.5}
+        - {x: 74.5, y: -75.5}
+        - {x: 75.5, y: -74.5}
+        - {x: 75.5, y: 74.5}
+    - name: SNES - The Lost Vikings - Baleog_87
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 130
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_88
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 130
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_89
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 130
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_90
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 89
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_91
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 85
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -16, y: 7}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 4}
+        - {x: 10, y: 16}
+    - name: SNES - The Lost Vikings - Baleog_92
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 85
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_93
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 18
+        width: 62
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 46.5}
+        - {x: -16, y: 46.5}
+        - {x: -31, y: 34.5}
+        - {x: -31, y: 3.5}
+        - {x: -30, y: 2.5}
+        - {x: -28, y: 2.5}
+        - {x: -25, y: 4.5}
+        - {x: -14, y: -46.5}
+        - {x: 29, y: -46.5}
+        - {x: 31, y: -30.5}
+        - {x: 31, y: 31.5}
+    - name: SNES - The Lost Vikings - Baleog_94
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 53
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 16}
+        - {x: -16, y: 7}
+        - {x: -16, y: -15}
+        - {x: -15, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 7}
+        - {x: 12, y: 16}
+    - name: SNES - The Lost Vikings - Baleog_95
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 53
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 16}
+        - {x: -16, y: 7}
+        - {x: -16, y: -15}
+        - {x: -15, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 7}
+        - {x: 12, y: 16}
+    - name: SNES - The Lost Vikings - Baleog_96
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 53
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_97
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 12
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_98
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 12
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_101
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 12
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_102
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 12
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_103
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 12
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Baleog_104
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 12
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

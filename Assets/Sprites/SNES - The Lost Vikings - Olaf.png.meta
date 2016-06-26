@@ -1,0 +1,1349 @@
+fileFormatVersion: 2
+guid: 7beae73776d177748aaf736f97fdf54a
+timeCreated: 1466866994
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Idle_Shidle_Forward_1
+    21300002: Idle_Shidle_Forward_2
+    21300004: SNES - The Lost Vikings - Olaf_2
+    21300006: SNES - The Lost Vikings - Olaf_3
+    21300008: SNES - The Lost Vikings - Olaf_4
+    21300010: SNES - The Lost Vikings - Olaf_5
+    21300012: SNES - The Lost Vikings - Olaf_6
+    21300014: SNES - The Lost Vikings - Olaf_7
+    21300016: SNES - The Lost Vikings - Olaf_8
+    21300018: SNES - The Lost Vikings - Olaf_9
+    21300020: SNES - The Lost Vikings - Olaf_10
+    21300022: Forward_1_1
+    21300024: Forward_1_2
+    21300026: Forward_1_3
+    21300028: Forward_1_4
+    21300030: Forward_1_5
+    21300032: Forward_1_6
+    21300034: Forward_1_7
+    21300036: Forward_1_8
+    21300038: SNES - The Lost Vikings - Olaf_19
+    21300040: SNES - The Lost Vikings - Olaf_20
+    21300042: SNES - The Lost Vikings - Olaf_21
+    21300044: SNES - The Lost Vikings - Olaf_22
+    21300046: Forward_2_1
+    21300048: Forward_2_2
+    21300050: Forward_2_3
+    21300052: Forward_2_4
+    21300054: Forward_2_5
+    21300056: Forward_2_6
+    21300058: Forward_2_7
+    21300060: Forward_2_8
+    21300062: SNES - The Lost Vikings - Olaf_31
+    21300064: SNES - The Lost Vikings - Olaf_32
+    21300066: Idle_Stupid_Shidle_Forward_1
+    21300068: Idle_Stupid_Shidle_Forward_2
+    21300070: Idle_Stupid_Shidle_Forward_3
+    21300072: Idle_Stupid_Shidle_Forward_4
+    21300074: SNES - The Lost Vikings - Olaf_37
+    21300076: SNES - The Lost Vikings - Olaf_38
+    21300078: Climbing_1
+    21300080: Climbing_2
+    21300082: Climbing_3
+    21300084: Climbing_4
+    21300086: Climbing_End_1
+    21300088: Climbing_End_2
+    21300090: SNES - The Lost Vikings - Olaf_52
+    21300092: SNES - The Lost Vikings - Olaf_53
+    21300094: Fall_Shield_Up_Forward_1
+    21300096: Fall_Shield_Up_Forward_2
+    21300098: Fall_Shield_Up_1
+    21300100: Fall_Shield_Up_2
+    21300102: SNES - The Lost Vikings - Olaf_58
+    21300104: SNES - The Lost Vikings - Olaf_59
+    21300106: SNES - The Lost Vikings - Olaf_60
+    21300108: SNES - The Lost Vikings - Olaf_61
+    21300110: Fall_Shield_Forward_1
+    21300112: Fall_Shield_Forward_2
+    21300114: SNES - The Lost Vikings - Olaf_64
+    21300116: SNES - The Lost Vikings - Olaf_65
+    21300118: SNES - The Lost Vikings - Olaf_66
+    21300120: Push_1
+    21300122: Push_2
+    21300124: Push_3
+    21300126: Push_4
+    21300128: SNES - The Lost Vikings - Olaf_71
+    21300130: SNES - The Lost Vikings - Olaf_72
+    21300132: SNES - The Lost Vikings - Olaf_73
+    21300134: SNES - The Lost Vikings - Olaf_74
+    21300136: SNES - The Lost Vikings - Olaf_75
+    21300138: SNES - The Lost Vikings - Olaf_76
+    21300140: SNES - The Lost Vikings - Olaf_77
+    21300142: SNES - The Lost Vikings - Olaf_78
+    21300144: SNES - The Lost Vikings - Olaf_79
+    21300146: SNES - The Lost Vikings - Olaf_80
+    21300148: SNES - The Lost Vikings - Olaf_81
+    21300150: SNES - The Lost Vikings - Olaf_82
+    21300152: SNES - The Lost Vikings - Olaf_83
+    21300154: SNES - The Lost Vikings - Olaf_84
+    21300156: SNES - The Lost Vikings - Olaf_85
+    21300158: Idle_S
+    21300160: SNES - The Lost Vikings - Olaf_87
+    21300162: SNES - The Lost Vikings - Olaf_88
+    21300164: SNES - The Lost Vikings - Olaf_89
+    21300166: SNES - The Lost Vikings - Olaf_95
+    21300168: SNES - The Lost Vikings - Olaf_97
+    21300170: SNES - The Lost Vikings - Olaf_99
+    21300172: SNES - The Lost Vikings - Olaf_100
+    21300174: SNES - The Lost Vikings - Olaf_101
+    21300176: SNES - The Lost Vikings - Olaf_102
+    21300178: SNES - The Lost Vikings - Olaf_103
+    21300180: SNES - The Lost Vikings - Olaf_104
+    21300182: SNES - The Lost Vikings - Olaf_105
+    21300184: SNES - The Lost Vikings - Olaf_106
+    21300186: SNES - The Lost Vikings - Olaf_107
+    21300188: SNES - The Lost Vikings - Olaf_108
+    21300190: SNES - The Lost Vikings - Olaf_109
+    21300192: SNES - The Lost Vikings - Olaf_110
+    21300194: SNES - The Lost Vikings - Olaf_111
+    21300196: SNES - The Lost Vikings - Olaf_112
+    21300198: SNES - The Lost Vikings - Olaf_113
+    21300200: SNES - The Lost Vikings - Olaf_114
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 20
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Idle_Shidle_Forward_1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 581
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 16}
+        - {x: -16, y: 10}
+        - {x: -16, y: -16}
+        - {x: 15, y: -16}
+        - {x: 16, y: -14}
+        - {x: 16, y: 16}
+    - name: Idle_Shidle_Forward_2
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 580
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 581
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_3
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 580
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 580
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_5
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 580
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_6
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 580
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_7
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 580
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 580
+        width: 33
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_9
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 580
+        width: 29
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_10
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 578
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Forward_1_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 542
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Forward_1_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 542
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Forward_1_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 542
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Forward_1_4
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 542
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Forward_1_5
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 542
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Forward_1_6
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 542
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Forward_1_7
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 542
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Forward_1_8
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 542
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_19
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 541
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_20
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 541
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_21
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 541
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_22
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 541
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Forward_2_1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 501
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Forward_2_2
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 501
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Forward_2_3
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 501
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Forward_2_4
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 501
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Forward_2_5
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 501
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Forward_2_6
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 501
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Forward_2_7
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 501
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Forward_2_8
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 501
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_31
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 499
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_32
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 499
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Idle_Stupid_Shidle_Forward_1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 462
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Idle_Stupid_Shidle_Forward_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 462
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Idle_Stupid_Shidle_Forward_3
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 462
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Idle_Stupid_Shidle_Forward_4
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 462
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_37
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 457
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_38
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 457
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Climbing_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 419
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Climbing_2
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 419
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Climbing_3
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 419
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Climbing_4
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 419
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Climbing_End_1
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 422
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Climbing_End_2
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 427
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_52
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 419
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_53
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 419
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Fall_Shield_Up_Forward_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 378
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Fall_Shield_Up_Forward_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 378
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Fall_Shield_Up_1
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 377
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Fall_Shield_Up_2
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 378
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_58
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 379
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: SNES - The Lost Vikings - Olaf_59
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 377
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_60
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 377
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_61
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 377
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Fall_Shield_Forward_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 335
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: -12}
+    - name: Fall_Shield_Forward_2
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 335
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -14}
+        - {x: -8, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: SNES - The Lost Vikings - Olaf_64
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 336
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_65
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 336
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_66
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 336
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Push_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 297
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Push_2
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 297
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 16}
+        - {x: -16, y: 3}
+        - {x: -16, y: -16}
+        - {x: 10, y: -16}
+        - {x: 16, y: -8}
+        - {x: 16, y: 16}
+    - name: Push_3
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 297
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Push_4
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 297
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 16}
+        - {x: -16, y: 4}
+        - {x: -16, y: -16}
+        - {x: 10, y: -16}
+        - {x: 16, y: -12}
+        - {x: 16, y: 16}
+    - name: SNES - The Lost Vikings - Olaf_71
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 298
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_72
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 298
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_73
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 296
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_74
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 296
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_75
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 296
+        width: 38
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_76
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 297
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_77
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 296
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_78
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 258
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_79
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 260
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_80
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 257
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_81
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 253
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_82
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 253
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_83
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 257
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_84
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 257
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_85
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 257
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Idle_S
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 214
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_87
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 214
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_88
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 214
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_89
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 223
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_95
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 223
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_97
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 223
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_99
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 174
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_100
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 174
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_101
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 174
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_102
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 174
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_103
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 174
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_104
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 124
+        width: 56
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22, y: 16}
+        - {x: -28, y: 16}
+        - {x: -28, y: -16}
+        - {x: 28, y: -16}
+        - {x: 28, y: 10}
+    - name: SNES - The Lost Vikings - Olaf_105
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 124
+        width: 57
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.5, y: 16}
+        - {x: -28.5, y: 12}
+        - {x: -28.5, y: -15}
+        - {x: -27.5, y: -16}
+        - {x: 27.5, y: -16}
+        - {x: 27.5, y: -15}
+        - {x: 28.5, y: -8}
+        - {x: 28.5, y: 16}
+    - name: SNES - The Lost Vikings - Olaf_106
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 124
+        width: 56
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 16}
+        - {x: -28, y: 15}
+        - {x: -28, y: -16}
+        - {x: 28, y: -16}
+        - {x: 28, y: 9}
+        - {x: 16, y: 16}
+    - name: SNES - The Lost Vikings - Olaf_107
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 124
+        width: 56
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -26, y: 16}
+        - {x: -28, y: 12}
+        - {x: -28, y: -16}
+        - {x: 28, y: -16}
+        - {x: 28, y: 12}
+        - {x: 21, y: 14}
+    - name: SNES - The Lost Vikings - Olaf_108
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 7
+        width: 151
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 73.5, y: 79.5}
+        - {x: -71.5, y: 79.5}
+        - {x: -74.5, y: 75.5}
+        - {x: -75.5, y: 74.5}
+        - {x: -75.5, y: -74.5}
+        - {x: -73.5, y: -79.5}
+        - {x: 71.5, y: -79.5}
+        - {x: 74.5, y: -75.5}
+        - {x: 75.5, y: -74.5}
+        - {x: 75.5, y: 74.5}
+    - name: SNES - The Lost Vikings - Olaf_109
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 72
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_110
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 30
+        width: 45
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 34.5}
+        - {x: -22.5, y: 29.5}
+        - {x: -22.5, y: -24.5}
+        - {x: -18.5, y: -34.5}
+        - {x: 22.5, y: -34.5}
+        - {x: 22.5, y: 13.5}
+        - {x: 19.5, y: 34.5}
+    - name: SNES - The Lost Vikings - Olaf_111
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 25
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 15, y: -16}
+        - {x: 16, y: -15}
+        - {x: 16, y: 16}
+    - name: SNES - The Lost Vikings - Olaf_112
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 25
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_113
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 27
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Olaf_114
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 27
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
