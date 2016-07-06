@@ -4,9 +4,9 @@ using System.Collections;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField]
-    IViking m_DefaultViking;
+    ICharacter m_DefaultViking;
 
-    public IViking DefaultViking
+    public ICharacter DefaultViking
     {
         get
         {

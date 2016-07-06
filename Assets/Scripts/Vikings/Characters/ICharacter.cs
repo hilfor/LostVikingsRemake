@@ -1,4 +1,4 @@
-﻿public interface IViking
+﻿public interface ICharacter
 {
     void MoveRight(float speed);
     void MoveLeft(float speed);

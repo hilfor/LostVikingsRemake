@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerMotor : MonoBehaviour
 {
 
-    IViking m_CurrentViking;
+    ICharacter m_CurrentViking;
 
     public void Move(float direction)
     {

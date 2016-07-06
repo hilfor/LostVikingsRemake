@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-public class Olaf : MonoBehaviour, IViking
+public class Olaf : MonoBehaviour, ICharacter
 {
 
     private enum FacingDirection
