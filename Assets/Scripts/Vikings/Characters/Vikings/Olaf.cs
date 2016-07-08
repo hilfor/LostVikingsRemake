@@ -22,9 +22,9 @@ public class Olaf : MonoBehaviour, ICharacter
     bool m_Grounded;
 
     ShieldPosition m_ShieldPosition;
-    FacingDirection m_FacingDirection;
+    FacingDirection m_FacingDirection = FacingDirection.RIGHT;
 
-    Transform m_OlafGraphic;
+    Transform m_OlafTransform;
     Rigidbody2D m_OlafRigidBody;
 
     public void Action(InputAction action)
@@ -39,35 +39,43 @@ public class Olaf : MonoBehaviour, ICharacter
 
     public void MoveLeft(float speed)
     {
-        if (m_FacingDirection == FacingDirection.RIGHT && m_ShieldPosition == ShieldPosition.UP)
+        if (m_FacingDirection == FacingDirection.RIGHT)
         {
             ChangeFacingDirection();
+            m_FacingDirection = FacingDirection.LEFT;
         }
 
-        m_OlafRigidBody.velocity = -Vector2.right;
+        Vector2 olafVelocity = m_OlafRigidBody.velocity;
+        olafVelocity.x = -speed;
+        m_OlafRigidBody.velocity = olafVelocity;
+        m_Animator.SetFloat("Speed", speed);
     }
 
     public void MoveRight(float speed)
     {
-        if (m_FacingDirection == FacingDirection.LEFT && m_ShieldPosition == ShieldPosition.UP)
+        if (m_FacingDirection == FacingDirection.LEFT)
         {
             ChangeFacingDirection();
+            m_FacingDirection = FacingDirection.RIGHT;
         }
-        m_OlafRigidBody.velocity = Vector2.right;
+        Vector2 olafVelocity = m_OlafRigidBody.velocity;
+        olafVelocity.x = speed;
+        m_OlafRigidBody.velocity = olafVelocity;
+        m_Animator.SetFloat("Speed", speed);
     }
 
     void Awake()
     {
         m_Animator = GetComponent<Animator>();
-        m_OlafGraphic = gameObject.transform;
+        m_OlafTransform = gameObject.transform;
         m_OlafRigidBody = GetComponent<Rigidbody2D>();
     }
 
     void ChangeFacingDirection()
     {
-        Vector3 scale = m_OlafGraphic.localScale;
+        Vector3 scale = m_OlafTransform.localScale;
         scale.x *= -1;
-        m_OlafGraphic.localScale = scale;
+        m_OlafTransform.localScale = scale;
     }
 
     // Use this for initialization
@@ -79,19 +87,19 @@ public class Olaf : MonoBehaviour, ICharacter
     // Update is called once per frame
     void Update()
     {
-
+        //if (m_OlafRigidBody.velocity != Vector2.zero)
+        //{
+        //    m_Animator.SetFloat("Speed", 1f);
+        //}
+        //else
+        //{
+        //    m_Animator.SetFloat("Speed", 0);
+        //}
     }
 
     void FixedUpdate()
     {
-        if (m_OlafRigidBody.velocity != Vector2.zero)
-        {
-            m_Animator.SetFloat("Speed", 1f);
-        }
-        else
-        {
-            m_Animator.SetFloat("Speed", 0);
-        }
+        
 
 
     }

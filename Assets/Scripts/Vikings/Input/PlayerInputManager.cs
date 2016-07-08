@@ -8,7 +8,6 @@ public class PlayerInputManager : MonoBehaviour
 
     void Start()
     {
-
     }
 
     void FixedUpdate()
