@@ -4,54 +4,77 @@ using System.Collections;
 public class PlayerInputManager : MonoBehaviour
 {
     [SerializeField]
+    private InputActionList actionsList;
+    [SerializeField]
     private PlayerMotor m_PlayerMotor;
+    private Hashtable m_InputMap;
 
-    void FixedUpdate()
+    void Awake()
     {
-        InputAction action = CheckInput();
-        if (action == InputAction.RIGHT_PRESSED || action == InputAction.LEFT_PRESSED)
+        m_InputMap = new Hashtable();
+    }
+
+    void FillInputMap()
+    {
+        InputMap[] actions = actionsList.InputActions;
+
+        for (int i = 0; i < actions.Length; i++)
         {
-            m_PlayerMotor.Move(action == InputAction.RIGHT_PRESSED ? 1 : -1);
-        }
-        else
-        {
-            m_PlayerMotor.ExecuteAction(action);
+            m_InputMap.Add(actions[i].action, actions[i].key);
         }
     }
 
-    InputAction CheckInput()
+    void FixedUpdate()
     {
+        InputState state = CheckInput();
+        m_PlayerMotor.ExecuteAction(state);
+
+        //if (state == InputAction.RIGHT_PRESSED || state == InputAction.LEFT_PRESSED)
+        //{
+        //    m_PlayerMotor.Move(state == InputAction.RIGHT_PRESSED ? 1 : -1);
+        //}
+        //else
+        //{
+        //    m_PlayerMotor.ExecuteAction(state);
+        //}
+    }
+
+    InputState CheckInput()
+    {
+        InputState inputState = new InputState(m_InputMap);
+
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            return InputAction.LEFT_PRESSED;
+
+            //return InputAction.LEFT_PRESSED;
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            return InputAction.RIGHT_PRESSED;
+            //          return InputAction.RIGHT_PRESSED;
         }
 
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            return InputAction.UP_PRESSED;
+            //   return InputAction.UP_PRESSED;
         }
 
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            return InputAction.DOWN_PRESSED;
+            //    return InputAction.DOWN_PRESSED;
         }
 
         if (Input.GetKeyDown(KeyCode.RightShift))
         {
-            return InputAction.TRIGGER_SPECIAL_ACTION2;
+            //    return InputAction.SPECIAL_ACTION2;
         }
 
         if (Input.GetKeyDown(KeyCode.RightControl))
         {
-            return InputAction.TRIGGER_SPECIAL_ACTION1;
+            //   return InputAction.SPECIAL_ACTION1;
         }
 
-        return InputAction.NONE;
+        return inputState;
     }
 
 

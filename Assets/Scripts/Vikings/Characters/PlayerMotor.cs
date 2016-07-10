@@ -23,21 +23,21 @@ public class PlayerMotor : MonoBehaviour
         }
     }
 
-    public void ExecuteAction(InputAction action)
+    public void ExecuteAction(InputState state)
     {
 
-        switch (action)
-        {
-            //case InputAction.JUMP:
-            //    m_CurrentViking.Jump();
-            //    break;
-            case InputAction.NONE:
-                m_CurrentViking.NoInput();
-                break;
-            default:
-                m_CurrentViking.Action(action);
-                break;
-        }
+        //switch (state)
+        //{
+        //    //case InputAction.JUMP:
+        //    //    m_CurrentViking.Jump();
+        //    //    break;
+        //    case InputAction.NONE:
+        //        m_CurrentViking.NoInput();
+        //        break;
+        //    default:
+        //        m_CurrentViking.Action(state);
+        //        break;
+        //}
 
 
     }

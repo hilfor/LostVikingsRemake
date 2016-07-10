@@ -15,7 +15,7 @@ public class Olaf : BaseViking
 
     public override void Action(InputAction action)
     {
-        if (action == InputAction.TRIGGER_SPECIAL_ACTION1)
+        if (action == InputAction.SPECIAL_ACTION1)
         {
             if (m_ShieldPosition == ShieldPosition.FORWARD)
             {

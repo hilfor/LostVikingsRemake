@@ -16,9 +16,9 @@ public class Eric : BaseViking
 
         switch (action)
         {
-            case InputAction.TRIGGER_SPECIAL_ACTION1:
+            case InputAction.SPECIAL_ACTION1:
                 break;
-            case InputAction.TRIGGER_SPECIAL_ACTION2:
+            case InputAction.SPECIAL_ACTION2:
                 break;
         }
     }
