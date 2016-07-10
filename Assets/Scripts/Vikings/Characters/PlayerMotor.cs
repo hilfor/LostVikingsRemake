@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerMotor : MonoBehaviour
 {
     public ICharacter m_CurrentViking;
-
+    
     void Start()
     {
         m_CurrentViking = GetComponent<ICharacter>();
@@ -25,12 +25,21 @@ public class PlayerMotor : MonoBehaviour
 
     public void ExecuteAction(InputAction action)
     {
-        if (action == InputAction.JUMP)
+
+        switch (action)
         {
-            m_CurrentViking.Jump();
+            //case InputAction.JUMP:
+            //    m_CurrentViking.Jump();
+            //    break;
+            case InputAction.NONE:
+                m_CurrentViking.NoInput();
+                break;
+            default:
+                m_CurrentViking.Action(action);
+                break;
         }
 
-        m_CurrentViking.Action(action);
+
     }
 
 

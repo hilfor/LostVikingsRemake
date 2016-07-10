@@ -1,19 +1,19 @@
 fileFormatVersion: 2
 guid: 7beae73776d177748aaf736f97fdf54a
-timeCreated: 1466866994
+timeCreated: 1468067509
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Idle_Shidle_Forward_1
-    21300002: Idle_Shidle_Forward_2
+    21300002: Idle_Shidle_Up_1
     21300004: SNES - The Lost Vikings - Olaf_2
-    21300006: SNES - The Lost Vikings - Olaf_3
-    21300008: SNES - The Lost Vikings - Olaf_4
-    21300010: SNES - The Lost Vikings - Olaf_5
-    21300012: SNES - The Lost Vikings - Olaf_6
-    21300014: SNES - The Lost Vikings - Olaf_7
-    21300016: SNES - The Lost Vikings - Olaf_8
-    21300018: SNES - The Lost Vikings - Olaf_9
+    21300006: Zapped_Dead_1
+    21300008: Zapped_Dead_2
+    21300010: Zapped_Dead_3
+    21300012: Zapped_Dead_4
+    21300014: Zapped_Dead_5
+    21300016: Zapped_Dead_6
+    21300018: Zapped_Dead_7
     21300020: SNES - The Lost Vikings - Olaf_10
     21300022: Forward_1_1
     21300024: Forward_1_2
@@ -35,12 +35,12 @@ TextureImporter:
     21300056: Forward_2_6
     21300058: Forward_2_7
     21300060: Forward_2_8
-    21300062: SNES - The Lost Vikings - Olaf_31
-    21300064: SNES - The Lost Vikings - Olaf_32
-    21300066: Idle_Stupid_Shidle_Forward_1
-    21300068: Idle_Stupid_Shidle_Forward_2
-    21300070: Idle_Stupid_Shidle_Forward_3
-    21300072: Idle_Stupid_Shidle_Forward_4
+    21300062: Zapped_1
+    21300064: Zapped_2
+    21300066: Idle_Stupid_Shield_Forward_1
+    21300068: Idle_Stupid_Shield_Forward_2
+    21300070: Idle_Stupid_Shield_Forward_3
+    21300072: Idle_Stupid_Shield_Forward_4
     21300074: SNES - The Lost Vikings - Olaf_37
     21300076: SNES - The Lost Vikings - Olaf_38
     21300078: Climbing_1
@@ -55,10 +55,10 @@ TextureImporter:
     21300096: Fall_Shield_Up_Forward_2
     21300098: Fall_Shield_Up_1
     21300100: Fall_Shield_Up_2
-    21300102: SNES - The Lost Vikings - Olaf_58
-    21300104: SNES - The Lost Vikings - Olaf_59
-    21300106: SNES - The Lost Vikings - Olaf_60
-    21300108: SNES - The Lost Vikings - Olaf_61
+    21300102: Hit_1
+    21300104: Squashed_1
+    21300106: Squashed_2
+    21300108: Squashed_3
     21300110: Fall_Shield_Forward_1
     21300112: Fall_Shield_Forward_2
     21300114: SNES - The Lost Vikings - Olaf_64
@@ -78,22 +78,22 @@ TextureImporter:
     21300142: SNES - The Lost Vikings - Olaf_78
     21300144: SNES - The Lost Vikings - Olaf_79
     21300146: SNES - The Lost Vikings - Olaf_80
-    21300148: SNES - The Lost Vikings - Olaf_81
-    21300150: SNES - The Lost Vikings - Olaf_82
+    21300148: Fall_Too_High_2
+    21300150: Fall_Too_High_1
     21300152: SNES - The Lost Vikings - Olaf_83
     21300154: SNES - The Lost Vikings - Olaf_84
     21300156: SNES - The Lost Vikings - Olaf_85
-    21300158: Idle_S
-    21300160: SNES - The Lost Vikings - Olaf_87
-    21300162: SNES - The Lost Vikings - Olaf_88
+    21300158: Idle_Stupid_Shield_Up_1
+    21300160: Idle_Stupid_Shield_Up_2
+    21300162: Idle_Stupid_Shield_Up_3
     21300164: SNES - The Lost Vikings - Olaf_89
     21300166: SNES - The Lost Vikings - Olaf_95
     21300168: SNES - The Lost Vikings - Olaf_97
-    21300170: SNES - The Lost Vikings - Olaf_99
-    21300172: SNES - The Lost Vikings - Olaf_100
-    21300174: SNES - The Lost Vikings - Olaf_101
-    21300176: SNES - The Lost Vikings - Olaf_102
-    21300178: SNES - The Lost Vikings - Olaf_103
+    21300170: Fall_Too_High_Landing_1
+    21300172: Fall_Too_High_Landing_2
+    21300174: Fall_Too_High_Landing_3
+    21300176: Fall_Too_High_Landing_4
+    21300178: Fall_Too_High_Landing_5
     21300180: SNES - The Lost Vikings - Olaf_104
     21300182: SNES - The Lost Vikings - Olaf_105
     21300184: SNES - The Lost Vikings - Olaf_106
@@ -168,7 +168,7 @@ TextureImporter:
         - {x: 15, y: -16}
         - {x: 16, y: -14}
         - {x: 16, y: 16}
-    - name: Idle_Shidle_Forward_2
+    - name: Idle_Shidle_Up_1
       rect:
         serializedVersion: 2
         x: 63
@@ -190,7 +190,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Olaf_3
+    - name: Zapped_Dead_1
       rect:
         serializedVersion: 2
         x: 352
@@ -201,7 +201,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Olaf_4
+    - name: Zapped_Dead_2
       rect:
         serializedVersion: 2
         x: 384
@@ -212,7 +212,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Olaf_5
+    - name: Zapped_Dead_3
       rect:
         serializedVersion: 2
         x: 416
@@ -223,7 +223,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Olaf_6
+    - name: Zapped_Dead_4
       rect:
         serializedVersion: 2
         x: 448
@@ -234,7 +234,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Olaf_7
+    - name: Zapped_Dead_5
       rect:
         serializedVersion: 2
         x: 480
@@ -245,7 +245,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Olaf_8
+    - name: Zapped_Dead_6
       rect:
         serializedVersion: 2
         x: 512
@@ -256,7 +256,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Olaf_9
+    - name: Zapped_Dead_7
       rect:
         serializedVersion: 2
         x: 546
@@ -498,7 +498,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Olaf_31
+    - name: Zapped_1
       rect:
         serializedVersion: 2
         x: 351
@@ -509,7 +509,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Olaf_32
+    - name: Zapped_2
       rect:
         serializedVersion: 2
         x: 383
@@ -520,7 +520,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Idle_Stupid_Shidle_Forward_1
+    - name: Idle_Stupid_Shield_Forward_1
       rect:
         serializedVersion: 2
         x: 9
@@ -531,7 +531,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Idle_Stupid_Shidle_Forward_2
+    - name: Idle_Stupid_Shield_Forward_2
       rect:
         serializedVersion: 2
         x: 40
@@ -542,7 +542,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Idle_Stupid_Shidle_Forward_3
+    - name: Idle_Stupid_Shield_Forward_3
       rect:
         serializedVersion: 2
         x: 71
@@ -553,7 +553,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Idle_Stupid_Shidle_Forward_4
+    - name: Idle_Stupid_Shield_Forward_4
       rect:
         serializedVersion: 2
         x: 102
@@ -718,7 +718,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Olaf_58
+    - name: Hit_1
       rect:
         serializedVersion: 2
         x: 227
@@ -733,7 +733,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
-    - name: SNES - The Lost Vikings - Olaf_59
+    - name: Squashed_1
       rect:
         serializedVersion: 2
         x: 350
@@ -744,7 +744,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Olaf_60
+    - name: Squashed_2
       rect:
         serializedVersion: 2
         x: 382
@@ -755,7 +755,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Olaf_61
+    - name: Squashed_3
       rect:
         serializedVersion: 2
         x: 414
@@ -997,22 +997,22 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Olaf_81
+    - name: Fall_Too_High_2
       rect:
         serializedVersion: 2
-        x: 244
-        y: 253
+        x: 245
+        y: 252
         width: 31
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Olaf_82
+    - name: Fall_Too_High_1
       rect:
         serializedVersion: 2
         x: 276
-        y: 253
+        y: 252
         width: 31
         height: 32
       alignment: 0
@@ -1052,7 +1052,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Idle_S
+    - name: Idle_Stupid_Shield_Up_1
       rect:
         serializedVersion: 2
         x: 8
@@ -1063,7 +1063,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Olaf_87
+    - name: Idle_Stupid_Shield_Up_2
       rect:
         serializedVersion: 2
         x: 42
@@ -1074,7 +1074,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Olaf_88
+    - name: Idle_Stupid_Shield_Up_3
       rect:
         serializedVersion: 2
         x: 74
@@ -1118,18 +1118,18 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Olaf_99
+    - name: Fall_Too_High_Landing_1
       rect:
         serializedVersion: 2
         x: 8
         y: 174
         width: 31
-        height: 31
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Olaf_100
+    - name: Fall_Too_High_Landing_2
       rect:
         serializedVersion: 2
         x: 40
@@ -1140,35 +1140,35 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Olaf_101
+    - name: Fall_Too_High_Landing_3
       rect:
         serializedVersion: 2
         x: 72
         y: 174
         width: 31
-        height: 24
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Olaf_102
+    - name: Fall_Too_High_Landing_4
       rect:
         serializedVersion: 2
         x: 104
         y: 174
         width: 31
-        height: 27
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Olaf_103
+    - name: Fall_Too_High_Landing_5
       rect:
         serializedVersion: 2
         x: 138
         y: 174
         width: 29
-        height: 30
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

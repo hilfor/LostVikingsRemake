@@ -1,0 +1,254 @@
+fileFormatVersion: 2
+guid: a3ea0681e9df34c47af07bb2ef97a785
+timeCreated: 1468076049
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SNES - The Lost Vikings - Tomator_0
+    21300002: SNES - The Lost Vikings - Tomator_1
+    21300004: SNES - The Lost Vikings - Tomator_2
+    21300006: SNES - The Lost Vikings - Tomator_3
+    21300008: SNES - The Lost Vikings - Tomator_4
+    21300010: SNES - The Lost Vikings - Tomator_5
+    21300012: SNES - The Lost Vikings - Tomator_6
+    21300014: SNES - The Lost Vikings - Tomator_7
+    21300016: SNES - The Lost Vikings - Tomator_9
+    21300018: SNES - The Lost Vikings - Tomator_10
+    21300020: SNES - The Lost Vikings - Tomator_13
+    21300022: SNES - The Lost Vikings - Tomator_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 512
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: SNES - The Lost Vikings - Tomator_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 208
+        width: 61
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 32}
+        - {x: -30.5, y: 26}
+        - {x: -30.5, y: -32}
+        - {x: 30.5, y: -32}
+        - {x: 30.5, y: 15}
+        - {x: 20.5, y: 32}
+    - name: SNES - The Lost Vikings - Tomator_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 207
+        width: 61
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 32}
+        - {x: -30.5, y: 19}
+        - {x: -30.5, y: -29}
+        - {x: -28.5, y: -32}
+        - {x: 30.5, y: -32}
+        - {x: 30.5, y: 20}
+        - {x: 24.5, y: 32}
+    - name: SNES - The Lost Vikings - Tomator_2
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 206
+        width: 61
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: 32}
+        - {x: -30.5, y: 28}
+        - {x: -30.5, y: -26}
+        - {x: -29.5, y: -32}
+        - {x: 9.5, y: -32}
+        - {x: 30.5, y: -30}
+        - {x: 30.5, y: 24}
+        - {x: 16.5, y: 32}
+    - name: SNES - The Lost Vikings - Tomator_3
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 206
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.5, y: 9}
+        - {x: 28.5, y: 19}
+        - {x: 15.5, y: 31}
+        - {x: 12.5, y: 32}
+        - {x: -19.5, y: 32}
+        - {x: -31.5, y: 18}
+        - {x: -31.5, y: -22}
+        - {x: -28.5, y: -32}
+        - {x: 31.5, y: -32}
+    - name: SNES - The Lost Vikings - Tomator_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 131
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: 32}
+        - {x: -31, y: -32}
+        - {x: 31, y: -32}
+        - {x: 31, y: 16}
+        - {x: 26, y: 32}
+    - name: SNES - The Lost Vikings - Tomator_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 129
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 32}
+        - {x: -31.5, y: -32}
+        - {x: 31.5, y: -32}
+        - {x: 31.5, y: 32}
+    - name: SNES - The Lost Vikings - Tomator_6
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 129
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 32}
+        - {x: -32, y: 30}
+        - {x: -32, y: -25}
+        - {x: -26, y: -32}
+        - {x: 27, y: -32}
+        - {x: 32, y: -29}
+        - {x: 32, y: 28}
+        - {x: 29, y: 32}
+    - name: SNES - The Lost Vikings - Tomator_7
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 32}
+        - {x: -32, y: 26}
+        - {x: -32, y: -30}
+        - {x: -28, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
+    - name: SNES - The Lost Vikings - Tomator_9
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 97
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Tomator_10
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 87
+        width: 16
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Tomator_13
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 79
+        width: 16
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Tomator_8
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 78
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

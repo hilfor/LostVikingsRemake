@@ -2,14 +2,8 @@
 using System.Collections;
 using System;
 
-public class Olaf : MonoBehaviour, ICharacter
+public class Olaf : BaseViking
 {
-
-    private enum FacingDirection
-    {
-        LEFT,
-        RIGHT
-    }
 
     private enum ShieldPosition
     {
@@ -17,90 +11,43 @@ public class Olaf : MonoBehaviour, ICharacter
         UP
     }
 
-    Animator m_Animator;
+    ShieldPosition m_ShieldPosition = ShieldPosition.FORWARD;
 
-    bool m_Grounded;
-
-    ShieldPosition m_ShieldPosition;
-    FacingDirection m_FacingDirection = FacingDirection.RIGHT;
-
-    Transform m_OlafTransform;
-    Rigidbody2D m_OlafRigidBody;
-
-    public void Action(InputAction action)
+    public override void Action(InputAction action)
     {
-        throw new NotImplementedException();
-    }
-
-    public void Jump()
-    {
-        Debug.Log("Olaf is Jumping");
-    }
-
-    public void MoveLeft(float speed)
-    {
-        if (m_FacingDirection == FacingDirection.RIGHT)
+        if (action == InputAction.TRIGGER_SPECIAL_ACTION1)
         {
-            ChangeFacingDirection();
-            m_FacingDirection = FacingDirection.LEFT;
+            if (m_ShieldPosition == ShieldPosition.FORWARD)
+            {
+                m_ShieldPosition = ShieldPosition.UP;
+            }
+            else
+            {
+                m_ShieldPosition = ShieldPosition.FORWARD;
+            }
         }
-
-        Vector2 olafVelocity = m_OlafRigidBody.velocity;
-        olafVelocity.x = -speed;
-        m_OlafRigidBody.velocity = olafVelocity;
-        m_Animator.SetFloat("Speed", speed);
     }
 
-    public void MoveRight(float speed)
+
+    protected new void Update()
     {
-        if (m_FacingDirection == FacingDirection.LEFT)
+        m_Animator.SetBool("ShieldForward", m_ShieldPosition == ShieldPosition.FORWARD);
+        base.Update();
+    }
+
+    protected override void TopHit(Collider2D collider)
+    {
+        if (m_ShieldPosition == ShieldPosition.UP)
         {
-            ChangeFacingDirection();
-            m_FacingDirection = FacingDirection.RIGHT;
+            Debug.Log("Stopped something from hitting me from the top");
         }
-        Vector2 olafVelocity = m_OlafRigidBody.velocity;
-        olafVelocity.x = speed;
-        m_OlafRigidBody.velocity = olafVelocity;
-        m_Animator.SetFloat("Speed", speed);
     }
 
-    void Awake()
+    protected override void FrontHit(Collider2D collider)
     {
-        m_Animator = GetComponent<Animator>();
-        m_OlafTransform = gameObject.transform;
-        m_OlafRigidBody = GetComponent<Rigidbody2D>();
-    }
-
-    void ChangeFacingDirection()
-    {
-        Vector3 scale = m_OlafTransform.localScale;
-        scale.x *= -1;
-        m_OlafTransform.localScale = scale;
-    }
-
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //if (m_OlafRigidBody.velocity != Vector2.zero)
-        //{
-        //    m_Animator.SetFloat("Speed", 1f);
-        //}
-        //else
-        //{
-        //    m_Animator.SetFloat("Speed", 0);
-        //}
-    }
-
-    void FixedUpdate()
-    {
-        
-
-
+        if (m_ShieldPosition == ShieldPosition.FORWARD)
+        {
+            Debug.Log("Stopped something from hitting me from the front");
+        }
     }
 }

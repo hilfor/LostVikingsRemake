@@ -1,8 +1,8 @@
 ﻿public enum InputAction
 {
     NONE,
-    JUMP,
-    SPECIAL_ACTION,
+    TRIGGER_SPECIAL_ACTION1,
+    TRIGGER_SPECIAL_ACTION2,
     RIGHT_PRESSED,
     LEFT_PRESSED,
     UP_PRESSED,

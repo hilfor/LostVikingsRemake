@@ -6,24 +6,16 @@ public class PlayerInputManager : MonoBehaviour
     [SerializeField]
     private PlayerMotor m_PlayerMotor;
 
-    void Start()
-    {
-    }
-
     void FixedUpdate()
     {
         InputAction action = CheckInput();
-        if (action != InputAction.NONE)
+        if (action == InputAction.RIGHT_PRESSED || action == InputAction.LEFT_PRESSED)
         {
-            if (action == InputAction.RIGHT_PRESSED || action == InputAction.LEFT_PRESSED)
-            {
-                m_PlayerMotor.Move(action == InputAction.RIGHT_PRESSED ? 1 : -1);
-            }
-            else
-            {
-                m_PlayerMotor.ExecuteAction(action);
-            }
-
+            m_PlayerMotor.Move(action == InputAction.RIGHT_PRESSED ? 1 : -1);
+        }
+        else
+        {
+            m_PlayerMotor.ExecuteAction(action);
         }
     }
 
@@ -49,14 +41,14 @@ public class PlayerInputManager : MonoBehaviour
             return InputAction.DOWN_PRESSED;
         }
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.RightShift))
         {
-            return InputAction.JUMP;
+            return InputAction.TRIGGER_SPECIAL_ACTION2;
         }
 
-        if (Input.GetKey(KeyCode.RightControl))
+        if (Input.GetKeyDown(KeyCode.RightControl))
         {
-            return InputAction.SPECIAL_ACTION;
+            return InputAction.TRIGGER_SPECIAL_ACTION1;
         }
 
         return InputAction.NONE;

@@ -1,0 +1,1845 @@
+fileFormatVersion: 2
+guid: b35ed9dce9a444146be2f40a44691470
+timeCreated: 1468075955
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SNES - The Lost Vikings - Enemies_0
+    21300002: SNES - The Lost Vikings - Enemies_1
+    21300004: SNES - The Lost Vikings - Enemies_2
+    21300006: SNES - The Lost Vikings - Enemies_3
+    21300008: SNES - The Lost Vikings - Enemies_4
+    21300010: SNES - The Lost Vikings - Enemies_5
+    21300012: SNES - The Lost Vikings - Enemies_6
+    21300014: SNES - The Lost Vikings - Enemies_7
+    21300016: SNES - The Lost Vikings - Enemies_8
+    21300018: SNES - The Lost Vikings - Enemies_9
+    21300020: SNES - The Lost Vikings - Enemies_10
+    21300022: SNES - The Lost Vikings - Enemies_11
+    21300024: SNES - The Lost Vikings - Enemies_12
+    21300026: SNES - The Lost Vikings - Enemies_13
+    21300028: SNES - The Lost Vikings - Enemies_14
+    21300030: SNES - The Lost Vikings - Enemies_15
+    21300032: SNES - The Lost Vikings - Enemies_16
+    21300034: SNES - The Lost Vikings - Enemies_17
+    21300036: SNES - The Lost Vikings - Enemies_18
+    21300038: SNES - The Lost Vikings - Enemies_19
+    21300040: SNES - The Lost Vikings - Enemies_20
+    21300042: SNES - The Lost Vikings - Enemies_21
+    21300044: SNES - The Lost Vikings - Enemies_22
+    21300046: SNES - The Lost Vikings - Enemies_23
+    21300048: SNES - The Lost Vikings - Enemies_24
+    21300050: SNES - The Lost Vikings - Enemies_25
+    21300052: SNES - The Lost Vikings - Enemies_26
+    21300054: SNES - The Lost Vikings - Enemies_27
+    21300056: SNES - The Lost Vikings - Enemies_28
+    21300058: SNES - The Lost Vikings - Enemies_29
+    21300060: SNES - The Lost Vikings - Enemies_30
+    21300062: SNES - The Lost Vikings - Enemies_31
+    21300064: SNES - The Lost Vikings - Enemies_32
+    21300066: SNES - The Lost Vikings - Enemies_33
+    21300068: SNES - The Lost Vikings - Enemies_34
+    21300070: SNES - The Lost Vikings - Enemies_35
+    21300072: SNES - The Lost Vikings - Enemies_36
+    21300074: SNES - The Lost Vikings - Enemies_37
+    21300076: SNES - The Lost Vikings - Enemies_38
+    21300078: SNES - The Lost Vikings - Enemies_39
+    21300080: SNES - The Lost Vikings - Enemies_40
+    21300082: SNES - The Lost Vikings - Enemies_41
+    21300084: SNES - The Lost Vikings - Enemies_42
+    21300086: SNES - The Lost Vikings - Enemies_43
+    21300088: SNES - The Lost Vikings - Enemies_44
+    21300090: SNES - The Lost Vikings - Enemies_45
+    21300092: SNES - The Lost Vikings - Enemies_46
+    21300094: SNES - The Lost Vikings - Enemies_47
+    21300096: SNES - The Lost Vikings - Enemies_48
+    21300098: SNES - The Lost Vikings - Enemies_49
+    21300100: SNES - The Lost Vikings - Enemies_50
+    21300102: SNES - The Lost Vikings - Enemies_51
+    21300104: SNES - The Lost Vikings - Enemies_52
+    21300106: SNES - The Lost Vikings - Enemies_53
+    21300108: SNES - The Lost Vikings - Enemies_54
+    21300110: SNES - The Lost Vikings - Enemies_55
+    21300112: SNES - The Lost Vikings - Enemies_56
+    21300114: SNES - The Lost Vikings - Enemies_57
+    21300116: SNES - The Lost Vikings - Enemies_58
+    21300118: SNES - The Lost Vikings - Enemies_59
+    21300120: SNES - The Lost Vikings - Enemies_60
+    21300122: SNES - The Lost Vikings - Enemies_61
+    21300124: SNES - The Lost Vikings - Enemies_62
+    21300126: SNES - The Lost Vikings - Enemies_63
+    21300128: SNES - The Lost Vikings - Enemies_64
+    21300130: SNES - The Lost Vikings - Enemies_65
+    21300132: SNES - The Lost Vikings - Enemies_66
+    21300134: SNES - The Lost Vikings - Enemies_67
+    21300136: SNES - The Lost Vikings - Enemies_68
+    21300138: SNES - The Lost Vikings - Enemies_69
+    21300140: SNES - The Lost Vikings - Enemies_70
+    21300142: SNES - The Lost Vikings - Enemies_71
+    21300144: SNES - The Lost Vikings - Enemies_72
+    21300146: SNES - The Lost Vikings - Enemies_73
+    21300148: SNES - The Lost Vikings - Enemies_74
+    21300150: SNES - The Lost Vikings - Enemies_75
+    21300152: SNES - The Lost Vikings - Enemies_76
+    21300154: SNES - The Lost Vikings - Enemies_77
+    21300156: SNES - The Lost Vikings - Enemies_78
+    21300158: SNES - The Lost Vikings - Enemies_79
+    21300160: SNES - The Lost Vikings - Enemies_80
+    21300162: SNES - The Lost Vikings - Enemies_81
+    21300164: SNES - The Lost Vikings - Enemies_82
+    21300166: SNES - The Lost Vikings - Enemies_83
+    21300168: SNES - The Lost Vikings - Enemies_84
+    21300170: SNES - The Lost Vikings - Enemies_85
+    21300172: SNES - The Lost Vikings - Enemies_86
+    21300174: SNES - The Lost Vikings - Enemies_87
+    21300176: SNES - The Lost Vikings - Enemies_88
+    21300178: SNES - The Lost Vikings - Enemies_89
+    21300180: SNES - The Lost Vikings - Enemies_90
+    21300182: SNES - The Lost Vikings - Enemies_91
+    21300184: SNES - The Lost Vikings - Enemies_92
+    21300186: SNES - The Lost Vikings - Enemies_93
+    21300188: SNES - The Lost Vikings - Enemies_94
+    21300190: SNES - The Lost Vikings - Enemies_95
+    21300192: SNES - The Lost Vikings - Enemies_96
+    21300194: SNES - The Lost Vikings - Enemies_97
+    21300196: SNES - The Lost Vikings - Enemies_98
+    21300198: SNES - The Lost Vikings - Enemies_99
+    21300200: SNES - The Lost Vikings - Enemies_100
+    21300202: SNES - The Lost Vikings - Enemies_101
+    21300204: SNES - The Lost Vikings - Enemies_102
+    21300206: SNES - The Lost Vikings - Enemies_103
+    21300208: SNES - The Lost Vikings - Enemies_104
+    21300210: SNES - The Lost Vikings - Enemies_105
+    21300212: SNES - The Lost Vikings - Enemies_106
+    21300214: SNES - The Lost Vikings - Enemies_107
+    21300216: SNES - The Lost Vikings - Enemies_108
+    21300218: SNES - The Lost Vikings - Enemies_109
+    21300220: SNES - The Lost Vikings - Enemies_110
+    21300222: SNES - The Lost Vikings - Enemies_111
+    21300224: SNES - The Lost Vikings - Enemies_112
+    21300226: SNES - The Lost Vikings - Enemies_113
+    21300228: SNES - The Lost Vikings - Enemies_114
+    21300230: SNES - The Lost Vikings - Enemies_115
+    21300232: SNES - The Lost Vikings - Enemies_116
+    21300234: SNES - The Lost Vikings - Enemies_117
+    21300236: SNES - The Lost Vikings - Enemies_118
+    21300238: SNES - The Lost Vikings - Enemies_119
+    21300240: SNES - The Lost Vikings - Enemies_120
+    21300242: SNES - The Lost Vikings - Enemies_121
+    21300244: SNES - The Lost Vikings - Enemies_122
+    21300246: SNES - The Lost Vikings - Enemies_123
+    21300248: SNES - The Lost Vikings - Enemies_124
+    21300250: SNES - The Lost Vikings - Enemies_125
+    21300252: SNES - The Lost Vikings - Enemies_126
+    21300254: SNES - The Lost Vikings - Enemies_127
+    21300256: SNES - The Lost Vikings - Enemies_128
+    21300258: SNES - The Lost Vikings - Enemies_129
+    21300260: SNES - The Lost Vikings - Enemies_130
+    21300262: SNES - The Lost Vikings - Enemies_131
+    21300264: SNES - The Lost Vikings - Enemies_132
+    21300266: SNES - The Lost Vikings - Enemies_133
+    21300268: SNES - The Lost Vikings - Enemies_134
+    21300270: SNES - The Lost Vikings - Enemies_135
+    21300272: SNES - The Lost Vikings - Enemies_136
+    21300274: SNES - The Lost Vikings - Enemies_137
+    21300276: SNES - The Lost Vikings - Enemies_138
+    21300278: SNES - The Lost Vikings - Enemies_139
+    21300280: SNES - The Lost Vikings - Enemies_140
+    21300282: SNES - The Lost Vikings - Enemies_141
+    21300284: SNES - The Lost Vikings - Enemies_143
+    21300286: SNES - The Lost Vikings - Enemies_144
+    21300288: SNES - The Lost Vikings - Enemies_145
+    21300290: SNES - The Lost Vikings - Enemies_146
+    21300292: SNES - The Lost Vikings - Enemies_147
+    21300294: SNES - The Lost Vikings - Enemies_148
+    21300296: SNES - The Lost Vikings - Enemies_142
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: SNES - The Lost Vikings - Enemies_0
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 400
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_1
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 400
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_2
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 401
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_3
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 401
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_4
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 400
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_5
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 400
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_6
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 401
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_7
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 401
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_8
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 401
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_9
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 401
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_10
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 401
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_11
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 401
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_12
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 402
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_13
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 397
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_14
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 359
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_15
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 359
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_16
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 359
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_17
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 359
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_18
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 359
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_19
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 359
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_20
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 359
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_21
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 359
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_22
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 359
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_23
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 359
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_24
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 359
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_25
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 359
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_26
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 359
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_27
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 359
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_28
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 365
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_29
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 365
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_30
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 365
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_31
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 365
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_32
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 365
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_33
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 325
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_34
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 325
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_35
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 325
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_36
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 325
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_37
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 325
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_38
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 319
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_39
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 319
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_40
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 319
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_41
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 319
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_42
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 319
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_43
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 318
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_44
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 318
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_45
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 318
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_46
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 318
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_47
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 335
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_48
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 325
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_49
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 293
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_50
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 293
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_51
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 293
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_52
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 293
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_53
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 293
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_54
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 282
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_55
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 282
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_56
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 282
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_57
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 282
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_58
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 282
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_59
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 282
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_60
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 282
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_61
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 301
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_62
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 276
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_63
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 276
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_64
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 276
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_65
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 276
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_66
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 276
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_67
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 276
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_68
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 275
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_69
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 275
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_70
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 276
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_71
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 274
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_72
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 279
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_73
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 237
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_74
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 237
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_75
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 237
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_76
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 237
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_77
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 237
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_78
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 237
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_79
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 237
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_80
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 237
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_81
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 237
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_82
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 240
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_83
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 237
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_84
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 236
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_85
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 236
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_86
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 236
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_87
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 236
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_88
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 239
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_89
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 236
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_90
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 236
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_91
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 251
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_92
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 200
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_93
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 200
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_94
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 192
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_95
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 192
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_96
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_97
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 192
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_98
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 192
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_99
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 196
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_100
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 196
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_101
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 196
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_102
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 196
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_103
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 196
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_104
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 196
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_105
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 198
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_106
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 193
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_107
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 195
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_108
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 190
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_109
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 190
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_110
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 191
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_111
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 150
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_112
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 150
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_113
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 150
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_114
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 150
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_115
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 150
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_116
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 150
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_117
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 156
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_118
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 156
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_119
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 156
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_120
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 156
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_121
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 156
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_122
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 156
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_123
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 159
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_124
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 163
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_125
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 158
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_126
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 159
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_127
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 109
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_128
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 109
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_129
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 109
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_130
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 109
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_131
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 117
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_132
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 117
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_133
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 113
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_134
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 113
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_135
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 114
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_136
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 111
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_137
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 112
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_138
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 111
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_139
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 111
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_140
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 112
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_141
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 111
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_143
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 78
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_144
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 78
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_145
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 76
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_146
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 76
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_147
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 76
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_148
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 100
+        width: 16
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNES - The Lost Vikings - Enemies_142
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 275
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
