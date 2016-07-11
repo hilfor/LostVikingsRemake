@@ -56,7 +56,7 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
         m_RigidBody.velocity = currentVelocity;
     }
 
-    public abstract void Action(InputAction action);
+    public abstract void Action(InputState state);
 
     public void MoveLeft(float speed)
     {

@@ -26,7 +26,7 @@ public class PlayerInputManager : MonoBehaviour
 
     void FixedUpdate()
     {
-        InputState state = CheckInput();
+        InputState state = GetInputState();
         m_PlayerMotor.ExecuteAction(state);
 
         //if (state == InputAction.RIGHT_PRESSED || state == InputAction.LEFT_PRESSED)
@@ -39,49 +39,49 @@ public class PlayerInputManager : MonoBehaviour
         //}
     }
 
-    InputState CheckInput()
+    InputState GetInputState()
     {
         InputState inputState = new InputState(m_InputMap);
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-
-            //return InputAction.LEFT_PRESSED;
+            inputState.CheckPressed(InputAction.LEFT);
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            //          return InputAction.RIGHT_PRESSED;
+            inputState.CheckPressed(InputAction.RIGHT);
         }
 
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            //   return InputAction.UP_PRESSED;
+            inputState.CheckPressed(InputAction.UP);
         }
 
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            //    return InputAction.DOWN_PRESSED;
+            inputState.CheckPressed(InputAction.DOWN);
         }
 
-        if (Input.GetKeyDown(KeyCode.RightShift))
+        if (Input.GetKey(KeyCode.RightShift))
         {
-            //    return InputAction.SPECIAL_ACTION2;
+            inputState.CheckPressed(InputAction.SPECIAL_ACTION1);
+            if (Input.GetKeyDown(KeyCode.RightShift))
+            {
+                inputState.CheckTriggered(InputAction.SPECIAL_ACTION1);
+            }
         }
 
-        if (Input.GetKeyDown(KeyCode.RightControl))
+        if (Input.GetKey(KeyCode.RightControl))
         {
-            //   return InputAction.SPECIAL_ACTION1;
+            inputState.CheckPressed(InputAction.SPECIAL_ACTION2);
+            if (Input.GetKeyDown(KeyCode.RightControl))
+            {
+                inputState.CheckTriggered(InputAction.SPECIAL_ACTION2);
+            }
         }
 
         return inputState;
     }
-
-
-
-
-
-
-
 
 }

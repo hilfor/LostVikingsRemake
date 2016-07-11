@@ -11,15 +11,20 @@ public class Eric : BaseViking
     bool m_ActivateSprint = false;
 
 
-    public override void Action(InputAction action)
+    public override void Action(InputState inputState)
     {
-
-        switch (action)
+        if (inputState.CheckPressed(InputAction.SPECIAL_ACTION1))
         {
-            case InputAction.SPECIAL_ACTION1:
-                break;
-            case InputAction.SPECIAL_ACTION2:
-                break;
+            m_ActivateSprint = true;
+
+        }
+        else
+        {
+            m_ActivateSprint = false;
+        }
+        if (inputState.CheckTriggered(InputAction.SPECIAL_ACTION2))
+        {
+            // jump
         }
     }
 

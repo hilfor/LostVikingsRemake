@@ -3,8 +3,8 @@
     NONE,
     SPECIAL_ACTION1,
     SPECIAL_ACTION2,
-    RIGHT_PRESSED,
-    LEFT_PRESSED,
-    UP_PRESSED,
-    DOWN_PRESSED
+    RIGHT,
+    LEFT,
+    UP,
+    DOWN
 }

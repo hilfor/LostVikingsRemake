@@ -4,7 +4,7 @@ using System;
 
 public class Baelog : BaseViking
 {
-    public override void Action(InputAction action)
+    public override void Action(InputState action)
     {
         throw new NotImplementedException();
     }

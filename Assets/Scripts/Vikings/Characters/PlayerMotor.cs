@@ -4,13 +4,13 @@ using System.Collections;
 public class PlayerMotor : MonoBehaviour
 {
     public ICharacter m_CurrentViking;
-    
+
     void Start()
     {
         m_CurrentViking = GetComponent<ICharacter>();
     }
 
-    public void Move(float direction)
+    void Move(float direction)
     {
         float normalizedSpeed = Mathf.Abs(direction);
         if (direction < 0)
@@ -23,8 +23,17 @@ public class PlayerMotor : MonoBehaviour
         }
     }
 
-    public void ExecuteAction(InputState state)
+    public void ExecuteAction(InputState inputState)
     {
+
+        if (inputState.CheckPressed(InputAction.RIGHT) || inputState.CheckPressed(InputAction.LEFT))
+        {
+            Move(inputState.CheckPressed(InputAction.RIGHT) ? 1 : -1);
+        }
+        else
+        {
+            m_CurrentViking.Action(inputState);
+        }
 
         //switch (state)
         //{

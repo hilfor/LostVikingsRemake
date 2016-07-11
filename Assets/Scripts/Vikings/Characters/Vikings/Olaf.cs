@@ -13,9 +13,9 @@ public class Olaf : BaseViking
 
     ShieldPosition m_ShieldPosition = ShieldPosition.FORWARD;
 
-    public override void Action(InputAction action)
+    public override void Action(InputState inputState)
     {
-        if (action == InputAction.SPECIAL_ACTION1)
+        if (inputState.CheckTriggered(InputAction.SPECIAL_ACTION1))
         {
             if (m_ShieldPosition == ShieldPosition.FORWARD)
             {
