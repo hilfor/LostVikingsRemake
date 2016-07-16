@@ -1,37 +1,37 @@
 fileFormatVersion: 2
 guid: b35ed9dce9a444146be2f40a44691470
-timeCreated: 1468075955
+timeCreated: 1468671353
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: SNES - The Lost Vikings - Enemies_0
-    21300002: SNES - The Lost Vikings - Enemies_1
-    21300004: SNES - The Lost Vikings - Enemies_2
-    21300006: SNES - The Lost Vikings - Enemies_3
-    21300008: SNES - The Lost Vikings - Enemies_4
-    21300010: SNES - The Lost Vikings - Enemies_5
-    21300012: SNES - The Lost Vikings - Enemies_6
-    21300014: SNES - The Lost Vikings - Enemies_7
+    21300000: Blue_Dinosaur_Walk_1
+    21300002: Blue_Dinosaur_Walk_2
+    21300004: Blue_Dinosaur_Walk_3
+    21300006: Blue_Dinosaur_Walk_4
+    21300008: Red_Dinosaur_Walk_1
+    21300010: Red_Dinosaur_Walk_2
+    21300012: Red_Dinosaur_Walk_3
+    21300014: Red_Dinosaur_Walk_4
     21300016: SNES - The Lost Vikings - Enemies_8
     21300018: SNES - The Lost Vikings - Enemies_9
     21300020: SNES - The Lost Vikings - Enemies_10
     21300022: SNES - The Lost Vikings - Enemies_11
     21300024: SNES - The Lost Vikings - Enemies_12
     21300026: SNES - The Lost Vikings - Enemies_13
-    21300028: SNES - The Lost Vikings - Enemies_14
-    21300030: SNES - The Lost Vikings - Enemies_15
-    21300032: SNES - The Lost Vikings - Enemies_16
-    21300034: SNES - The Lost Vikings - Enemies_17
-    21300036: SNES - The Lost Vikings - Enemies_18
-    21300038: SNES - The Lost Vikings - Enemies_19
-    21300040: SNES - The Lost Vikings - Enemies_20
-    21300042: SNES - The Lost Vikings - Enemies_21
-    21300044: SNES - The Lost Vikings - Enemies_22
-    21300046: SNES - The Lost Vikings - Enemies_23
-    21300048: SNES - The Lost Vikings - Enemies_24
-    21300050: SNES - The Lost Vikings - Enemies_25
-    21300052: SNES - The Lost Vikings - Enemies_26
-    21300054: SNES - The Lost Vikings - Enemies_27
+    21300028: Blue_Dinosaur_Attack_1
+    21300030: Blue_Dinosaur_Attack_2
+    21300032: Blue_Dinosaur_Attack_3
+    21300034: Blue_Dinosaur_Attack_4
+    21300036: Blue_Dinosaur_Attack_5
+    21300038: Blue_Dinosaur_Attack_6
+    21300040: Blue_Dinosaur_Attack_7
+    21300042: Red_Dinosaur_Attack_1
+    21300044: Red_Dinosaur_Attack_2
+    21300046: Red_Dinosaur_Attack_3
+    21300048: Red_Dinosaur_Attack_4
+    21300050: Red_Dinosaur_Attack_5
+    21300052: Red_Dinosaur_Attack_6
+    21300054: Red_Dinosaur_Attack_7
     21300056: SNES - The Lost Vikings - Enemies_28
     21300058: SNES - The Lost Vikings - Enemies_29
     21300060: SNES - The Lost Vikings - Enemies_30
@@ -199,7 +199,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: SNES - The Lost Vikings - Enemies_0
+    - name: Blue_Dinosaur_Walk_1
       rect:
         serializedVersion: 2
         x: 60
@@ -207,10 +207,10 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Enemies_1
+    - name: Blue_Dinosaur_Walk_2
       rect:
         serializedVersion: 2
         x: 98
@@ -218,10 +218,10 @@ TextureImporter:
         width: 30
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Enemies_2
+    - name: Blue_Dinosaur_Walk_3
       rect:
         serializedVersion: 2
         x: 135
@@ -229,10 +229,10 @@ TextureImporter:
         width: 29
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Enemies_3
+    - name: Blue_Dinosaur_Walk_4
       rect:
         serializedVersion: 2
         x: 173
@@ -240,10 +240,10 @@ TextureImporter:
         width: 29
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Enemies_4
+    - name: Red_Dinosaur_Walk_1
       rect:
         serializedVersion: 2
         x: 332
@@ -251,21 +251,21 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Enemies_5
+    - name: Red_Dinosaur_Walk_2
       rect:
         serializedVersion: 2
-        x: 370
+        x: 369
         y: 400
         width: 30
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Enemies_6
+    - name: Red_Dinosaur_Walk_3
       rect:
         serializedVersion: 2
         x: 407
@@ -273,10 +273,10 @@ TextureImporter:
         width: 29
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Enemies_7
+    - name: Red_Dinosaur_Walk_4
       rect:
         serializedVersion: 2
         x: 445
@@ -284,7 +284,7 @@ TextureImporter:
         width: 29
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_8
@@ -295,7 +295,7 @@ TextureImporter:
         width: 27
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_9
@@ -306,7 +306,7 @@ TextureImporter:
         width: 27
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_10
@@ -317,7 +317,7 @@ TextureImporter:
         width: 28
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_11
@@ -328,7 +328,7 @@ TextureImporter:
         width: 27
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_12
@@ -339,7 +339,7 @@ TextureImporter:
         width: 27
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_13
@@ -350,21 +350,21 @@ TextureImporter:
         width: 8
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Enemies_14
+    - name: Blue_Dinosaur_Attack_1
       rect:
         serializedVersion: 2
         x: 11
         y: 359
         width: 27
-        height: 30
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Enemies_15
+    - name: Blue_Dinosaur_Attack_2
       rect:
         serializedVersion: 2
         x: 45
@@ -372,10 +372,10 @@ TextureImporter:
         width: 30
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Enemies_16
+    - name: Blue_Dinosaur_Attack_3
       rect:
         serializedVersion: 2
         x: 83
@@ -383,10 +383,10 @@ TextureImporter:
         width: 28
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Enemies_17
+    - name: Blue_Dinosaur_Attack_4
       rect:
         serializedVersion: 2
         x: 118
@@ -394,10 +394,10 @@ TextureImporter:
         width: 27
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Enemies_18
+    - name: Blue_Dinosaur_Attack_5
       rect:
         serializedVersion: 2
         x: 154
@@ -405,43 +405,43 @@ TextureImporter:
         width: 31
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Enemies_19
+    - name: Blue_Dinosaur_Attack_6
       rect:
         serializedVersion: 2
         x: 191
         y: 359
         width: 31
-        height: 31
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Enemies_20
+    - name: Blue_Dinosaur_Attack_7
       rect:
         serializedVersion: 2
         x: 233
         y: 359
         width: 30
-        height: 30
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Enemies_21
+    - name: Red_Dinosaur_Attack_1
       rect:
         serializedVersion: 2
         x: 283
         y: 359
         width: 27
-        height: 30
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Enemies_22
+    - name: Red_Dinosaur_Attack_2
       rect:
         serializedVersion: 2
         x: 317
@@ -449,10 +449,10 @@ TextureImporter:
         width: 30
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Enemies_23
+    - name: Red_Dinosaur_Attack_3
       rect:
         serializedVersion: 2
         x: 355
@@ -460,10 +460,10 @@ TextureImporter:
         width: 28
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Enemies_24
+    - name: Red_Dinosaur_Attack_4
       rect:
         serializedVersion: 2
         x: 390
@@ -471,10 +471,10 @@ TextureImporter:
         width: 27
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Enemies_25
+    - name: Red_Dinosaur_Attack_5
       rect:
         serializedVersion: 2
         x: 426
@@ -482,29 +482,29 @@ TextureImporter:
         width: 31
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Enemies_26
+    - name: Red_Dinosaur_Attack_6
       rect:
         serializedVersion: 2
         x: 463
         y: 359
         width: 31
-        height: 31
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Enemies_27
+    - name: Red_Dinosaur_Attack_7
       rect:
         serializedVersion: 2
         x: 505
         y: 359
         width: 30
-        height: 30
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_28
@@ -515,7 +515,7 @@ TextureImporter:
         width: 24
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_29
@@ -526,7 +526,7 @@ TextureImporter:
         width: 22
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_30
@@ -537,7 +537,7 @@ TextureImporter:
         width: 22
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_31
@@ -548,7 +548,7 @@ TextureImporter:
         width: 24
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_32
@@ -559,7 +559,7 @@ TextureImporter:
         width: 27
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_33
@@ -570,7 +570,7 @@ TextureImporter:
         width: 31
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_34
@@ -581,7 +581,7 @@ TextureImporter:
         width: 32
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_35
@@ -592,7 +592,7 @@ TextureImporter:
         width: 29
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_36
@@ -603,7 +603,7 @@ TextureImporter:
         width: 32
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_37
@@ -614,7 +614,7 @@ TextureImporter:
         width: 30
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_38
@@ -625,7 +625,7 @@ TextureImporter:
         width: 32
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_39
@@ -636,7 +636,7 @@ TextureImporter:
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_40
@@ -647,7 +647,7 @@ TextureImporter:
         width: 28
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_41
@@ -658,7 +658,7 @@ TextureImporter:
         width: 26
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_42
@@ -669,7 +669,7 @@ TextureImporter:
         width: 29
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_43
@@ -680,7 +680,7 @@ TextureImporter:
         width: 32
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_44
@@ -691,7 +691,7 @@ TextureImporter:
         width: 32
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_45
@@ -702,7 +702,7 @@ TextureImporter:
         width: 32
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_46
@@ -713,7 +713,7 @@ TextureImporter:
         width: 32
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_47
@@ -724,7 +724,7 @@ TextureImporter:
         width: 7
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_48
@@ -735,7 +735,7 @@ TextureImporter:
         width: 7
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_49
@@ -746,7 +746,7 @@ TextureImporter:
         width: 30
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_50
@@ -757,7 +757,7 @@ TextureImporter:
         width: 30
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_51
@@ -768,7 +768,7 @@ TextureImporter:
         width: 31
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_52
@@ -779,7 +779,7 @@ TextureImporter:
         width: 32
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_53
@@ -790,7 +790,7 @@ TextureImporter:
         width: 32
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_54
@@ -801,7 +801,7 @@ TextureImporter:
         width: 28
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_55
@@ -812,7 +812,7 @@ TextureImporter:
         width: 29
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_56
@@ -823,7 +823,7 @@ TextureImporter:
         width: 31
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_57
@@ -834,7 +834,7 @@ TextureImporter:
         width: 28
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_58
@@ -845,7 +845,7 @@ TextureImporter:
         width: 26
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_59
@@ -856,7 +856,7 @@ TextureImporter:
         width: 30
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_60
@@ -867,7 +867,7 @@ TextureImporter:
         width: 23
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_61
@@ -878,7 +878,7 @@ TextureImporter:
         width: 6
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_62
@@ -889,7 +889,7 @@ TextureImporter:
         width: 26
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_63
@@ -900,7 +900,7 @@ TextureImporter:
         width: 24
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_64
@@ -911,7 +911,7 @@ TextureImporter:
         width: 22
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_65
@@ -922,7 +922,7 @@ TextureImporter:
         width: 22
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_66
@@ -933,7 +933,7 @@ TextureImporter:
         width: 26
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_67
@@ -944,7 +944,7 @@ TextureImporter:
         width: 28
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_68
@@ -955,7 +955,7 @@ TextureImporter:
         width: 9
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_69
@@ -966,7 +966,7 @@ TextureImporter:
         width: 15
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_70
@@ -977,7 +977,7 @@ TextureImporter:
         width: 15
         height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_71
@@ -999,7 +999,7 @@ TextureImporter:
         width: 15
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_73
@@ -1010,7 +1010,7 @@ TextureImporter:
         width: 30
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_74
@@ -1021,7 +1021,7 @@ TextureImporter:
         width: 30
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_75
@@ -1032,7 +1032,7 @@ TextureImporter:
         width: 32
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_76
@@ -1043,7 +1043,7 @@ TextureImporter:
         width: 32
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_77
@@ -1054,7 +1054,7 @@ TextureImporter:
         width: 30
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_78
@@ -1065,7 +1065,7 @@ TextureImporter:
         width: 32
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_79
@@ -1076,7 +1076,7 @@ TextureImporter:
         width: 29
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_80
@@ -1087,7 +1087,7 @@ TextureImporter:
         width: 30
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_81
@@ -1098,7 +1098,7 @@ TextureImporter:
         width: 30
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_82
@@ -1109,7 +1109,7 @@ TextureImporter:
         width: 30
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_83
@@ -1120,7 +1120,7 @@ TextureImporter:
         width: 30
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_84
@@ -1131,7 +1131,7 @@ TextureImporter:
         width: 26
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_85
@@ -1142,7 +1142,7 @@ TextureImporter:
         width: 20
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_86
@@ -1153,7 +1153,7 @@ TextureImporter:
         width: 22
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_87
@@ -1164,7 +1164,7 @@ TextureImporter:
         width: 27
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_88
@@ -1175,7 +1175,7 @@ TextureImporter:
         width: 31
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_89
@@ -1186,7 +1186,7 @@ TextureImporter:
         width: 24
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_90
@@ -1197,7 +1197,7 @@ TextureImporter:
         width: 20
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_91
@@ -1208,7 +1208,7 @@ TextureImporter:
         width: 7
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_92
@@ -1219,7 +1219,7 @@ TextureImporter:
         width: 23
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_93
@@ -1230,7 +1230,7 @@ TextureImporter:
         width: 23
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_94
@@ -1241,7 +1241,7 @@ TextureImporter:
         width: 31
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_95
@@ -1252,7 +1252,7 @@ TextureImporter:
         width: 32
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_96
@@ -1263,7 +1263,7 @@ TextureImporter:
         width: 27
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_97
@@ -1274,7 +1274,7 @@ TextureImporter:
         width: 25
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_98
@@ -1285,7 +1285,7 @@ TextureImporter:
         width: 24
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_99
@@ -1296,7 +1296,7 @@ TextureImporter:
         width: 29
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_100
@@ -1307,7 +1307,7 @@ TextureImporter:
         width: 26
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_101
@@ -1318,7 +1318,7 @@ TextureImporter:
         width: 25
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_102
@@ -1329,7 +1329,7 @@ TextureImporter:
         width: 20
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_103
@@ -1340,7 +1340,7 @@ TextureImporter:
         width: 22
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_104
@@ -1351,7 +1351,7 @@ TextureImporter:
         width: 22
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_105
@@ -1362,7 +1362,7 @@ TextureImporter:
         width: 22
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_106
@@ -1373,7 +1373,7 @@ TextureImporter:
         width: 22
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_107
@@ -1384,7 +1384,7 @@ TextureImporter:
         width: 21
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_108
@@ -1395,7 +1395,7 @@ TextureImporter:
         width: 20
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_109
@@ -1406,7 +1406,7 @@ TextureImporter:
         width: 21
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_110
@@ -1417,7 +1417,7 @@ TextureImporter:
         width: 23
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_111
@@ -1428,7 +1428,7 @@ TextureImporter:
         width: 24
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_112
@@ -1439,7 +1439,7 @@ TextureImporter:
         width: 24
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_113
@@ -1450,7 +1450,7 @@ TextureImporter:
         width: 26
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_114
@@ -1461,7 +1461,7 @@ TextureImporter:
         width: 31
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_115
@@ -1472,7 +1472,7 @@ TextureImporter:
         width: 32
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_116
@@ -1483,7 +1483,7 @@ TextureImporter:
         width: 32
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_117
@@ -1494,7 +1494,7 @@ TextureImporter:
         width: 25
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_118
@@ -1505,7 +1505,7 @@ TextureImporter:
         width: 28
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_119
@@ -1516,7 +1516,7 @@ TextureImporter:
         width: 24
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_120
@@ -1527,7 +1527,7 @@ TextureImporter:
         width: 20
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_121
@@ -1538,7 +1538,7 @@ TextureImporter:
         width: 19
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_122
@@ -1549,7 +1549,7 @@ TextureImporter:
         width: 20
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_123
@@ -1560,7 +1560,7 @@ TextureImporter:
         width: 25
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_124
@@ -1571,7 +1571,7 @@ TextureImporter:
         width: 32
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_125
@@ -1582,7 +1582,7 @@ TextureImporter:
         width: 27
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_126
@@ -1593,7 +1593,7 @@ TextureImporter:
         width: 25
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_127
@@ -1604,7 +1604,7 @@ TextureImporter:
         width: 28
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_128
@@ -1615,7 +1615,7 @@ TextureImporter:
         width: 29
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_129
@@ -1626,7 +1626,7 @@ TextureImporter:
         width: 28
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_130
@@ -1637,7 +1637,7 @@ TextureImporter:
         width: 29
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_131
@@ -1648,7 +1648,7 @@ TextureImporter:
         width: 31
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_132
@@ -1659,7 +1659,7 @@ TextureImporter:
         width: 31
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_133
@@ -1670,7 +1670,7 @@ TextureImporter:
         width: 30
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_134
@@ -1681,7 +1681,7 @@ TextureImporter:
         width: 27
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_135
@@ -1692,7 +1692,7 @@ TextureImporter:
         width: 28
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_136
@@ -1703,7 +1703,7 @@ TextureImporter:
         width: 17
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_137
@@ -1714,7 +1714,7 @@ TextureImporter:
         width: 32
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_138
@@ -1725,7 +1725,7 @@ TextureImporter:
         width: 31
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_139
@@ -1736,7 +1736,7 @@ TextureImporter:
         width: 17
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_140
@@ -1747,7 +1747,7 @@ TextureImporter:
         width: 32
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_141
@@ -1758,7 +1758,7 @@ TextureImporter:
         width: 30
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_143
@@ -1769,7 +1769,7 @@ TextureImporter:
         width: 27
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_144
@@ -1791,7 +1791,7 @@ TextureImporter:
         width: 28
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_146
@@ -1802,7 +1802,7 @@ TextureImporter:
         width: 25
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_147
@@ -1813,7 +1813,7 @@ TextureImporter:
         width: 27
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Enemies_148

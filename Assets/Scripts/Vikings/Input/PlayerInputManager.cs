@@ -27,7 +27,8 @@ public class PlayerInputManager : MonoBehaviour
     void FixedUpdate()
     {
         InputState state = GetInputState();
-        m_PlayerMotor.ExecuteAction(state);
+        if (m_PlayerMotor)
+            m_PlayerMotor.ExecuteAction(state);
 
         //if (state == InputAction.RIGHT_PRESSED || state == InputAction.LEFT_PRESSED)
         //{

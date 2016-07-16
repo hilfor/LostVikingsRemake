@@ -1,17 +1,17 @@
 fileFormatVersion: 2
 guid: 9a15c62532dc0dd4dbd822d43c6c03a4
-timeCreated: 1468076011
+timeCreated: 1468670915
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: SNES - The Lost Vikings - Friendly NPCs_0
-    21300002: SNES - The Lost Vikings - Friendly NPCs_1
-    21300004: SNES - The Lost Vikings - Friendly NPCs_2
-    21300006: SNES - The Lost Vikings - Friendly NPCs_3
-    21300008: SNES - The Lost Vikings - Friendly NPCs_4
-    21300010: SNES - The Lost Vikings - Friendly NPCs_5
-    21300012: SNES - The Lost Vikings - Friendly NPCs_6
-    21300014: SNES - The Lost Vikings - Friendly NPCs_7
+    21300000: Blue_Wife_1
+    21300002: Blue_Wife_2
+    21300004: Blue_Child_1
+    21300006: Blue_Child_2
+    21300008: Green_Wife_1
+    21300010: Green_Wife_2
+    21300012: Green_Child_1
+    21300014: Green_Child_2
     21300016: SNES - The Lost Vikings - Friendly NPCs_8
     21300018: SNES - The Lost Vikings - Friendly NPCs_9
     21300020: SNES - The Lost Vikings - Friendly NPCs_10
@@ -70,7 +70,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: SNES - The Lost Vikings - Friendly NPCs_0
+    - name: Blue_Wife_1
       rect:
         serializedVersion: 2
         x: 3
@@ -78,10 +78,10 @@ TextureImporter:
         width: 26
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Friendly NPCs_1
+    - name: Blue_Wife_2
       rect:
         serializedVersion: 2
         x: 33
@@ -89,10 +89,10 @@ TextureImporter:
         width: 25
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Friendly NPCs_2
+    - name: Blue_Child_1
       rect:
         serializedVersion: 2
         x: 62
@@ -100,10 +100,10 @@ TextureImporter:
         width: 21
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Friendly NPCs_3
+    - name: Blue_Child_2
       rect:
         serializedVersion: 2
         x: 87
@@ -111,10 +111,10 @@ TextureImporter:
         width: 21
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Friendly NPCs_4
+    - name: Green_Wife_1
       rect:
         serializedVersion: 2
         x: 3
@@ -122,10 +122,10 @@ TextureImporter:
         width: 26
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Friendly NPCs_5
+    - name: Green_Wife_2
       rect:
         serializedVersion: 2
         x: 33
@@ -133,10 +133,10 @@ TextureImporter:
         width: 25
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Friendly NPCs_6
+    - name: Green_Child_1
       rect:
         serializedVersion: 2
         x: 62
@@ -144,10 +144,10 @@ TextureImporter:
         width: 21
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Friendly NPCs_7
+    - name: Green_Child_2
       rect:
         serializedVersion: 2
         x: 87
@@ -155,7 +155,7 @@ TextureImporter:
         width: 21
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Friendly NPCs_8
@@ -166,7 +166,7 @@ TextureImporter:
         width: 31
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Friendly NPCs_9
@@ -177,7 +177,7 @@ TextureImporter:
         width: 28
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Friendly NPCs_10
@@ -188,7 +188,7 @@ TextureImporter:
         width: 29
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Friendly NPCs_11
@@ -199,7 +199,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 16, y: 16}
@@ -218,7 +218,7 @@ TextureImporter:
         width: 30
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Friendly NPCs_13
@@ -229,7 +229,7 @@ TextureImporter:
         width: 30
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Friendly NPCs_14
@@ -240,7 +240,7 @@ TextureImporter:
         width: 32
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Friendly NPCs_15
@@ -251,7 +251,7 @@ TextureImporter:
         width: 24
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Friendly NPCs_16
@@ -262,7 +262,7 @@ TextureImporter:
         width: 22
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Friendly NPCs_17
@@ -273,7 +273,7 @@ TextureImporter:
         width: 19
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Friendly NPCs_18
@@ -284,7 +284,7 @@ TextureImporter:
         width: 20
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: SNES - The Lost Vikings - Friendly NPCs_19
@@ -295,7 +295,7 @@ TextureImporter:
         width: 20
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     outline: []

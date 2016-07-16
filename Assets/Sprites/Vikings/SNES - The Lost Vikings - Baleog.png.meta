@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: bf45be7821a7a724b8d3419666b97a11
-timeCreated: 1468584918
+timeCreated: 1468668628
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -734,23 +734,37 @@ TextureImporter:
         serializedVersion: 2
         x: 84
         y: 400
-        width: 32
-        height: 31
+        width: 33
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -9.5, y: 16}
+        - {x: -16.5, y: 8}
+        - {x: -16.5, y: -16}
+        - {x: 15.5, y: -16}
+        - {x: 16.5, y: -13}
+        - {x: 16.5, y: 14}
+        - {x: 10.5, y: 16}
     - name: Attacking_Sword_High_4
       rect:
         serializedVersion: 2
         x: 122
         y: 400
-        width: 32
-        height: 31
+        width: 33
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 3.5, y: 16}
+        - {x: -15.5, y: 16}
+        - {x: -16.5, y: 13}
+        - {x: -16.5, y: -16}
+        - {x: 11.5, y: -16}
+        - {x: 16.5, y: -10}
+        - {x: 16.5, y: 11}
     - name: SNES - The Lost Vikings - Baleog_51
       rect:
         serializedVersion: 2
@@ -801,7 +815,7 @@ TextureImporter:
         x: 69
         y: 360
         width: 26
-        height: 30
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -856,7 +870,7 @@ TextureImporter:
         x: 391
         y: 350
         width: 31
-        height: 26
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -878,7 +892,7 @@ TextureImporter:
         x: 427
         y: 350
         width: 31
-        height: 20
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1107,10 +1121,10 @@ TextureImporter:
     - name: Pushing_2
       rect:
         serializedVersion: 2
-        x: 53
+        x: 50
         y: 171
-        width: 28
-        height: 31
+        width: 31
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1129,10 +1143,10 @@ TextureImporter:
     - name: Pushing_4
       rect:
         serializedVersion: 2
-        x: 124
+        x: 121
         y: 171
-        width: 28
-        height: 31
+        width: 31
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1305,11 +1319,16 @@ TextureImporter:
         x: 14
         y: 12
         width: 32
-        height: 31
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -15}
+        - {x: -13, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: Falling_Too_High_Landing_2
       rect:
         serializedVersion: 2
@@ -1327,18 +1346,26 @@ TextureImporter:
         x: 168
         y: 12
         width: 32
-        height: 21
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -3, y: 7}
+        - {x: -12, y: 1}
+        - {x: -16, y: -8}
+        - {x: -16, y: -16}
+        - {x: 15, y: -16}
+        - {x: 16, y: -13}
+        - {x: 16, y: 6}
+        - {x: 12, y: 7}
     - name: Falling_Too_High_Landing_6
       rect:
         serializedVersion: 2
         x: 207
         y: 12
         width: 31
-        height: 31
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1349,22 +1376,35 @@ TextureImporter:
         x: 91
         y: 12
         width: 32
-        height: 26
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 8, y: 12}
+        - {x: 3, y: 11}
+        - {x: -12, y: 1}
+        - {x: -16, y: -3}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 6}
+        - {x: 13, y: 12}
     - name: Falling_Too_High_Landing_4
       rect:
         serializedVersion: 2
         x: 128
         y: 12
         width: 32
-        height: 26
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 0, y: 12}
+        - {x: -16, y: 2}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 12}
     outline: []
   spritePackingTag: 
   userData: 
