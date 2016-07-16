@@ -1,11 +1,11 @@
 fileFormatVersion: 2
 guid: bf45be7821a7a724b8d3419666b97a11
-timeCreated: 1466811350
+timeCreated: 1468584918
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: SNES - The Lost Vikings - Baleog_0
-    21300002: SNES - The Lost Vikings - Baleog_1
+    21300000: Idle_1
+    21300002: Idle_2
     21300004: SNES - The Lost Vikings - Baleog_2
     21300006: SNES - The Lost Vikings - Baleog_3
     21300008: SNES - The Lost Vikings - Baleog_4
@@ -20,92 +20,92 @@ TextureImporter:
     21300026: SNES - The Lost Vikings - Baleog_13
     21300028: SNES - The Lost Vikings - Baleog_14
     21300030: SNES - The Lost Vikings - Baleog_16
-    21300032: SNES - The Lost Vikings - Baleog_17
-    21300034: SNES - The Lost Vikings - Baleog_18
-    21300036: SNES - The Lost Vikings - Baleog_19
-    21300038: SNES - The Lost Vikings - Baleog_20
-    21300040: SNES - The Lost Vikings - Baleog_21
-    21300042: SNES - The Lost Vikings - Baleog_22
-    21300044: SNES - The Lost Vikings - Baleog_23
-    21300046: SNES - The Lost Vikings - Baleog_24
+    21300032: Walking_1
+    21300034: Walking_2
+    21300036: Walking_3
+    21300038: Walking_4
+    21300040: Walking_5
+    21300042: Walking_6
+    21300044: Walking_7
+    21300046: Walking_8
     21300048: SNES - The Lost Vikings - Baleog_25
     21300050: SNES - The Lost Vikings - Baleog_26
-    21300052: SNES - The Lost Vikings - Baleog_27
-    21300054: SNES - The Lost Vikings - Baleog_28
-    21300056: SNES - The Lost Vikings - Baleog_29
-    21300058: SNES - The Lost Vikings - Baleog_30
-    21300060: SNES - The Lost Vikings - Baleog_31
-    21300062: SNES - The Lost Vikings - Baleog_32
-    21300064: SNES - The Lost Vikings - Baleog_33
-    21300066: SNES - The Lost Vikings - Baleog_34
+    21300052: Shooting_Bow_1
+    21300054: Shooting_Bow_2
+    21300056: Shooting_Bow_3
+    21300058: Shooting_Bow_4
+    21300060: Shooting_Bow_5
+    21300062: Shooting_Bow_6
+    21300064: Shooting_Bow_7
+    21300066: Shooting_Bow_8
     21300068: SNES - The Lost Vikings - Baleog_35
     21300070: SNES - The Lost Vikings - Baleog_36
     21300072: SNES - The Lost Vikings - Baleog_37
     21300074: SNES - The Lost Vikings - Baleog_38
     21300076: SNES - The Lost Vikings - Baleog_39
-    21300078: SNES - The Lost Vikings - Baleog_40
-    21300080: SNES - The Lost Vikings - Baleog_41
-    21300082: SNES - The Lost Vikings - Baleog_42
-    21300084: SNES - The Lost Vikings - Baleog_43
+    21300078: Attacking_Sword_Mid_1
+    21300080: Attacking_Sword_Mid_2
+    21300082: Attacking_Sword_Mid_3
+    21300084: Attacking_Sword_Mid_4
     21300086: SNES - The Lost Vikings - Baleog_44
     21300088: SNES - The Lost Vikings - Baleog_45
     21300090: SNES - The Lost Vikings - Baleog_46
-    21300092: SNES - The Lost Vikings - Baleog_47
-    21300094: SNES - The Lost Vikings - Baleog_48
-    21300096: SNES - The Lost Vikings - Baleog_49
-    21300098: SNES - The Lost Vikings - Baleog_50
+    21300092: Attacking_Sword_High_1
+    21300094: Attacking_Sword_High_2
+    21300096: Attacking_Sword_High_3
+    21300098: Attacking_Sword_High_4
     21300100: SNES - The Lost Vikings - Baleog_51
     21300102: SNES - The Lost Vikings - Baleog_52
-    21300104: SNES - The Lost Vikings - Baleog_53
-    21300106: SNES - The Lost Vikings - Baleog_54
-    21300108: SNES - The Lost Vikings - Baleog_55
-    21300110: SNES - The Lost Vikings - Baleog_56
-    21300112: SNES - The Lost Vikings - Baleog_57
-    21300114: SNES - The Lost Vikings - Baleog_58
+    21300104: Climbing_1
+    21300106: Climbing_2
+    21300108: Climbing_3
+    21300110: Climbing_4
+    21300112: Climbing_Finished_1
+    21300114: Climbing_Finished_2
     21300116: SNES - The Lost Vikings - Baleog_59
     21300118: SNES - The Lost Vikings - Baleog_60
-    21300120: SNES - The Lost Vikings - Baleog_61
+    21300120: Idle_Stupid_Look_1
     21300122: SNES - The Lost Vikings - Baleog_62
     21300124: SNES - The Lost Vikings - Baleog_63
     21300126: SNES - The Lost Vikings - Baleog_64
     21300128: SNES - The Lost Vikings - Baleog_65
     21300130: SNES - The Lost Vikings - Baleog_66
-    21300132: SNES - The Lost Vikings - Baleog_67
-    21300134: SNES - The Lost Vikings - Baleog_68
+    21300132: Idle_Stupid_Flex_Side_1
+    21300134: Idle_Stupid_Flex_Side_2
     21300136: SNES - The Lost Vikings - Baleog_69
     21300138: SNES - The Lost Vikings - Baleog_70
     21300140: SNES - The Lost Vikings - Baleog_71
-    21300142: SNES - The Lost Vikings - Baleog_72
-    21300144: SNES - The Lost Vikings - Baleog_73
-    21300146: SNES - The Lost Vikings - Baleog_74
-    21300148: SNES - The Lost Vikings - Baleog_75
-    21300150: SNES - The Lost Vikings - Baleog_76
+    21300142: Idle_Stupid_Flex_Front_1
+    21300144: Idle_Stupid_Flex_Front_2
+    21300146: Idle_Stupid_Flex_Front_3
+    21300148: Idle_Stupid_Flex_Front_4
+    21300150: Idle_Stupid_Flex_Front_5
     21300152: SNES - The Lost Vikings - Baleog_77
     21300154: SNES - The Lost Vikings - Baleog_78
     21300156: SNES - The Lost Vikings - Baleog_79
-    21300158: SNES - The Lost Vikings - Baleog_80
-    21300160: SNES - The Lost Vikings - Baleog_81
-    21300162: SNES - The Lost Vikings - Baleog_82
-    21300164: SNES - The Lost Vikings - Baleog_83
-    21300166: SNES - The Lost Vikings - Baleog_84
-    21300168: SNES - The Lost Vikings - Baleog_85
+    21300158: Falling_1
+    21300160: Falling_2
+    21300162: Pushing_1
+    21300164: Pushing_2
+    21300166: Pushing_3
+    21300168: Pushing_4
     21300170: SNES - The Lost Vikings - Baleog_86
     21300172: SNES - The Lost Vikings - Baleog_87
     21300174: SNES - The Lost Vikings - Baleog_88
     21300176: SNES - The Lost Vikings - Baleog_89
-    21300178: SNES - The Lost Vikings - Baleog_90
+    21300178: Hit_1
     21300180: SNES - The Lost Vikings - Baleog_91
     21300182: SNES - The Lost Vikings - Baleog_92
     21300184: SNES - The Lost Vikings - Baleog_93
     21300186: SNES - The Lost Vikings - Baleog_94
     21300188: SNES - The Lost Vikings - Baleog_95
     21300190: SNES - The Lost Vikings - Baleog_96
-    21300192: SNES - The Lost Vikings - Baleog_97
-    21300194: SNES - The Lost Vikings - Baleog_98
-    21300196: SNES - The Lost Vikings - Baleog_101
-    21300198: SNES - The Lost Vikings - Baleog_102
-    21300200: SNES - The Lost Vikings - Baleog_103
-    21300202: SNES - The Lost Vikings - Baleog_104
+    21300192: Falling_Too_High_Landing_1
+    21300194: Falling_Too_High_Landing_2
+    21300196: Falling_Too_High_Landing_5
+    21300198: Falling_Too_High_Landing_6
+    21300200: Falling_Too_High_Landing_3
+    21300202: Falling_Too_High_Landing_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -146,13 +146,13 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 20
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: SNES - The Lost Vikings - Baleog_0
+    - name: Idle_1
       rect:
         serializedVersion: 2
         x: 11
@@ -163,7 +163,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_1
+    - name: Idle_2
       rect:
         serializedVersion: 2
         x: 40
@@ -328,7 +328,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_17
+    - name: Walking_1
       rect:
         serializedVersion: 2
         x: 13
@@ -339,7 +339,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_18
+    - name: Walking_2
       rect:
         serializedVersion: 2
         x: 48
@@ -350,7 +350,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_19
+    - name: Walking_3
       rect:
         serializedVersion: 2
         x: 80
@@ -361,7 +361,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_20
+    - name: Walking_4
       rect:
         serializedVersion: 2
         x: 111
@@ -372,7 +372,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_21
+    - name: Walking_5
       rect:
         serializedVersion: 2
         x: 140
@@ -383,7 +383,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_22
+    - name: Walking_6
       rect:
         serializedVersion: 2
         x: 178
@@ -394,7 +394,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_23
+    - name: Walking_7
       rect:
         serializedVersion: 2
         x: 210
@@ -405,7 +405,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_24
+    - name: Walking_8
       rect:
         serializedVersion: 2
         x: 241
@@ -443,7 +443,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_27
+    - name: Shooting_Bow_1
       rect:
         serializedVersion: 2
         x: 14
@@ -459,7 +459,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 11, y: -16}
         - {x: 16, y: -9}
-    - name: SNES - The Lost Vikings - Baleog_28
+    - name: Shooting_Bow_2
       rect:
         serializedVersion: 2
         x: 50
@@ -476,7 +476,7 @@ TextureImporter:
         - {x: 12, y: -16}
         - {x: 16, y: -14}
         - {x: 16, y: 16}
-    - name: SNES - The Lost Vikings - Baleog_29
+    - name: Shooting_Bow_3
       rect:
         serializedVersion: 2
         x: 87
@@ -493,7 +493,7 @@ TextureImporter:
         - {x: 15, y: -16}
         - {x: 16, y: -12}
         - {x: 16, y: 16}
-    - name: SNES - The Lost Vikings - Baleog_30
+    - name: Shooting_Bow_4
       rect:
         serializedVersion: 2
         x: 125
@@ -511,7 +511,7 @@ TextureImporter:
         - {x: 16, y: -11}
         - {x: 16, y: 13}
         - {x: 12, y: 16}
-    - name: SNES - The Lost Vikings - Baleog_31
+    - name: Shooting_Bow_5
       rect:
         serializedVersion: 2
         x: 162
@@ -529,7 +529,7 @@ TextureImporter:
         - {x: 11, y: -16}
         - {x: 16, y: -8}
         - {x: 16, y: 10}
-    - name: SNES - The Lost Vikings - Baleog_32
+    - name: Shooting_Bow_6
       rect:
         serializedVersion: 2
         x: 200
@@ -546,7 +546,7 @@ TextureImporter:
         - {x: 14, y: -16}
         - {x: 16, y: -13}
         - {x: 16, y: 16}
-    - name: SNES - The Lost Vikings - Baleog_33
+    - name: Shooting_Bow_7
       rect:
         serializedVersion: 2
         x: 238
@@ -563,7 +563,7 @@ TextureImporter:
         - {x: 11, y: -16}
         - {x: 16, y: -11}
         - {x: 16, y: 16}
-    - name: SNES - The Lost Vikings - Baleog_34
+    - name: Shooting_Bow_8
       rect:
         serializedVersion: 2
         x: 276
@@ -606,7 +606,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_40
+    - name: Attacking_Sword_Mid_1
       rect:
         serializedVersion: 2
         x: 16
@@ -617,7 +617,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_41
+    - name: Attacking_Sword_Mid_2
       rect:
         serializedVersion: 2
         x: 50
@@ -634,7 +634,7 @@ TextureImporter:
         - {x: 16, y: -9}
         - {x: 16, y: 4}
         - {x: 1, y: 16}
-    - name: SNES - The Lost Vikings - Baleog_42
+    - name: Attacking_Sword_Mid_3
       rect:
         serializedVersion: 2
         x: 87
@@ -651,7 +651,7 @@ TextureImporter:
         - {x: 16, y: -16}
         - {x: 16, y: 3}
         - {x: 2, y: 16}
-    - name: SNES - The Lost Vikings - Baleog_43
+    - name: Attacking_Sword_Mid_4
       rect:
         serializedVersion: 2
         x: 124
@@ -701,7 +701,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_47
+    - name: Attacking_Sword_High_1
       rect:
         serializedVersion: 2
         x: 17
@@ -712,7 +712,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_48
+    - name: Attacking_Sword_High_2
       rect:
         serializedVersion: 2
         x: 47
@@ -729,7 +729,7 @@ TextureImporter:
         - {x: 16, y: -14}
         - {x: 16, y: 11}
         - {x: 12, y: 16}
-    - name: SNES - The Lost Vikings - Baleog_49
+    - name: Attacking_Sword_High_3
       rect:
         serializedVersion: 2
         x: 84
@@ -740,7 +740,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_50
+    - name: Attacking_Sword_High_4
       rect:
         serializedVersion: 2
         x: 122
@@ -773,7 +773,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_53
+    - name: Climbing_1
       rect:
         serializedVersion: 2
         x: 15
@@ -784,7 +784,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_54
+    - name: Climbing_2
       rect:
         serializedVersion: 2
         x: 42
@@ -795,7 +795,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_55
+    - name: Climbing_3
       rect:
         serializedVersion: 2
         x: 69
@@ -806,7 +806,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_56
+    - name: Climbing_4
       rect:
         serializedVersion: 2
         x: 99
@@ -817,7 +817,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_57
+    - name: Climbing_Finished_1
       rect:
         serializedVersion: 2
         x: 139
@@ -828,7 +828,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_58
+    - name: Climbing_Finished_2
       rect:
         serializedVersion: 2
         x: 172
@@ -861,7 +861,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_61
+    - name: Idle_Stupid_Look_1
       rect:
         serializedVersion: 2
         x: 19
@@ -918,23 +918,12 @@ TextureImporter:
         x: 426
         y: 314
         width: 29
-        height: 25
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_66
-      rect:
-        serializedVersion: 2
-        x: 429
-        y: 331
-        width: 12
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: SNES - The Lost Vikings - Baleog_67
+    - name: Idle_Stupid_Flex_Side_1
       rect:
         serializedVersion: 2
         x: 14
@@ -945,7 +934,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_68
+    - name: Idle_Stupid_Flex_Side_2
       rect:
         serializedVersion: 2
         x: 52
@@ -994,7 +983,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_72
+    - name: Idle_Stupid_Flex_Front_1
       rect:
         serializedVersion: 2
         x: 14
@@ -1005,7 +994,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_73
+    - name: Idle_Stupid_Flex_Front_2
       rect:
         serializedVersion: 2
         x: 49
@@ -1016,7 +1005,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_74
+    - name: Idle_Stupid_Flex_Front_3
       rect:
         serializedVersion: 2
         x: 85
@@ -1027,7 +1016,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_75
+    - name: Idle_Stupid_Flex_Front_4
       rect:
         serializedVersion: 2
         x: 120
@@ -1038,7 +1027,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_76
+    - name: Idle_Stupid_Flex_Front_5
       rect:
         serializedVersion: 2
         x: 155
@@ -1082,7 +1071,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_80
+    - name: Falling_1
       rect:
         serializedVersion: 2
         x: 15
@@ -1093,7 +1082,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_81
+    - name: Falling_2
       rect:
         serializedVersion: 2
         x: 46
@@ -1104,7 +1093,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_82
+    - name: Pushing_1
       rect:
         serializedVersion: 2
         x: 15
@@ -1115,7 +1104,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_83
+    - name: Pushing_2
       rect:
         serializedVersion: 2
         x: 53
@@ -1126,7 +1115,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_84
+    - name: Pushing_3
       rect:
         serializedVersion: 2
         x: 86
@@ -1137,7 +1126,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_85
+    - name: Pushing_4
       rect:
         serializedVersion: 2
         x: 124
@@ -1202,7 +1191,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_90
+    - name: Hit_1
       rect:
         serializedVersion: 2
         x: 12
@@ -1310,7 +1299,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_97
+    - name: Falling_Too_High_Landing_1
       rect:
         serializedVersion: 2
         x: 14
@@ -1321,7 +1310,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_98
+    - name: Falling_Too_High_Landing_2
       rect:
         serializedVersion: 2
         x: 54
@@ -1332,7 +1321,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_101
+    - name: Falling_Too_High_Landing_5
       rect:
         serializedVersion: 2
         x: 168
@@ -1343,7 +1332,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_102
+    - name: Falling_Too_High_Landing_6
       rect:
         serializedVersion: 2
         x: 207
@@ -1354,7 +1343,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_103
+    - name: Falling_Too_High_Landing_3
       rect:
         serializedVersion: 2
         x: 91
@@ -1365,7 +1354,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: SNES - The Lost Vikings - Baleog_104
+    - name: Falling_Too_High_Landing_4
       rect:
         serializedVersion: 2
         x: 128
