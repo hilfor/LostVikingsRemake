@@ -6,7 +6,7 @@ public class Baelog : BaseViking
 {
     public override void Action(InputState action)
     {
-        throw new NotImplementedException();
+        //throw new NotImplementedException();
     }
 
     protected override void FrontHit(Collider2D collider)

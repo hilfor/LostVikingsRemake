@@ -31,8 +31,9 @@ public class Olaf : BaseViking
 
     protected new void Update()
     {
-        m_Animator.SetBool("ShieldForward", m_ShieldPosition == ShieldPosition.FORWARD);
+        Debug.Log("Olaf update is running ");
         base.Update();
+        m_Animator.SetBool("ShieldForward", m_ShieldPosition == ShieldPosition.FORWARD);
     }
 
     protected override void TopHit(Collider2D collider)

@@ -86,4 +86,9 @@ public class InputState
         return false;
     }
 
+    public bool CheckNoInput()
+    {
+        return m_Pressed.Count == 0 && m_Triggered.Count == 0;
+    }
+
 }

@@ -124,10 +124,11 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
 
     protected void Update()
     {
+        Debug.Log("Default update is running for " + gameObject.name);
         m_Animator.SetFloat("Speed", m_CurrentSpeed);
         m_Animator.SetBool("Climbing", m_Climbing);
         m_Animator.SetBool("Grounded", !m_Falling);
-        m_Animator.SetBool("Falling", m_Falling);
+        //m_Animator.SetBool("Falling", m_Falling);
 
         if (m_FallingDistance >= m_MaxFallingDistance)
         {

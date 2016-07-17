@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(PlayerMotor))]
 public class PlayerInputManager : MonoBehaviour
 {
     [SerializeField]
     private InputActionList actionsList;
+
     [SerializeField]
     private PlayerMotor m_PlayerMotor;
     private Hashtable m_InputMap;
@@ -12,12 +14,13 @@ public class PlayerInputManager : MonoBehaviour
     void Awake()
     {
         m_InputMap = new Hashtable();
+        m_PlayerMotor = GetComponent<PlayerMotor>();
+        FillInputMap();
     }
 
     void FillInputMap()
     {
         InputMap[] actions = actionsList.InputActions;
-
         for (int i = 0; i < actions.Length; i++)
         {
             m_InputMap.Add(actions[i].action, actions[i].key);
@@ -46,40 +49,58 @@ public class PlayerInputManager : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            inputState.CheckPressed(InputAction.LEFT);
+            inputState.SetPressed(InputAction.LEFT);
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            inputState.CheckPressed(InputAction.RIGHT);
+            inputState.SetPressed(InputAction.RIGHT);
         }
 
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            inputState.CheckPressed(InputAction.UP);
+            inputState.SetPressed(InputAction.UP);
         }
 
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            inputState.CheckPressed(InputAction.DOWN);
+            inputState.SetPressed(InputAction.DOWN);
         }
 
         if (Input.GetKey(KeyCode.RightShift))
         {
-            inputState.CheckPressed(InputAction.SPECIAL_ACTION1);
+            inputState.SetPressed(InputAction.SPECIAL_ACTION1);
             if (Input.GetKeyDown(KeyCode.RightShift))
             {
-                inputState.CheckTriggered(InputAction.SPECIAL_ACTION1);
+                inputState.SetTriggered(InputAction.SPECIAL_ACTION1);
             }
         }
 
         if (Input.GetKey(KeyCode.RightControl))
         {
-            inputState.CheckPressed(InputAction.SPECIAL_ACTION2);
+            inputState.SetPressed(InputAction.SPECIAL_ACTION2);
             if (Input.GetKeyDown(KeyCode.RightControl))
             {
-                inputState.CheckTriggered(InputAction.SPECIAL_ACTION2);
+                inputState.SetTriggered(InputAction.SPECIAL_ACTION2);
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            inputState.SetTriggered(InputAction.SELECT_OLAF);
+            inputState.SetTriggered(InputAction.CHANGE_VIKING);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            inputState.SetTriggered(InputAction.SELECT_ERIC);
+            inputState.SetTriggered(InputAction.CHANGE_VIKING);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            inputState.SetTriggered(InputAction.SELECT_BAELOG);
+            inputState.SetTriggered(InputAction.CHANGE_VIKING);
         }
 
         return inputState;
