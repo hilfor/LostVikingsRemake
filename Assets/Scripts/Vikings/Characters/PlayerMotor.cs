@@ -21,8 +21,8 @@ public class PlayerMotor : MonoBehaviour
         m_CameraFollow = m_MainCamera.GetComponent<CameraFollowPlayer>();
 
         m_Olaf = GameObject.Find("Olaf").GetComponent<Transform>();
-        m_Eric = GameObject.Find("Eric").GetComponent<Transform>();
-        m_Baelog = GameObject.Find("Baelog").GetComponent<Transform>();
+        //m_Eric = GameObject.Find("Eric").GetComponent<Transform>();
+        //m_Baelog = GameObject.Find("Baelog").GetComponent<Transform>();
 
 
         if (m_CameraFollow)
@@ -33,7 +33,7 @@ public class PlayerMotor : MonoBehaviour
         }
     }
 
-    void Move(float direction)
+    void MoveHorizontaly(float direction)
     {
         //if (m_ActiveViking == null)
         //    return;
@@ -47,6 +47,21 @@ public class PlayerMotor : MonoBehaviour
         {
             //Debug.Log("Moving " + m_ActiveViking + " Right");
             m_ActiveViking.MoveRight(normalizedSpeed);
+        }
+    }
+
+    void MoveVertically(float direction)
+    {
+        float normalizedSpeed = Mathf.Abs(direction);
+        if (direction < 0)
+        {
+            //Debug.Log("Moving " + m_ActiveViking + " Left");
+            m_ActiveViking.MoveDown(normalizedSpeed);
+        }
+        else
+        {
+            //Debug.Log("Moving " + m_ActiveViking + " Right");
+            m_ActiveViking.MoveUp(normalizedSpeed);
         }
     }
 
@@ -84,7 +99,11 @@ public class PlayerMotor : MonoBehaviour
 
         if (inputState.CheckPressed(InputAction.RIGHT) || inputState.CheckPressed(InputAction.LEFT))
         {
-            Move(inputState.CheckPressed(InputAction.RIGHT) ? 1 : -1);
+            MoveHorizontaly(inputState.CheckPressed(InputAction.RIGHT) ? 1 : -1);
+        }
+        else if (inputState.CheckPressed(InputAction.DOWN) || inputState.CheckPressed(InputAction.UP))
+        {
+            MoveVertically(inputState.CheckPressed(InputAction.UP) ? 1 : -1);
         }
         else
         {

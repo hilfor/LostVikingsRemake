@@ -23,8 +23,13 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
     protected Rigidbody2D m_RigidBody;
     protected float m_CurrentSpeed = 0;
 
+    protected Vector2 m_CurrentVelocityVector;
+
+    private float m_FallBeganTimestamp;
+
+
     bool m_Climbing = false;
-    bool m_Falling = false;
+    bool m_Falling = true;
 
     FacingDirection m_FacingDirection = FacingDirection.RIGHT;
 
@@ -79,6 +84,18 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
         Move(speed);
     }
 
+    public void MoveUp(float speed)
+    {
+        if (!m_Climbing)
+            return;
+    }
+
+    public void MoveDown(float speed)
+    {
+        if (!m_Climbing)
+            return;
+    }
+
     public void Hit()
     {
         m_Animator.SetTrigger("Hit");
@@ -91,11 +108,25 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
     void Grounded(Collider2D collider)
     {
         m_Falling = false;
+        m_FallBeganTimestamp = 0;
+        m_FallStartPosition = Vector2.zero;
+        m_FallingDistance = 0;
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+
+    }
+
+    public void OnTriggerExit2D(Collider2D collision)
+    {
+
     }
 
     void Falling(Collider2D collider)
     {
         m_Falling = true;
+        m_FallBeganTimestamp = Time.realtimeSinceStartup;
         m_FallStartPosition = m_Transform.position;
     }
 
@@ -124,30 +155,33 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
 
     protected void Update()
     {
-        Debug.Log("Default update is running for " + gameObject.name);
         m_Animator.SetFloat("Speed", m_CurrentSpeed);
         m_Animator.SetBool("Climbing", m_Climbing);
         m_Animator.SetBool("Grounded", !m_Falling);
-        //m_Animator.SetBool("Falling", m_Falling);
 
         if (m_FallingDistance >= m_MaxFallingDistance)
         {
-            Debug.Log(m_FallingDistance);
             m_Animator.SetTrigger("Fall_Too_High");
         }
     }
 
     void FixedUpdate()
     {
+        Vector2 currentVelocity = m_RigidBody.velocity;
         if (m_Falling)
         {
             m_FallingDistance = Vector2.Distance(m_FallStartPosition, m_Transform.position);
+
+            //float fallingTime = m_FallBeganTimestamp - Time.realtimeSinceStartup;
+
+            //currentVelocity.y = m_RigidBody.gravityScale * fallingTime * 8.81f;
         }
         else
         {
-            m_FallingDistance = 0;
-            m_FallStartPosition = Vector2.zero;
+            currentVelocity.y = 0;
         }
+        //m_RigidBody.velocity = currentVelocity;
     }
+
 
 }

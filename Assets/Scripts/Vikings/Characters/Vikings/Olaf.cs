@@ -31,7 +31,6 @@ public class Olaf : BaseViking
 
     protected new void Update()
     {
-        Debug.Log("Olaf update is running ");
         base.Update();
         m_Animator.SetBool("ShieldForward", m_ShieldPosition == ShieldPosition.FORWARD);
     }
