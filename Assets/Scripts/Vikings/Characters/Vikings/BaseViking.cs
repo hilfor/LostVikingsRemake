@@ -21,13 +21,16 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
     protected Animator m_Animator;
     protected Transform m_Transform;
     protected Rigidbody2D m_RigidBody;
-    protected float m_CurrentSpeed = 0;
 
     protected Vector2 m_CurrentVelocityVector;
+    protected float m_CurrentHorizontalSpeed = 0;
+    protected float m_CurrentVerticalSpeed = 0;
 
     private float m_FallBeganTimestamp;
 
-
+    bool m_LeftLadderTriggerReached = false;
+    bool m_RightLadderTriggerReached = false;
+    bool m_CanClimb = false;
     bool m_Climbing = false;
     bool m_Falling = true;
 
@@ -37,11 +40,11 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
 
     Vector2 m_FallStartPosition = Vector2.zero;
 
-    public void Move(float direction)
+    public void MoveHorizontaly(float direction)
     {
         // Rigidbody
         Vector2 vikingVelocity = m_RigidBody.velocity;
-        m_CurrentSpeed = Math.Abs(direction);
+        m_CurrentHorizontalSpeed = Math.Abs(direction);
         vikingVelocity.x = direction * m_MovementSpeed;
         m_RigidBody.velocity = vikingVelocity;
 
@@ -50,14 +53,25 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
         //m_OlafTransform.Translate(olafTranslate);
     }
 
+    public void MoveVertically(float direction)
+    {
+        Vector2 vikingVelocity = m_RigidBody.velocity;
+        m_CurrentVerticalSpeed = Math.Abs(direction);
+        vikingVelocity.y = direction * m_MovementSpeed;
+        m_RigidBody.velocity = vikingVelocity;
+    }
+
     #region ICharacter overrides
 
     public void NoInput()
     {
-        m_CurrentSpeed = 0;
+        m_CurrentHorizontalSpeed = 0;
+        m_CurrentVerticalSpeed = 0;
 
         Vector2 currentVelocity = m_RigidBody.velocity;
         currentVelocity.x = 0;
+        if (m_CanClimb)
+            currentVelocity.y = 0;
         m_RigidBody.velocity = currentVelocity;
     }
 
@@ -70,7 +84,7 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
             ChangeFacingDirection();
             m_FacingDirection = FacingDirection.LEFT;
         }
-        Move(-speed);
+        MoveHorizontaly(-speed);
     }
 
     public void MoveRight(float speed)
@@ -81,19 +95,23 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
             m_FacingDirection = FacingDirection.RIGHT;
         }
 
-        Move(speed);
+        MoveHorizontaly(speed);
     }
 
     public void MoveUp(float speed)
     {
-        if (!m_Climbing)
+        if (!m_CanClimb)
             return;
+        m_Climbing = true;
+        MoveVertically(speed);
     }
 
     public void MoveDown(float speed)
     {
-        if (!m_Climbing)
+        if (!m_CanClimb)
             return;
+        m_Climbing = true;
+        MoveVertically(-speed);
     }
 
     public void Hit()
@@ -115,12 +133,39 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
+        switch (collision.tag)
+        {
+            case "LadderLeftTrigger":
+                // reached the ladder
+                m_LeftLadderTriggerReached = true;
+                break;
+            case "LadderRightTrigger":
+                m_RightLadderTriggerReached = true;
+                break;
+            case "LadderTrigger":
+                // reached top/bottom
+                // disable the climbing animation 
 
+                break;
+        }
+        // mark climbable 
+        m_CanClimb = true;
+        // mark rigidbody as kinematic
+        m_RigidBody.isKinematic = true;
     }
 
     public void OnTriggerExit2D(Collider2D collision)
     {
-
+        switch (collision.tag)
+        {
+            case "LadderLeftTrigger":
+                // reached the ladder
+                m_LeftLadderTriggerReached = false;
+                break;
+            case "LadderRightTrigger":
+                m_RightLadderTriggerReached = false;
+                break;
+        }
     }
 
     void Falling(Collider2D collider)
@@ -155,8 +200,31 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
 
     protected void Update()
     {
-        m_Animator.SetFloat("Speed", m_CurrentSpeed);
-        m_Animator.SetBool("Climbing", m_Climbing);
+        if (m_LeftLadderTriggerReached && m_RightLadderTriggerReached)
+        {
+            m_RigidBody.isKinematic = true;
+            m_CanClimb = true;
+        }
+        else
+        {
+            m_RigidBody.isKinematic = false;
+            m_CanClimb = false;
+        }
+        SetAnimationsParameters();
+    }
+
+    void SetAnimationsParameters()
+    {
+        m_Animator.SetFloat("Speed", m_CurrentHorizontalSpeed);
+        if (m_CanClimb)
+        {
+            m_Animator.SetBool("Climbing", m_Climbing);
+        }
+        else
+        {
+            m_Animator.SetBool("Climbing", false);
+        }
+
         m_Animator.SetBool("Grounded", !m_Falling);
 
         if (m_FallingDistance >= m_MaxFallingDistance)

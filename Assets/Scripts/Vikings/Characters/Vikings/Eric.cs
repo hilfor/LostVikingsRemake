@@ -16,13 +16,13 @@ public class Eric : BaseViking
         if (inputState.CheckPressed(InputAction.SPECIAL_ACTION1))
         {
             if (!m_ActivateSprint)
-                m_CurrentSpeed = m_SprintSpeed;
+                m_CurrentHorizontalSpeed = m_SprintSpeed;
             m_ActivateSprint = true;
         }
         else
         {
             if (m_ActivateSprint)
-                m_CurrentSpeed = m_MovementSpeed;
+                m_CurrentHorizontalSpeed = m_MovementSpeed;
             m_ActivateSprint = false;
         }
         if (inputState.CheckTriggered(InputAction.SPECIAL_ACTION2))
