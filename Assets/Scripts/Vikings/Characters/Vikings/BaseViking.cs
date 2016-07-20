@@ -32,7 +32,11 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
     bool m_RightLadderTriggerReached = false;
     bool m_CanClimb = false;
     bool m_Climbing = false;
-    bool m_Falling = true;
+
+    bool m_ReachedTopOfLadder = false;
+    bool m_ReachedBottomOfLadder = false;
+
+    bool m_Falling = false;
 
     FacingDirection m_FacingDirection = FacingDirection.RIGHT;
 
@@ -133,6 +137,7 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("BaseViking Triggered " + collision.name);
         switch (collision.tag)
         {
             case "LadderLeftTrigger":
@@ -142,20 +147,28 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
             case "LadderRightTrigger":
                 m_RightLadderTriggerReached = true;
                 break;
-            case "LadderTrigger":
+            case "LadderTopTrigger":
                 // reached top/bottom
                 // disable the climbing animation 
-
+                if (m_Climbing)
+                    m_Animator.SetTrigger("Climbing_Finished");
+                m_ReachedTopOfLadder = true;
+                break;
+            case "LadderBottomTrigger":
+                if (m_Climbing)
+                    m_Climbing = false;
+                m_ReachedBottomOfLadder = true;
                 break;
         }
         // mark climbable 
-        m_CanClimb = true;
+        //m_CanClimb = true;
         // mark rigidbody as kinematic
-        m_RigidBody.isKinematic = true;
+        //m_RigidBody.isKinematic = true;
     }
 
     public void OnTriggerExit2D(Collider2D collision)
     {
+        Debug.Log("BaseViking: Exiting " + collision.name);
         switch (collision.tag)
         {
             case "LadderLeftTrigger":
@@ -164,6 +177,14 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
                 break;
             case "LadderRightTrigger":
                 m_RightLadderTriggerReached = false;
+                break;
+            case "LadderTrigger":
+                m_ReachedTopOfLadder = false;
+
+                break;
+            case "LadderBottomTrigger":
+
+                m_ReachedBottomOfLadder = false;
                 break;
         }
     }
@@ -218,6 +239,7 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
         m_Animator.SetFloat("Speed", m_CurrentHorizontalSpeed);
         if (m_CanClimb)
         {
+
             m_Animator.SetBool("Climbing", m_Climbing);
         }
         else
@@ -239,16 +261,11 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
         if (m_Falling)
         {
             m_FallingDistance = Vector2.Distance(m_FallStartPosition, m_Transform.position);
-
-            //float fallingTime = m_FallBeganTimestamp - Time.realtimeSinceStartup;
-
-            //currentVelocity.y = m_RigidBody.gravityScale * fallingTime * 8.81f;
         }
         else
         {
             currentVelocity.y = 0;
         }
-        //m_RigidBody.velocity = currentVelocity;
     }
 
 
