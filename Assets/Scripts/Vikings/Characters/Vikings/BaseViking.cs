@@ -28,13 +28,14 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
 
     private float m_FallBeganTimestamp;
 
-    bool m_LeftLadderTriggerReached = false;
-    bool m_RightLadderTriggerReached = false;
-    bool m_CanClimb = false;
-    bool m_Climbing = false;
+    bool m_CanClimbUp = false;
+    bool m_CanClimbDown = false;
 
-    bool m_ReachedTopOfLadder = false;
-    bool m_ReachedBottomOfLadder = false;
+
+    bool m_LadderReached = false;
+    bool m_LadderLeftTriggerReached = false;
+    bool m_LadderRightTriggerReached = false;
+
 
     bool m_Falling = false;
 
@@ -43,18 +44,17 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
     float m_FallingDistance = 0;
 
     Vector2 m_FallStartPosition = Vector2.zero;
+    private bool m_LadderTopReached;
+    private bool m_LadderBottomReached;
 
     public void MoveHorizontaly(float direction)
     {
-        // Rigidbody
+        if (!CheckHorizontalMovementEnabled())
+            return;
         Vector2 vikingVelocity = m_RigidBody.velocity;
         m_CurrentHorizontalSpeed = Math.Abs(direction);
         vikingVelocity.x = direction * m_MovementSpeed;
         m_RigidBody.velocity = vikingVelocity;
-
-        // Transform
-        //Vector2 olafTranslate = new Vector2(speed, 0);
-        //m_OlafTransform.Translate(olafTranslate);
     }
 
     public void MoveVertically(float direction)
@@ -74,7 +74,7 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
 
         Vector2 currentVelocity = m_RigidBody.velocity;
         currentVelocity.x = 0;
-        if (m_CanClimb)
+        if (m_CanClimbUp || m_CanClimbDown)
             currentVelocity.y = 0;
         m_RigidBody.velocity = currentVelocity;
     }
@@ -102,20 +102,27 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
         MoveHorizontaly(speed);
     }
 
+    private bool CheckHorizontalMovementEnabled()
+    {
+        return true;
+    }
+
     public void MoveUp(float speed)
     {
-        if (!m_CanClimb)
-            return;
-        m_Climbing = true;
-        MoveVertically(speed);
+        if (m_CanClimbUp)
+        {
+            Debug.Log("Climbing up");
+            MoveVertically(speed);
+        }
     }
 
     public void MoveDown(float speed)
     {
-        if (!m_CanClimb)
-            return;
-        m_Climbing = true;
-        MoveVertically(-speed);
+        if (m_CanClimbDown)
+        {
+            Debug.Log("Climbing down");
+            MoveVertically(-speed);
+        }
     }
 
     public void Hit()
@@ -137,68 +144,93 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("BaseViking Triggered " + collision.name);
         switch (collision.tag)
         {
+            case "Ladder":
+                m_LadderReached = true;
+                break;
             case "LadderLeftTrigger":
-                // reached the ladder
-                m_LeftLadderTriggerReached = true;
+                if (m_LadderReached)
+                    m_LadderLeftTriggerReached = true;
                 break;
             case "LadderRightTrigger":
-                m_RightLadderTriggerReached = true;
+                if (m_LadderReached)
+                    m_LadderRightTriggerReached = true;
                 break;
             case "LadderTopTrigger":
-                // reached top/bottom
-                // disable the climbing animation 
-                if (m_Climbing)
-                    m_Animator.SetTrigger("Climbing_Finished");
-                m_ReachedTopOfLadder = true;
+                if (m_LadderReached)
+                {
+                    m_LadderTopReached = true;
+                    ResetVerticalVelocity();
+                }
                 break;
             case "LadderBottomTrigger":
-                if (m_Climbing)
-                    m_Climbing = false;
-                m_ReachedBottomOfLadder = true;
+                if (m_LadderReached)
+                {
+                    m_LadderBottomReached = true;
+                    ResetVerticalVelocity();
+                }
                 break;
         }
-        // mark climbable 
-        //m_CanClimb = true;
-        // mark rigidbody as kinematic
-        //m_RigidBody.isKinematic = true;
+    }
+
+    private void ResetVerticalVelocity()
+    {
+        Vector2 vel = m_RigidBody.velocity;
+        vel.y = 0;
+        m_RigidBody.velocity = vel;
     }
 
     public void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("BaseViking: Exiting " + collision.name);
         switch (collision.tag)
         {
+            case "Ladder":
+                ResetLadderTriggers();
+                break;
             case "LadderLeftTrigger":
-                // reached the ladder
-                m_LeftLadderTriggerReached = false;
+                m_LadderLeftTriggerReached = false;
                 break;
             case "LadderRightTrigger":
-                m_RightLadderTriggerReached = false;
+                m_LadderRightTriggerReached = false;
                 break;
-            case "LadderTrigger":
-                m_ReachedTopOfLadder = false;
-
+            case "LadderTopTrigger":
+                m_LadderTopReached = false;
                 break;
             case "LadderBottomTrigger":
-
-                m_ReachedBottomOfLadder = false;
+                m_LadderBottomReached = false;
                 break;
         }
     }
 
+    private void ResetLadderTriggers()
+    {
+        Debug.LogError("ResetLadderTriggers is not fully implemented Yet!");
+        m_RigidBody.isKinematic = false;
+
+        m_LadderReached = false;
+        m_LadderBottomReached = false;
+        m_LadderTopReached = false;
+        m_LadderRightTriggerReached = false;
+        m_LadderLeftTriggerReached = false;
+        m_CanClimbDown = false;
+        m_CanClimbUp = false;
+    }
+
     void Falling(Collider2D collider)
     {
+        if (collider.tag == "Ground")
+            return;
         m_Falling = true;
         m_FallBeganTimestamp = Time.realtimeSinceStartup;
         m_FallStartPosition = m_Transform.position;
     }
-
+    #region abstract functions
     protected abstract void TopHit(Collider2D collider);
     protected abstract void FrontHit(Collider2D collider);
-    #endregion 
+    #endregion
+
+    #endregion
 
     void Awake()
     {
@@ -221,31 +253,65 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
 
     protected void Update()
     {
-        if (m_LeftLadderTriggerReached && m_RightLadderTriggerReached)
+        CheckLadderClimbingState();
+        SetAnimationsParameters();
+    }
+
+    void CheckLadderClimbingState()
+    {
+        if (!m_LadderReached && !(m_LadderLeftTriggerReached && m_LadderRightTriggerReached))
+            return;
+
+        m_RigidBody.isKinematic = true;
+
+        if (m_LadderTopReached)
         {
-            m_RigidBody.isKinematic = true;
-            m_CanClimb = true;
+            m_CanClimbDown = true;
+            m_CanClimbUp = false;
+        }
+        else if (m_LadderBottomReached)
+        {
+            m_CanClimbDown = false;
+            m_CanClimbUp = true;
         }
         else
         {
-            m_RigidBody.isKinematic = false;
-            m_CanClimb = false;
+            m_CanClimbDown = true;
+            m_CanClimbUp = true;
         }
-        SetAnimationsParameters();
     }
 
     void SetAnimationsParameters()
     {
-        m_Animator.SetFloat("Speed", m_CurrentHorizontalSpeed);
-        if (m_CanClimb)
-        {
+        //Vector2 currentVelocity = m_RigidBody.velocity;
+        //if (m_CanClimbUp || m_CanClimbDown)
+        //{
+        //    m_Animator.SetBool("Climbing", true);
+        //    if (currentVelocity.y > 0)
+        //    {
+        //        Debug.Log("Climbing up animation");
+        //        m_Animator.StartPlayback();
 
-            m_Animator.SetBool("Climbing", m_Climbing);
-        }
-        else
-        {
-            m_Animator.SetBool("Climbing", false);
-        }
+        //    }
+        //    else if (currentVelocity.y < 0)
+        //    {
+        //        Debug.Log("Climbing down animation");
+        //        m_Animator.StartPlayback();
+        //    }
+        //    else
+        //    {
+        //        Debug.Log("Stopping ");
+
+        //        m_Animator.StopPlayback();
+        //    }
+        //}
+        //else
+        //{
+        //    m_Animator.SetBool("Climbing", false);
+
+        //}
+
+        m_Animator.SetFloat("Speed", m_CurrentHorizontalSpeed);
 
         m_Animator.SetBool("Grounded", !m_Falling);
 
@@ -258,6 +324,7 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
     void FixedUpdate()
     {
         Vector2 currentVelocity = m_RigidBody.velocity;
+
         if (m_Falling)
         {
             m_FallingDistance = Vector2.Distance(m_FallStartPosition, m_Transform.position);

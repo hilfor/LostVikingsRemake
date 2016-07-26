@@ -22,7 +22,7 @@ public class PlayerMotor : MonoBehaviour
 
         m_Olaf = GameObject.Find("Olaf").GetComponent<Transform>();
         //m_Eric = GameObject.Find("Eric").GetComponent<Transform>();
-        //m_Baelog = GameObject.Find("Baelog").GetComponent<Transform>();
+        m_Baelog = GameObject.Find("Baelog").GetComponent<Transform>();
 
 
         if (m_CameraFollow)
