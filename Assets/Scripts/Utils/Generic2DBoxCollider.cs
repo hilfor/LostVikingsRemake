@@ -45,7 +45,7 @@ public class Generic2DBoxCollider : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("GenericCollider Enter " + collision.name);
+        //Debug.Log("GenericCollider Enter " + collision.name);
         if (m_OnTriggerEnter.GetInvocationList().Length > 0)
         {
             m_OnTriggerEnter.Invoke(collision);
@@ -54,7 +54,6 @@ public class Generic2DBoxCollider : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("GenericCollider Exit " + collision.name);
         if (m_OnTriggerExit.GetInvocationList().Length > 0)
         {
             m_OnTriggerExit.Invoke(collision);

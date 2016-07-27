@@ -10,6 +10,16 @@ public class Waypoint : MonoBehaviour, IWaypoint
     private Waypoint m_LeftWaypoint;
     [SerializeField]
     private bool M_Loop = false;
+    [SerializeField]
+    private float m_WaypointReachedRadius = 0f;
+
+
+    private Transform m_Transform;
+
+    void Start()
+    {
+        m_Transform = transform;
+    }
 
     public IWaypoint NextWaypoint(IWaypoint lastWaypoint)
     {
@@ -26,13 +36,16 @@ public class Waypoint : MonoBehaviour, IWaypoint
         }
     }
 
-    public bool Reached(Transform walker)
+    public Vector2 GetWaypointPosition()
     {
-        throw new NotImplementedException();
+        return m_Transform.position;
     }
 
-    //public IWaypoint PreviousWaypoint(IWaypoint lastWaypoint)
-    //{
+    public bool Reached(IWalker walker)
+    {
+        if (Vector2.Distance(walker.GetWalkerPosition(), m_Transform.position) <= m_WaypointReachedRadius)
+            return true;
+        return false;
+    }
 
-    //}
 }

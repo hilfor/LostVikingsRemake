@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerMotor : MonoBehaviour
 {
-    private ICharacter m_ActiveViking = null;
+    private BaseViking m_ActiveViking = null;
 
     private Camera m_MainCamera;
 
@@ -22,14 +22,14 @@ public class PlayerMotor : MonoBehaviour
 
         m_Olaf = GameObject.Find("Olaf").GetComponent<Transform>();
         //m_Eric = GameObject.Find("Eric").GetComponent<Transform>();
-        m_Baelog = GameObject.Find("Baelog").GetComponent<Transform>();
+        //m_Baelog = GameObject.Find("Baelog").GetComponent<Transform>();
 
 
         if (m_CameraFollow)
         {
-            Debug.Log("Setting default viking to Olaf");
+            //Debug.Log("Setting default viking to Olaf");
             m_CameraFollow.ActiveViking = m_Olaf;
-            m_ActiveViking = m_Olaf.GetComponent<ICharacter>();
+            m_ActiveViking = m_Olaf.GetComponent<BaseViking>();
         }
     }
 
@@ -83,17 +83,17 @@ public class PlayerMotor : MonoBehaviour
         if (inputState.CheckTriggered(InputAction.SELECT_BAELOG))
         {
             ChangeCameraFollowViking(m_Baelog);
-            m_ActiveViking = m_Baelog.GetComponent<ICharacter>();
+            m_ActiveViking = m_Baelog.GetComponent<BaseViking>();
         }
         else if (inputState.CheckTriggered(InputAction.SELECT_ERIC))
         {
             ChangeCameraFollowViking(m_Eric);
-            m_ActiveViking = m_Eric.GetComponent<ICharacter>();
+            m_ActiveViking = m_Eric.GetComponent<BaseViking>();
         }
         else if (inputState.CheckTriggered(InputAction.SELECT_OLAF))
         {
             ChangeCameraFollowViking(m_Olaf);
-            m_ActiveViking = m_Olaf.GetComponent<ICharacter>();
+            m_ActiveViking = m_Olaf.GetComponent<BaseViking>();
         }
 
 

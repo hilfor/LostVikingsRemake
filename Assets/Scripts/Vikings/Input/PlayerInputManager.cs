@@ -27,7 +27,7 @@ public class PlayerInputManager : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+    void Update()
     {
         InputState state = GetInputState();
         if (m_PlayerMotor)

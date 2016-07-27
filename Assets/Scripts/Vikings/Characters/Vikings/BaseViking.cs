@@ -2,21 +2,23 @@
 using System.Collections;
 using System;
 
-public abstract class BaseViking : MonoBehaviour, ICharacter
+public abstract class BaseViking : MonoBehaviour, ICharacter, IWalker
 {
+    
+    [SerializeField]
+    protected float m_MovementSpeed = 1.5f;
+    [SerializeField]
+    protected float m_MaxFallingDistance = 3f;
 
-    private enum FacingDirection
-    {
-        LEFT,
-        RIGHT
-    }
+    [SerializeField]
+    protected Generic2DBoxCollider m_GroundCollider;
+    [SerializeField]
+    protected Generic2DBoxCollider m_TopCollider;
+    [SerializeField]
+    protected Generic2DBoxCollider m_ForontCollider;
 
-    public float m_MovementSpeed = 1.5f;
-    public float m_MaxFallingDistance = 3f;
-
-    public Generic2DBoxCollider m_GroundCollider;
-    public Generic2DBoxCollider m_TopCollider;
-    public Generic2DBoxCollider m_ForontCollider;
+    [SerializeField]
+    protected int m_Health = 1;
 
     protected Animator m_Animator;
     protected Transform m_Transform;
@@ -36,7 +38,6 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
     bool m_LadderLeftTriggerReached = false;
     bool m_LadderRightTriggerReached = false;
 
-
     bool m_Falling = false;
 
     FacingDirection m_FacingDirection = FacingDirection.RIGHT;
@@ -44,6 +45,9 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
     float m_FallingDistance = 0;
 
     Vector2 m_FallStartPosition = Vector2.zero;
+
+
+
     private bool m_LadderTopReached;
     private bool m_LadderBottomReached;
 
@@ -335,5 +339,15 @@ public abstract class BaseViking : MonoBehaviour, ICharacter
         }
     }
 
+    public void ReceiveDamage(int damage)
+    {
+        if (m_Health > 0)
+            m_Health -= damage;
+        throw new NotImplementedException();
+    }
 
+    Vector2 IWalker.GetWalkerPosition()
+    {
+        return m_Transform.position;
+    }
 }

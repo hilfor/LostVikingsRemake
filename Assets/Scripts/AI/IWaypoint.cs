@@ -2,6 +2,7 @@
 public interface IWaypoint
 {
     IWaypoint NextWaypoint(IWaypoint lastWaypoint);
-    bool Reached(Transform walker);
+    Vector2 GetWaypointPosition();
+    bool Reached(IWalker walker);
     //IWaypoint PreviousWaypoint(IWaypoint lastWaypoint);
 }
