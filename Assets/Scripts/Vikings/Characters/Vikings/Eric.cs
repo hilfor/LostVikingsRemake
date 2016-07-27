@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-public class Eric : BaseViking
+public class Eric : BaseViking, IWalker
 {
 
     public float m_SprintSpeed = 5f;
@@ -45,5 +45,8 @@ public class Eric : BaseViking
         base.Hit();
     }
 
-
+    public override void ReceiveDamage(int damage)
+    {
+        throw new NotImplementedException();
+    }
 }

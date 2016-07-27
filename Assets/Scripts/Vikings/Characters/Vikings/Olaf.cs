@@ -50,4 +50,17 @@ public class Olaf : BaseViking
             Debug.Log("Stopped something from hitting me from the front");
         }
     }
+
+    public override void ReceiveDamage(int damage)
+    {
+        if (m_ShieldPosition != ShieldPosition.FORWARD)
+        {
+            if (m_Health > 0)
+            {
+                Debug.Log("Being attacked by something !!! ");
+                m_Health--;
+            }
+
+        }
+    }
 }

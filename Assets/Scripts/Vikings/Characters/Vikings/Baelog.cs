@@ -9,6 +9,11 @@ public class Baelog : BaseViking
         //throw new NotImplementedException();
     }
 
+    public override void ReceiveDamage(int damage)
+    {
+        throw new NotImplementedException();
+    }
+
     protected override void FrontHit(Collider2D collider)
     {
         throw new NotImplementedException();

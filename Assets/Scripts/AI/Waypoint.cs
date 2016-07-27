@@ -16,9 +16,9 @@ public class Waypoint : MonoBehaviour, IWaypoint
 
     private Transform m_Transform;
 
-    void Start()
+    public void Awake()
     {
-        m_Transform = transform;
+        m_Transform = this.transform;
     }
 
     public IWaypoint NextWaypoint(IWaypoint lastWaypoint)

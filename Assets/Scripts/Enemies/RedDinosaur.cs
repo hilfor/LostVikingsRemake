@@ -35,7 +35,7 @@ public class RedDinosaur : MonoBehaviour, IEnemy, IWalker
     private bool m_AbleToMove = true;
     private bool m_Grounded = false;
 
-    private FacingDirection direction;
+    private FacingDirection m_FacingDirection = FacingDirection.RIGHT;
 
     private ICharacter m_PlayerToAttack = null;
     private List<ICharacter> m_PotentialPlayersList = new List<ICharacter>();
@@ -43,6 +43,8 @@ public class RedDinosaur : MonoBehaviour, IEnemy, IWalker
     private Transform m_Transform;
 
     private Rigidbody2D m_RigidBody;
+
+    private bool m_AttackStarted = false;
 
     void Awake()
     {
@@ -52,11 +54,12 @@ public class RedDinosaur : MonoBehaviour, IEnemy, IWalker
         //m_GroundCollider.OnTriggerExit = GroundLeftCheck;
         m_Transform = transform;
         m_RigidBody = GetComponent<Rigidbody2D>();
-        m_FrontCollider.OnTriggerEnter = AttackCheck;
+        m_FrontCollider.OnTriggerEnter = PlayerEnteredAttackRange;
+        m_FrontCollider.OnTriggerExit = PlayerExitedAttackRange;
         m_NextWaypoint = m_StartWaypoint;
+        m_NextWaypointPosition = m_NextWaypoint.GetWaypointPosition();
     }
 
-    void AttackCheck(Collider2D otherCollider) { }
 
     void GroundCollidedCheck(Collider2D otherCollider)
     {
@@ -78,13 +81,24 @@ public class RedDinosaur : MonoBehaviour, IEnemy, IWalker
     {
         if (otherCollider.tag == "Player")
         {
-            m_AbleToMove = false;
-            m_PotentialPlayersList.Add(otherCollider.GetComponent<ICharacter>());
+            ICharacter otherPlayer = otherCollider.GetComponent<ICharacter>();
+            if (m_PotentialPlayersList.IndexOf(otherPlayer) == -1)
+            {
+                m_PotentialPlayersList.Add(otherCollider.GetComponent<ICharacter>());
+            }
+            if (!m_AttackStarted)
+            {
+                m_AttackStarted = true;
+                StartCoroutine("AttackingEnemy");
+            }
         }
     }
 
-    IEnumerable AttackingEnemy(ICharacter otherPlayer)
+    IEnumerator AttackingEnemy()
     {
+
+        m_AbleToMove = false;
+        m_Animator.SetBool("Attacking", true);
         while (m_PotentialPlayersList.Count > 0)
         {
             m_PlayerToAttack = m_PotentialPlayersList[0];
@@ -93,9 +107,12 @@ public class RedDinosaur : MonoBehaviour, IEnemy, IWalker
                 m_PlayerToAttack.ReceiveDamage(m_AttackDamage);
                 yield return new WaitForSeconds(1);
             }
+            m_PotentialPlayersList.RemoveAt(0);
         }
-
+        m_Animator.SetBool("Attacking", false);
+        m_AttackStarted = false;
         m_AbleToMove = true;
+
     }
 
     void PlayerExitedAttackRange(Collider2D otherCollider)
@@ -122,7 +139,6 @@ public class RedDinosaur : MonoBehaviour, IEnemy, IWalker
     {
         if (m_NextWaypoint.Reached(this))
         {
-            Debug.Log("RedDimo reached Wp");
             m_NextWaypoint = m_NextWaypoint.NextWaypoint(m_NextWaypoint); // TODO: It sounds kinda funny, change this
             m_NextWaypointPosition = m_NextWaypoint.GetWaypointPosition();
             return;
@@ -148,15 +164,26 @@ public class RedDinosaur : MonoBehaviour, IEnemy, IWalker
 
         if (direction.x > 0)
         {
+            if (m_FacingDirection == FacingDirection.LEFT)
+                ChangeDirection(FacingDirection.RIGHT);
             MoveRight(speed);
         }
         else if (direction.x < 0)
         {
+            if (m_FacingDirection == FacingDirection.RIGHT)
+                ChangeDirection(FacingDirection.LEFT);
             MoveLeft(speed);
         }
 
     }
 
+    private void ChangeDirection(FacingDirection toDirection)
+    {
+        m_FacingDirection = toDirection;
+        Vector2 localScale = m_Transform.localScale;
+        localScale.x *= -1;
+        m_Transform.localScale = localScale;
+    }
 
     public void MoveRight(float speed)
     {

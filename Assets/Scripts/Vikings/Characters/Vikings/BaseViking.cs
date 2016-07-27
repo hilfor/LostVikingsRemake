@@ -339,12 +339,7 @@ public abstract class BaseViking : MonoBehaviour, ICharacter, IWalker
         }
     }
 
-    public void ReceiveDamage(int damage)
-    {
-        if (m_Health > 0)
-            m_Health -= damage;
-        throw new NotImplementedException();
-    }
+    public abstract void ReceiveDamage(int damage);
 
     Vector2 IWalker.GetWalkerPosition()
     {
