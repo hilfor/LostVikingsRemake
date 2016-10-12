@@ -1,0 +1,74 @@
+@RedDragon
+*Sequence:
+	- *Sequence:
+		- Check if not currently attacking
+		- *Sequence:
+			- Condition: Check if arrived at next waypoint 
+			- Action: Change the waypoint to be the next waypoint from a list of waypoints
+		- Action: Walk to next waypoint 
+	- *Sequence:
+		- Condition: Check if collided with player
+		- Action: Attack Player
+
+@Player:
+*Sequence: 
+	- *Sequence: # Ladder handling 
+		- Condition: If located within 2 horizontal colliders of a ladder
+		- Action: Set enable climbing
+		- *Sequence: # Top/Bottom check
+			- *Sequence(true):
+				- Condition: If reached top collider 
+				- Action: Restrict player from going up
+				- Action: Set display animation to finish climbing top
+			- *Sequence(true):
+				- Condition: If reached bottom collider 
+				- Action: Restrict player from going down
+				- Action: Set display animation to finish climbing bottom
+		- *Sequence: # Check the input conditions
+			- *Sequence(True):
+				- *Sequence:
+					- Condition: If the down arrow is pressed
+					- Condition: If movement is not restricted
+					- Action: Set player state to climbing 
+					- Action: Set player climbing direction to down
+			- *Sequence(True):
+				- *Sequence:
+					- Condition: If the down arrow is pressed
+					- Condition: If movement is not restricted
+					- Action: Set player state to climbing 
+					- Action: Set player climbing direction to up
+			- *Sequence:
+				- Condition: If no button pressed 
+				- Action: Clear player state
+		
+		- *Sequence: # Move the player and display the proper animation 
+			- Condition: If climbing was set to enabled
+			- Condition: If player state is climbing
+			- Action: Disable horizontal movement
+			- *Sequence(true): 
+				- Condition: If (player state is climbing) and (climbing direction is down)
+				- Action: Display climbing down animation
+				- Action: Move the player down the ladder
+			- *Sequence(true): 
+				- Condition: If (player state is climbing) and (climbing direction is up)
+				- Action: Display climbing up animation
+				- Action: Move the player up the ladder
+			
+	- *Sequence:
+		- Action: Display standing animation
+		- *Sequence:
+			- ^Inverter
+				- Action: Shoot raycast down, return true if hit
+			- Action: Display falling animation
+			
+		
+	
+
+	
+	
+	
+	Throw a raycast down
+	if hit something, then stop 
+	else fall
+	
+	
