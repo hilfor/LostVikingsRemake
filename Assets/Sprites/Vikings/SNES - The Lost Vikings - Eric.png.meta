@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 4e014d7b3ea06434984f669401c80996
-timeCreated: 1468656443
+timeCreated: 1471806375
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -144,6 +144,7 @@ TextureImporter:
     21300274: SNES - The Lost Vikings - Eric_156
     21300276: SNES - The Lost Vikings - Eric_164
     21300278: SNES - The Lost Vikings - Eric_92
+    21300280: Eric_Profile
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -1647,6 +1648,17 @@ TextureImporter:
         y: 216
         width: 23
         height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Eric_Profile
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 454
+        width: 26
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

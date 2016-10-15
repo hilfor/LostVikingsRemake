@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 7beae73776d177748aaf736f97fdf54a
-timeCreated: 1468067509
+timeCreated: 1471806352
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -105,6 +105,7 @@ TextureImporter:
     21300196: SNES - The Lost Vikings - Olaf_112
     21300198: SNES - The Lost Vikings - Olaf_113
     21300200: SNES - The Lost Vikings - Olaf_114
+    21300202: Olaf_Profile
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -1338,6 +1339,17 @@ TextureImporter:
         y: 27
         width: 30
         height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Olaf_Profile
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 588
+        width: 32
+        height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
