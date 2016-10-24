@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public interface IBTSequencer : IBTSelector
+public interface IBTSequencer : IBTNode
 {
-    void AppendCondition(IBTCondition condition);
+    IBTSequencer AppendNode(IBTNode node);
 }

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public interface IBTSelector
+public interface IBTNode
 {
     bool Process(IContext context);
 }

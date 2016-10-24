@@ -14,6 +14,7 @@ public class ChildJumping : MonoBehaviour
 
     void Start()
     {
+        
         m_Transform = transform;
         m_MaxJumpPosition = m_Transform.position;
         m_MaxJumpPosition.y += m_JumpHeight;

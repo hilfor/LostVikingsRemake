@@ -4,27 +4,29 @@ using System;
 
 public class BTSelector : IBTSelector
 {
-    private List<IBTCondition> conditions;
+    private List<IBTNode> childNodes;
 
     public BTSelector()
     {
-        this.conditions = new List<IBTCondition>();
+        this.childNodes = new List<IBTNode>();
     }
 
-    public void AppendCondition(IBTCondition condition)
+    public IBTSelector AppendNode(IBTNode node)
     {
-        this.conditions.Add(condition);
+        this.childNodes.Add(node);
+        return this;
     }
 
     public bool Process(IContext context)
     {
-        for (int i = 0; i < conditions.Count; i++)
+        for (int i = 0; i < childNodes.Count; i++)
         {
-            if (conditions[i].ConditionPassed(context))
+            if (childNodes[i].Process(context))
             {
                 return true;
             }
         }
         return false;
     }
+
 }

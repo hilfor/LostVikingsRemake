@@ -1,0 +1,92 @@
+﻿<sequence>
+  <!-- Ladder handling -->
+  <sequence>
+    <condition name="Within2HorizontalColliders"/>
+    <action name="SetEnableClimbing"/>
+    <sequence>
+      <positiveSequence>
+        <sequence>
+          <condition name="IfReachedTopCollider"/>
+          <action name="RestricetPlayerUpMovement"/>
+          <action name="SetAnimationToFinishClimbingTop"/>
+        </sequence>
+        <sequence>
+          <condition name="IfReachedBottomCollider"/>
+          <action name="RestricetPlayerDownMovement"/>
+          <action name="SetAnimationToFinishClimbingBottom"/>
+        </sequence>
+      </positiveSequence>
+    </sequence>
+    <sequence>
+      <positiveSequence>
+        <sequence>
+          <condition name="IfDownArrowPressed"/>
+          <condition name="IfMovementNotRestricted"/>
+          <action name="SetPlayerStateToClimbing"/>
+          <action name="SetPlayerClimbingDirectionToDown"/>
+        </sequence>
+        <sequence>
+          <condition name="IfUpArrowPressed"/>
+          <condition name="IfMovementNotRestricted"/>
+          <action name="SetPlayerStateToClimbing"/>
+          <action name="SetPlayerClimbingDirectionToUp"/>
+        </sequence>
+      </positiveSequence>
+      <sequence>
+        <condition name="NoButtonPressed"/>
+        <action name="ClearPlayerState"/>
+      </sequence>
+    </sequence>
+    <sequence>
+      <condition name="IfClimbingWasEnabled"/>
+      <condition name="IfPlayerStateClimbing"/>
+      <action name="DisableHorizontalMovement"/>
+      <positiveSequence>
+        <sequence>
+          <condition name="IfClimbingDirectionIsDown"/>
+          <action name="DisplayClimbingDownAnimation"/>
+          <action name="MoveThePlayerDownTheLadder"/>
+        </sequence>
+        <sequence>
+          <condition name="IfClimbingDirectionIsUp"/>
+          <action name="DisplayClimbingUpAnimation"/>
+          <action name="MoveThePlayerUpTheLadder"/>
+        </sequence>
+      </positiveSequence>
+    </sequence>
+  </sequence>
+  <!-- Regular movement handling -->
+  <action name="SetAnimationToStandingAnimation"/>
+  <inverter>
+    <sequence>
+      <inverter>
+        <action name="ShootRaycastDown"/>
+      </inverter>
+      <action name="SetAnimationToFalling"/>
+    </sequence>
+  </inverter>
+  <inverter>
+    <sequence>
+      <condition name="IfLeftButtonPressed"/>
+      <action name="SetAnimationToWalkingLeft"/>
+    </sequence>
+  </inverter>
+  <inverter>
+    <sequence>
+      <condition name="IfRightButtonPressed"/>
+      <action name="SetAnimationToWalkingRight"/>
+    </sequence>
+  </inverter>
+  <inverter>
+    <sequence>
+      <condition name="IfShiftButtonPressed"/>
+      <action name="SetAnimationToAttacking1"/>
+    </sequence>
+  </inverter>
+  <inverter>
+    <sequence>
+      <condition name="IfCtrlButtonPressed"/>
+      <action name="SetAnimationToAttacking2"/>
+    </sequence>
+  </inverter>
+</sequence>

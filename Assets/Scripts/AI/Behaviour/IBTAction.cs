@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public interface IBTAction 
+public interface IBTAction : IBTNode
 {
     bool Act(IContext context);
-
 }

@@ -1,4 +1,4 @@
-@RedDragon
+@RedDragon / @BlueDragon
 *Sequence:
 	- *Sequence:
 		- Check if not currently attacking
@@ -54,12 +54,32 @@
 				- Action: Display climbing up animation
 				- Action: Move the player up the ladder
 			
-	- *Sequence:
-		- Action: Display standing animation
-		- *Sequence:
-			- ^Inverter
-				- Action: Shoot raycast down, return true if hit
-			- Action: Display falling animation
+	- *Sequence: # Regular movement handling
+		- Action: Set display to standing animation
+		- ^Inverter:
+			- *Sequence: # handle the falling animation
+				- ^Inverter
+					- Action: Shoot raycast down (.5 units), return true if hit
+				- Action: Set animation to falling animation
+		- ^Inverter:
+			- *Sequence:
+				- Condition: If left button has been pressed
+				- Action: Set animation to walking left
+		- ^Inverter:
+			- *Sequence:
+				- Condition: If right button has been pressed
+				- Action: Set animation to walking right
+
+		- ^Inverter:
+			- *Sequence:
+				- Condition: If SHIFT button has been pressed
+				- Action: Set animation to attacking 1
+
+		- ^Inverter:
+			- *Sequence:
+				- Condition: If CTRL button has been pressed
+				- Action: Set animation to attacking 2
+
 			
 		
 	

@@ -1,18 +1,21 @@
-﻿using System;
+﻿using UnityEngine;
+using System.Collections;
+using System;
 using System.Collections.Generic;
-public class BTSequencer : IBTSequencer
+
+public class BTPositiveSequencer : IBTPositiveSequencer
 {
 
     private List<IBTNode> childNodes;
 
-    public BTSequencer()
+    public BTPositiveSequencer()
     {
         this.childNodes = new List<IBTNode>();
+
     }
 
-    public IBTSequencer AppendNode(IBTNode node)
+    public IBTPositiveSequencer AppendNode(IBTNode node)
     {
-        this.childNodes.Add(node);
         return this;
     }
 
@@ -20,13 +23,9 @@ public class BTSequencer : IBTSequencer
     {
         for (int i = 0; i < childNodes.Count; i++)
         {
-            if (!childNodes[i].Process(context))
-            {
-                return false;
-            }
+            childNodes[i].Process(context);
         }
 
         return true;
     }
-
 }

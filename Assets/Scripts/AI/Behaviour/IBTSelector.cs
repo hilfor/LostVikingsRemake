@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public interface IBTSelector : IBTSelector
+public interface IBTSelector : IBTNode
 {
-    void AppendCondition(IBTCondition condition);
+    IBTSelector AppendNode(IBTNode node);
 
 }
