@@ -1,4 +1,4 @@
-# UnrealRemake
+# Lost Vikings Unity remake
 This is a remake of the game Lost Vikings by Blizzard Entertainment for the NES. 
 This is a personal project. I have no intention of publishing it on any platform. 
 Future possibilities: 
