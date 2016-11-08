@@ -10,7 +10,7 @@
       <action name="WalkToNextWaypoint"/>
     </sequence>
     <sequence>
-      <condition name="IfCollidedWithPlayer"/>
+      <condition name="CheckIfCollidedWithPlayer"/>
       <action name="AttackPlayer"/>
     </sequence>
   </sequence>

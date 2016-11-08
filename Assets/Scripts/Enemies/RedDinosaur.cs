@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 
-public class RedDinosaur : MonoBehaviour, IEnemy, IWalker
+public class RedDinosaur : MonoBehaviour, IEnemy, IWalker, IFollower
 {
 
     //[SerializeField]
