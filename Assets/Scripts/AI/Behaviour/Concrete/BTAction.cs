@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class BTAction   : IBTAction
+public class BTAction   : IBTCondition
 {
     private Action<IContext> action;
 

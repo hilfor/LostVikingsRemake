@@ -2,15 +2,15 @@
 <type  name="RedDragon">
   <sequence>
     <sequence>
-      <condition name="CheckNotAlreadyAttacking"/>
+      <condition name="IfNotAlreadyAttacking"/>
       <sequence>
-        <condition name="CheckIfArrivedAtNextWaypoint"/>
+        <condition name="IfArrivedAtNextWaypoint"/>
         <action name="SetNextWaypoint"/>
       </sequence>
       <action name="WalkToNextWaypoint"/>
     </sequence>
     <sequence>
-      <condition name="CheckIfCollidedWithPlayer"/>
+      <condition name="IfCollidedWithPlayer"/>
       <action name="AttackPlayer"/>
     </sequence>
   </sequence>

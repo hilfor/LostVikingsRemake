@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-public abstract class BaseViking : MonoBehaviour, ICharacter, IWalker
+public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
 {
     
     [SerializeField]

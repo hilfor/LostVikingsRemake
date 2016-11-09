@@ -8,16 +8,46 @@
     void NoInput();
     State GetState();
 
+
 }
 
 public class State
 {
-    private bool attacking;
+    private bool attacking = false;
     public bool Attacking
     {
-        get;
-        set;
+        get
+        {
+            return attacking;
+        }
+        set
+        {
+            attacking = value;
+        }
     }
+
+    private int ladderBoundsCount = 0;
+    public bool WithinLadderBounds
+    {
+        get
+        {
+            return ladderBoundsCount == 2;
+        }
+    }
+
+    private bool climbingEnabled = false;
+    public bool CanClimb
+    {
+        get
+        {
+            return climbingEnabled;
+        }
+        set
+        {
+            climbingEnabled = value;
+        }
+    }
+
 
     //private bool arrivedNextWaypoint;
     //public bool ArrivedAtNextWaypoint
@@ -25,4 +55,11 @@ public class State
     //    set;
     //    get;
     //}
+
+    public State Clone()
+    {
+        State newState = new State();
+
+        return newState;
+    }
 }

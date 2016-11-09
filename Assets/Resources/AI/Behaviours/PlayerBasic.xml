@@ -1,7 +1,7 @@
 ﻿<sequence>
   <!-- Ladder handling -->
   <sequence>
-    <condition name="Within2HorizontalColliders"/>
+    <condition name="IfWithin2HorizontalColliders"/>
     <action name="SetEnableClimbing"/>
     <sequence>
       <positiveSequence>
@@ -33,7 +33,7 @@
         </sequence>
       </positiveSequence>
       <sequence>
-        <condition name="NoButtonPressed"/>
+        <condition name="IfNoButtonPressed"/>
         <action name="ClearPlayerState"/>
       </sequence>
     </sequence>

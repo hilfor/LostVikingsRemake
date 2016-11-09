@@ -87,10 +87,10 @@ public class Behaviour : MonoBehaviour
         string conditionClassName = node.Attributes["name"].Value;
         return (IBTCondition)CreateReflectionObject(conditionClassName);
     }
-    private IBTAction CreateAction(XmlNode node)
+    private IBTCondition CreateAction(XmlNode node)
     {
         string actionClassName = node.Attributes["name"].Value;
-        return (IBTAction)CreateReflectionObject(actionClassName);
+        return (IBTCondition)CreateReflectionObject(actionClassName);
     }
     private IBTSequencer CreateSequence(XmlNode node)
     {
@@ -121,7 +121,7 @@ public class Behaviour : MonoBehaviour
 }
 
 
-public class CheckNotAlreadyAttacking : IBTCondition
+public class IfNotAlreadyAttacking : IBTCondition
 {
     public bool ConditionPassed(IContext context)
     {
@@ -134,7 +134,7 @@ public class CheckNotAlreadyAttacking : IBTCondition
     }
 }
 
-public class CheckIfArrivedAtNextWaypoint : IBTCondition
+public class IfArrivedAtNextWaypoint : IBTCondition
 {
     public bool ConditionPassed(IContext context)
     {
@@ -197,7 +197,7 @@ public class WalkToNextWaypoint : IBTAction
     }
 }
 
-public class CheckIfCollidedWithPlayer : IBTCondition
+public class IfCollidedWithPlayer : IBTCondition
 {
     public bool ConditionPassed(IContext context)
     {
@@ -239,5 +239,83 @@ public class StopAttackPlayer : IBTAction
     public bool Process(IContext context)
     {
         return Act(context);
+    }
+}
+
+public class IfWithin2HorizontalColliders : IBTCondition
+{
+    public bool ConditionPassed(IContext context)
+    {
+        return ((ICharacter)context.GetVariable("ICharacter")).GetState().WithinLadderBounds;
+    }
+
+    public bool Process(IContext context)
+    {
+        return ConditionPassed(context);
+    }
+}
+
+public class SetEnableClimbing : IBTAction
+{
+    public bool Act(IContext context)
+    {
+        ((IPlayer)context.GetVariable("IPlayer")).SetCanClimb(true);
+        return true;
+    }
+
+    public bool Process(IContext context)
+    {
+        return Act(context);
+    }
+}
+
+public class IfReachedTopCollider : IBTCondition
+{
+    public bool ConditionPassed(IContext context)
+    {
+        return ((IPlayer)context.GetVariable("IPlayer")).ReachedTopLadder();
+    }
+
+    public bool Process(IContext context)
+    {
+        return ConditionPassed(context);
+    }
+}
+
+public class RestricetPlayerUpMovement : IBTAction
+{
+    public bool Act(IContext context)
+    {
+    }
+
+    public bool Process(IContext context)
+    {
+        return Act(context);
+    }
+}
+
+public class SetAnimationToFinishClimbingTop : IBTAction
+{
+    public bool Act(IContext context)
+    {
+        
+    }
+
+    public bool Process(IContext context)
+    {
+        return Act(context);
+    }
+}
+
+public class IfReachedBottomCollider : IBTCondition
+{
+    public bool ConditionPassed(IContext context)
+    {
+        return ((IPlayer)context.GetVariable("IPlayer")).ReachedBottomLadder();
+    }
+
+    public bool Process(IContext context)
+    {
+        return ConditionPassed(context);
     }
 }
