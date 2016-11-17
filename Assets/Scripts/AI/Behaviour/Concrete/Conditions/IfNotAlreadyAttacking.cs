@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class IfNotAlreadyAttacking : MonoBehaviour {
+public class IfNotAlreadyAttacking : IBTCondition
+{
+    public bool ConditionPassed(IContext context)
+    {
+        return !((ICharacter)context.GetVariable("ICharacter")).GetState().Attacking;
+    }
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public bool Process(IContext context)
+    {
+        return ConditionPassed(context);
+    }
 }

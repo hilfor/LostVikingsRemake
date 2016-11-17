@@ -1,15 +1,14 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿public class IfCollidedWithPlayer : IBTCondition
+{
+    public bool ConditionPassed(IContext context)
+    {
+        IEnemy enemy = (IEnemy)context.GetVariable("IEnemy");
 
-public class IfCollidedWithPlayer : MonoBehaviour {
+        return enemy.IsCollidedWithPlayer();
+    }
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public bool Process(IContext context)
+    {
+        return ConditionPassed(context);
+    }
 }

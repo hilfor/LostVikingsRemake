@@ -1,15 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
-public class IfMovementNotRestricted : MonoBehaviour {
+public class IfMovementNotRestricted : IBTCondition {
+    public bool ConditionPassed(IContext context)
+    {
+        State characterState = ((ICharacter)context.GetVariable("ICharacter")).GetState();
+        return characterState.CanClimb && characterState.CanMoveUp && characterState.CanMoveDown;
+    }
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public bool Process(IContext context)
+    {
+        return ConditionPassed(context);
+    }
 }

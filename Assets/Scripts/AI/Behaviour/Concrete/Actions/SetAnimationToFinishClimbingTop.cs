@@ -1,15 +1,13 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿public class SetAnimationToFinishClimbingTop : IBTAction
+{
+    public bool Act(IContext context)
+    {
+        ((ICharacter)context.GetVariable("ICharacter")).GetAnimationState().SetAnimationTrigger(AnimationStates.EndClimbing);
+        return true;
+    }
 
-public class SetAnimationToFinishClimbingTop : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public bool Process(IContext context)
+    {
+        return Act(context);
+    }
 }

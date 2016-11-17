@@ -1,15 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
-public class SetPlayerStateToClimbing : MonoBehaviour {
+public class SetPlayerStateToClimbing : IBTAction
+{
+    public bool Act(IContext context)
+    {
+        ((ICharacter)context.GetVariable("ICharacter")).GetState().CanClimb = true;
+        return true;
+    }
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public bool Process(IContext context)
+    {
+        return Act(context);
+    }
 }

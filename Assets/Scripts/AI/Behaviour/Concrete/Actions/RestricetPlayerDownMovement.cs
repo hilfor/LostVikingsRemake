@@ -1,15 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
-public class NewBehaviourScript : MonoBehaviour {
+public class RestrictPlayerDownMovement : IBTAction
+{
+    public bool Act(IContext context)
+    {
+        // TODO: Implement this
+        throw new NotImplementedException();
+    }
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public bool Process(IContext context)
+    {
+        throw new NotImplementedException();
+    }
 }

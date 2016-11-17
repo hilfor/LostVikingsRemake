@@ -1,15 +1,13 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿public class SetEnableClimbing : IBTAction
+{
+    public bool Act(IContext context)
+    {
+        ((IPlayer)context.GetVariable("IPlayer")).SetCanClimb(true);
+        return true;
+    }
 
-public class SetEnableClimbing : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public bool Process(IContext context)
+    {
+        return Act(context);
+    }
 }

@@ -1,15 +1,12 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿public class IfReachedBottomCollider : IBTCondition
+{
+    public bool ConditionPassed(IContext context)
+    {
+        return ((IPlayer)context.GetVariable("IPlayer")).ReachedBottomLadder();
+    }
 
-public class IfReachedBottomCollider : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public bool Process(IContext context)
+    {
+        return ConditionPassed(context);
+    }
 }

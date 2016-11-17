@@ -1,15 +1,13 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿public class IfArrivedAtNextWaypoint : IBTCondition
+{
+    public bool ConditionPassed(IContext context)
+    {
+        IFollower follower = (IFollower)context.GetVariable("IFollower");
+        return follower.GetNextWaypoint().Reached((IWalker)follower);
+    }
 
-public class IfArrivedAtNextWaypoint : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public bool Process(IContext context)
+    {
+        return ConditionPassed(context);
+    }
 }

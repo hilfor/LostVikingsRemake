@@ -1,15 +1,14 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿public class AttackPlayer : IBTAction
+{
+    public bool Act(IContext context)
+    {
+        IEnemy enemy = (IEnemy)context.GetVariable("IEnemy");
+        enemy.AttackPlayer();
+        return true;
+    }
 
-public class AttackPlayer : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public bool Process(IContext context)
+    {
+        return Act(context);
+    }
 }

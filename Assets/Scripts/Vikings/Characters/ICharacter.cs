@@ -30,7 +30,8 @@ public class AnimationState
 
 public enum AnimationStates
 {
-    EndClimbing
+    EndClimbingTop,
+    EndClimbingBottom
 }
 
 
@@ -86,12 +87,18 @@ public class State
         }
     }
 
-    //private bool arrivedNextWaypoint;
-    //public bool ArrivedAtNextWaypoint
-    //{
-    //    set;
-    //    get;
-    //}
+    private bool canMoveDown = false;
+    public bool CanMoveDown
+    {
+        get
+        {
+            return canMoveDown;
+        }
+        set
+        {
+            canMoveDown = value;
+        }
+    }
 
     public State Clone()
     {
