@@ -1,4 +1,7 @@
-﻿public interface ICharacter
+﻿using UnityEngine;
+using System;
+
+public interface ICharacter
 {
 
     //void Jump();
@@ -7,9 +10,30 @@
     void Action(InputState action);
     void NoInput();
     State GetState();
-
+    AnimationState GetAnimationState();
 
 }
+
+public class AnimationState
+{
+    private Animator m_Animator;
+    public AnimationState(Animator animator)
+    {
+        m_Animator = animator;
+    }
+
+    public void SetAnimationTrigger(AnimationStates state)
+    {
+        m_Animator.SetTrigger(Enum.GetName(typeof(AnimationState), state));
+    }
+}
+
+public enum AnimationStates
+{
+    EndClimbing
+}
+
+
 
 public class State
 {
@@ -48,6 +72,19 @@ public class State
         }
     }
 
+    private bool canMoveUp = false;
+    public bool CanMoveUp
+    {
+        get
+        {
+            return canMoveUp;
+        }
+        set
+        {
+            canMoveUp = value;
+
+        }
+    }
 
     //private bool arrivedNextWaypoint;
     //public bool ArrivedAtNextWaypoint

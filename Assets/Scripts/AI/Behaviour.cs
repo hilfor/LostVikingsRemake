@@ -286,6 +286,8 @@ public class RestricetPlayerUpMovement : IBTAction
 {
     public bool Act(IContext context)
     {
+        ((ICharacter)context.GetVariable("ICharacter")).GetState().CanMoveUp = false;
+        return true;
     }
 
     public bool Process(IContext context)
@@ -298,7 +300,8 @@ public class SetAnimationToFinishClimbingTop : IBTAction
 {
     public bool Act(IContext context)
     {
-        
+        ((ICharacter)context.GetVariable("ICharacter")).GetAnimationState().SetAnimationTrigger(AnimationStates.EndClimbing);
+        return true;
     }
 
     public bool Process(IContext context)
@@ -317,5 +320,18 @@ public class IfReachedBottomCollider : IBTCondition
     public bool Process(IContext context)
     {
         return ConditionPassed(context);
+    }
+}
+
+public class RestrictPlayerUpMovement : IBTAction
+{
+    public bool Act(IContext context)
+    {
+        
+    }
+
+    public bool Process(IContext context)
+    {
+        return Act(context);
     }
 }

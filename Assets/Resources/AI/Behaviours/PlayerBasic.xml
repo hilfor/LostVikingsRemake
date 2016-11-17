@@ -7,12 +7,12 @@
       <positiveSequence>
         <sequence>
           <condition name="IfReachedTopCollider"/>
-          <action name="RestricetPlayerUpMovement"/>
+          <action name="RestrictPlayerUpMovement"/>
           <action name="SetAnimationToFinishClimbingTop"/>
         </sequence>
         <sequence>
           <condition name="IfReachedBottomCollider"/>
-          <action name="RestricetPlayerDownMovement"/>
+          <action name="RestrictPlayerDownMovement"/>
           <action name="SetAnimationToFinishClimbingBottom"/>
         </sequence>
       </positiveSequence>
