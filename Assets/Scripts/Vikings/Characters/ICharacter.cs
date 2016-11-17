@@ -30,6 +30,8 @@ public class AnimationState
 
 public enum AnimationStates
 {
+    ClimbingUp,
+    ClimbingDown,
     EndClimbingTop,
     EndClimbingBottom
 }
@@ -97,6 +99,19 @@ public class State
         set
         {
             canMoveDown = value;
+        }
+    }
+
+    private bool canMoveHorizontally = true;
+    public bool CanMoveHorizontally
+    {
+        get
+        {
+            return canMoveHorizontally;
+        }
+        set
+        {
+            canMoveHorizontally = value;
         }
     }
 

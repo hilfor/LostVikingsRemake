@@ -1,15 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MoveThePlayerUpTheLadder : MonoBehaviour {
+public class MoveThePlayerUpTheLadder : IBTAction
+{
+    public bool Act(IContext context)
+    {
+        IWalker walker = (IWalker)context.GetVariable("IWalker");
+        walker.MoveUp(walker.GetWalkerSpeed());
+        return true;
+    }
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public bool Process(IContext context)
+    {
+        return Act(context);
+    }
 }

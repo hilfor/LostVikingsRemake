@@ -1,15 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
-public class DisableHorizontalMovement : MonoBehaviour {
+public class DisableHorizontalMovement : IBTAction {
+    public bool Act(IContext context)
+    {
+        ((ICharacter)context.GetVariable("ICharacter")).GetState().CanMoveHorizontally = false;
+        return true;
+    }
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public bool Process(IContext context)
+    {
+        return Act(context);
+    }
 }

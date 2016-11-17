@@ -12,6 +12,6 @@ public class RestrictPlayerDownMovement : IBTAction
 
     public bool Process(IContext context)
     {
-        throw new NotImplementedException();
+        return Act(context);
     }
 }

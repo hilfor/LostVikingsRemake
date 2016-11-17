@@ -1,15 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
-public class ClearPlayerState : MonoBehaviour {
+public class ClearPlayerState : IBTAction
+{
+    public bool Act(IContext context)
+    {
+        throw new NotImplementedException();
+    }
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public bool Process(IContext context)
+    {
+        return Act(context);
+    }
 }
