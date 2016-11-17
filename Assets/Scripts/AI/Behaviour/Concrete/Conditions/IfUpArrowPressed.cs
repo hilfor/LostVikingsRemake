@@ -6,7 +6,7 @@ public class IfUpArrowPressed : IBTCondition
 {
     public bool ConditionPassed(IContext context)
     {
-        throw new NotImplementedException();
+        return ((IPlayer)context.GetVariable("IPlayer")).GetInputState().CheckPressedOrTriggered(InputAction.UP);
     }
 
     public bool Process(IContext context)

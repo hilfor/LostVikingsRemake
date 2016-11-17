@@ -6,7 +6,8 @@ public class IfRightButtonPressed : IBTCondition
 {
     public bool ConditionPassed(IContext context)
     {
-        throw new NotImplementedException();
+        return ((IPlayer)context.GetVariable("IPlayer")).GetInputState().CheckPressedOrTriggered(InputAction.RIGHT);
+
     }
 
     public bool Process(IContext context)

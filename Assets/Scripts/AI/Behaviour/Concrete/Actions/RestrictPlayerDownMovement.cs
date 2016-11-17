@@ -6,8 +6,9 @@ public class RestrictPlayerDownMovement : IBTAction
 {
     public bool Act(IContext context)
     {
-        // TODO: Implement this
-        throw new NotImplementedException();
+        ((ICharacter)context.GetVariable("ICharacter")).GetState().CanMoveDown = false;
+        return true;
+
     }
 
     public bool Process(IContext context)

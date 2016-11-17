@@ -6,7 +6,8 @@ public class ClearPlayerState : IBTAction
 {
     public bool Act(IContext context)
     {
-        throw new NotImplementedException();
+        ((ICharacter)context.GetVariable("ICharacter")).GetState().Clear();
+        return true;
     }
 
     public bool Process(IContext context)

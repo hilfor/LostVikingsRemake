@@ -30,12 +30,23 @@ public class AnimationState
 
 public enum AnimationStates
 {
+
+    Idle,
+    Walking,
+    Action1,
+    Action2,
+    Falling,
     ClimbingUp,
     ClimbingDown,
     EndClimbingTop,
     EndClimbingBottom
 }
 
+public enum ClimbingDirections
+{
+    UP,
+    DOWN
+}
 
 
 public class State
@@ -114,6 +125,21 @@ public class State
             canMoveHorizontally = value;
         }
     }
+
+    private ClimbingDirections climbingDirection;
+    public ClimbingDirections ClimbingDirection
+    {
+        get
+        {
+            return climbingDirection;
+        }
+        set
+        {
+            climbingDirection = value;
+        }
+    }
+
+    public void Clear() { }
 
     public State Clone()
     {

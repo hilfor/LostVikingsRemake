@@ -66,6 +66,20 @@ public class InputState
         return m_Pressed.Contains(key);
     }
 
+    public bool CheckPressedOrTriggered(KeyCode key)
+    {
+        return m_Pressed.Contains(key) || m_Triggered.Contains(key);
+    }
+
+    public bool CheckPressedOrTriggered(InputAction action)
+    {
+        if (m_InputMap.Contains(action))
+        {
+            return m_Triggered.Contains((KeyCode)m_InputMap[action]) || m_Pressed.Contains((KeyCode)m_InputMap[action]);
+        }
+        return false;
+    }
+
     public bool CheckTriggered(InputAction action)
     {
         if (m_InputMap.Contains(action))

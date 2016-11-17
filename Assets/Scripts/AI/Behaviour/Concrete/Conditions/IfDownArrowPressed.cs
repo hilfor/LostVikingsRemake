@@ -6,7 +6,7 @@ public class IfDownArrowPressed : IBTCondition
 {
     public bool ConditionPassed(IContext context)
     {
-        return Input.GetKey(KeyCode.DownArrow);
+        return ((IPlayer)context.GetVariable("IPlayer")).GetInputState().CheckPressedOrTriggered(InputAction.DOWN);
     }
 
     public bool Process(IContext context)

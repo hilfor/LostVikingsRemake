@@ -6,7 +6,7 @@ public class IfCtrlButtonPressed : IBTCondition
 {
     public bool ConditionPassed(IContext context)
     {
-        throw new NotImplementedException();
+        return ((IPlayer)context.GetVariable("IPlayer")).GetInputState().CheckPressedOrTriggered(InputAction.SPECIAL_ACTION1);
     }
 
     public bool Process(IContext context)

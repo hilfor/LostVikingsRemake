@@ -6,7 +6,7 @@ public class IfClimbingDirectionIsDown : IBTCondition
 {
     public bool ConditionPassed(IContext context)
     {
-        throw new NotImplementedException();
+        return ((ICharacter)context.GetVariable("ICharacter")).GetState().ClimbingDirection == ClimbingDirections.DOWN;
     }
 
     public bool Process(IContext context)

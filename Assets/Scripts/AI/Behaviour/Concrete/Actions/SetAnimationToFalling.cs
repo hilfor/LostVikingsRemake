@@ -5,7 +5,8 @@ public class SetAnimationToFalling : IBTAction
 {
     public bool Act(IContext context)
     {
-        throw new NotImplementedException();
+        ((ICharacter)context.GetVariable("ICharacter")).GetAnimationState().SetAnimationTrigger(AnimationStates.Falling);
+        return true;
     }
 
     public bool Process(IContext context)

@@ -6,7 +6,7 @@ public class IfClimbingWasEnabled : IBTCondition
 {
     public bool ConditionPassed(IContext context)
     {
-        throw new NotImplementedException();
+        return ((ICharacter)context.GetVariable("ICharacter")).GetState().CanClimb;
     }
 
     public bool Process(IContext context)

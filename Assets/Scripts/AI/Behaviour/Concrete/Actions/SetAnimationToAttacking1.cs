@@ -6,7 +6,8 @@ public class SetAnimationToAttacking1 : IBTAction
 {
     public bool Act(IContext context)
     {
-        throw new NotImplementedException();
+        ((ICharacter)context.GetVariable("ICharacter")).GetAnimationState().SetAnimationTrigger(AnimationStates.Action1);
+        return true;
     }
 
     public bool Process(IContext context)

@@ -2,7 +2,7 @@
 {
     public bool Act(IContext context)
     {
-        ((IPlayer)context.GetVariable("IPlayer")).SetCanClimb(true);
+        ((ICharacter)context.GetVariable("ICharacter")).GetState().CanClimb = true;
         return true;
     }
 

@@ -2,7 +2,11 @@
 using System.Collections;
 
 public interface IPlayer : ICharacter {
-    void SetCanClimb(bool canClimb);
     bool ReachedTopLadder();
     bool ReachedBottomLadder();
+
+    void ExecuteAction1();
+    void ExecuteAction2();
+
+    InputState GetInputState();
 }

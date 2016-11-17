@@ -6,7 +6,7 @@ public class IfShiftButtonPressed : IBTCondition
 {
     public bool ConditionPassed(IContext context)
     {
-        throw new NotImplementedException();
+        return ((IPlayer)context.GetVariable("IPlayer")).GetInputState().CheckPressedOrTriggered(InputAction.SPECIAL_ACTION2);
     }
 
     public bool Process(IContext context)
