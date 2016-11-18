@@ -1,4 +1,7 @@
-﻿public interface ICharacter
+﻿using UnityEngine;
+using System;
+
+public interface ICharacter
 {
 
     //void Jump();
@@ -7,9 +10,44 @@
     void Action(InputState action);
     void NoInput();
     State GetState();
-
+    AnimationState GetAnimationState();
 
 }
+
+public class AnimationState
+{
+    private Animator m_Animator;
+    public AnimationState(Animator animator)
+    {
+        m_Animator = animator;
+    }
+
+    public void SetAnimationTrigger(AnimationStates state)
+    {
+        m_Animator.SetTrigger(Enum.GetName(typeof(AnimationState), state));
+    }
+}
+
+public enum AnimationStates
+{
+
+    Idle,
+    Walking,
+    Action1,
+    Action2,
+    Falling,
+    ClimbingUp,
+    ClimbingDown,
+    EndClimbingTop,
+    EndClimbingBottom
+}
+
+public enum ClimbingDirections
+{
+    UP,
+    DOWN
+}
+
 
 public class State
 {
@@ -48,13 +86,60 @@ public class State
         }
     }
 
+    private bool canMoveUp = false;
+    public bool CanMoveUp
+    {
+        get
+        {
+            return canMoveUp;
+        }
+        set
+        {
+            canMoveUp = value;
 
-    //private bool arrivedNextWaypoint;
-    //public bool ArrivedAtNextWaypoint
-    //{
-    //    set;
-    //    get;
-    //}
+        }
+    }
+
+    private bool canMoveDown = false;
+    public bool CanMoveDown
+    {
+        get
+        {
+            return canMoveDown;
+        }
+        set
+        {
+            canMoveDown = value;
+        }
+    }
+
+    private bool canMoveHorizontally = true;
+    public bool CanMoveHorizontally
+    {
+        get
+        {
+            return canMoveHorizontally;
+        }
+        set
+        {
+            canMoveHorizontally = value;
+        }
+    }
+
+    private ClimbingDirections climbingDirection;
+    public ClimbingDirections ClimbingDirection
+    {
+        get
+        {
+            return climbingDirection;
+        }
+        set
+        {
+            climbingDirection = value;
+        }
+    }
+
+    public void Clear() { }
 
     public State Clone()
     {
