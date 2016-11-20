@@ -2,7 +2,7 @@
 {
     public bool Act(IContext context)
     {
-        ((ICharacter)context.GetVariable("ICharacter")).GetAnimationState().SetAnimationTrigger(AnimationStates.EndClimbing);
+        ((ICharacter)context.GetVariable("ICharacter")).GetAnimationState().SetAnimationTrigger(AnimationStates.EndClimbingTop);
         return true;
     }
 

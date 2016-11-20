@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-public class Eric : BaseViking, IWalker
+public class Eric : BaseViking
 {
 
     public float m_SprintSpeed = 5f;
@@ -46,6 +46,66 @@ public class Eric : BaseViking, IWalker
     }
 
     public override void ReceiveDamage(int damage)
+    {
+        throw new NotImplementedException();
+    }
+
+    public override bool ReachedTopLadder()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override bool ReachedBottomLadder()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override void ExecuteAction1()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override void ExecuteAction2()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override InputState GetInputState()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override void Attack()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override State GetState()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override AnimationState GetAnimationState()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override Transform GetWalkerTransform()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override FacingDirection GetFacingDirection()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override float GetWalkerSpeed()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override void ChangeDirection(FacingDirection newDirection)
     {
         throw new NotImplementedException();
     }

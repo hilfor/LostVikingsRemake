@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 
-public class RedDinosaur : MonoBehaviour, IEnemy, IWalker, IFollower
+public class RedDinosaur : BaseEnemy, IWalker, IFollower
 {
 
 
@@ -33,6 +33,8 @@ public class RedDinosaur : MonoBehaviour, IEnemy, IWalker, IFollower
 
     private Animator m_Animator;
 
+    private IBTNode m_Bt;
+
     //private bool m_AbleToMove = true;
     //private bool m_Grounded = false;
 
@@ -48,6 +50,8 @@ public class RedDinosaur : MonoBehaviour, IEnemy, IWalker, IFollower
     private Rigidbody2D m_RigidBody;
 
     private bool m_AttackStarted = false;
+
+    private State m_State;
 
     //void GroundCollidedCheck(Collider2D otherCollider)
     //{
@@ -65,22 +69,6 @@ public class RedDinosaur : MonoBehaviour, IEnemy, IWalker, IFollower
     //    }
     //}
 
-    //void PlayerEnteredAttackRange(Collider2D otherCollider)
-    //{
-    //    if (otherCollider.tag == "Player")
-    //    {
-    //        ICharacter otherPlayer = otherCollider.GetComponent<ICharacter>();
-    //        if (m_PotentialPlayersList.IndexOf(otherPlayer) == -1)
-    //        {
-    //            m_PotentialPlayersList.Add(otherCollider.GetComponent<ICharacter>());
-    //        }
-    //        if (!m_AttackStarted)
-    //        {
-    //            m_AttackStarted = true;
-    //            StartCoroutine("AttackingEnemy");
-    //        }
-    //    }
-    //}
 
     //IEnumerator AttackingEnemy()
     //{
@@ -101,26 +89,6 @@ public class RedDinosaur : MonoBehaviour, IEnemy, IWalker, IFollower
     //    m_AttackStarted = false;
     //    m_AbleToMove = true;
 
-    //}
-
-    //void PlayerExitedAttackRange(Collider2D otherCollider)
-    //{
-    //    if (otherCollider.tag == "Player")
-    //    {
-    //        ICharacter exitedPlayer = otherCollider.GetComponent<ICharacter>();
-    //        if (m_PlayerToAttack.Equals(exitedPlayer))
-    //        {
-    //            m_PlayerToAttack = null;
-    //        }
-    //        else
-    //        {
-    //            if (m_PotentialPlayersList.Count > 0)
-    //            {
-    //                int playerIndex = m_PotentialPlayersList.FindIndex((ele) => ele.Equals(exitedPlayer));
-    //                m_PotentialPlayersList.RemoveAt(playerIndex);
-    //            }
-    //        }
-    //    }
     //}
 
     //void FixedUpdate()
@@ -179,14 +147,21 @@ public class RedDinosaur : MonoBehaviour, IEnemy, IWalker, IFollower
         m_NextWaypoint = m_StartWaypoint;
         m_NextWaypointPosition = m_StartWaypoint.GetWaypointPosition();
 
+        GetNode();
     }
 
+    public IBTNode GetNode()
+    {
+        Behavior behav = FindObjectOfType<Behavior>();
+        return behav.GetTree(Behavior.BehaviorTypes.DragonBasic);
+    }
+
+    #region implemented stuff
     private void PlayerEnteredAttackRange(Collider2D otherCollider)
     {
         if (otherCollider.tag == "Player")
         {
-            // TODO: add here handling of the other player entering the range
-            m_PlayerInAttackRange = true;
+            m_State.Attacking = true;
             IPlayer playerInRange = otherCollider.GetComponent<IPlayer>();
             if (m_PlayerToAttack == null)
             {
@@ -222,7 +197,7 @@ public class RedDinosaur : MonoBehaviour, IEnemy, IWalker, IFollower
 
             if (m_PotentialPlayersList.Count == 0 && m_PlayerToAttack == null)
             {
-                m_PlayerInAttackRange = false;
+                m_State.Attacking = false;
             }
         }
     }
@@ -232,10 +207,9 @@ public class RedDinosaur : MonoBehaviour, IEnemy, IWalker, IFollower
         return m_NextWaypoint;
     }
 
-    public State GetState()
+    public override State GetState()
     {
-        // TODO: create a state representing the object here
-        throw new NotImplementedException();
+        return m_State;
     }
 
     public Vector2 GetWalkerPosition()
@@ -253,12 +227,11 @@ public class RedDinosaur : MonoBehaviour, IEnemy, IWalker, IFollower
         return m_Transform;
     }
 
-    public bool IsCollidedWithPlayer()
+    public override bool IsCollidedWithPlayer()
     {
-        return m_PlayerInAttackRange;
+        return m_State.Attacking;
     }
 
-    #region walker
     public void MoveDown(float speed)
     {
         throw new NotImplementedException();
@@ -276,20 +249,16 @@ public class RedDinosaur : MonoBehaviour, IEnemy, IWalker, IFollower
         Vector2 currentVelocity = m_RigidBody.velocity;
         currentVelocity.x = speed;
         m_RigidBody.velocity = currentVelocity;
+        
     }
 
     public void MoveUp(float speed)
     {
         throw new NotImplementedException();
     }
-    #endregion
 
-    public void NoInput()
-    {
-        throw new NotImplementedException();
-    }
 
-    public void ReceiveDamage(int damage)
+    public override void ReceiveDamage(int damage)
     {
         m_Health -= damage;
     }
@@ -300,15 +269,11 @@ public class RedDinosaur : MonoBehaviour, IEnemy, IWalker, IFollower
         m_NextWaypointPosition = waypoint.GetWaypointPosition();
     }
 
-    public void StopAttackPlayer()
+    public override void StopAttackPlayer()
     {
-        throw new NotImplementedException();
+        m_State.Attacking = false;
     }
-
-    public void Action(InputState action)
-    {
-        throw new NotImplementedException();
-    }
+    #endregion
 
     public void ChangeDirection(FacingDirection newDirection)
     {
@@ -318,7 +283,7 @@ public class RedDinosaur : MonoBehaviour, IEnemy, IWalker, IFollower
         m_Transform.localScale = localScale;
     }
 
-    public AnimationState GetAnimationState()
+    public override AnimationState GetAnimationState()
     {
         throw new NotImplementedException();
     }
@@ -328,7 +293,7 @@ public class RedDinosaur : MonoBehaviour, IEnemy, IWalker, IFollower
         return m_FacingDirection;
     }
 
-    public void Attack()
+    public override void Attack()
     {
         // TODO: check a timer if should attack (not every frame)
         m_PlayerToAttack.ReceiveDamage(m_AttackDamage);

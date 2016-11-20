@@ -1,5 +1,4 @@
 ﻿<sequence>
-  <!-- Ladder handling -->
   <sequence>
     <condition name="IfWithin2HorizontalColliders"/>
     <action name="SetEnableClimbing"/>
@@ -55,7 +54,6 @@
       </positiveSequence>
     </sequence>
   </sequence>
-  <!-- Regular movement handling -->
   <action name="SetAnimationToStandingAnimation"/>
   <inverter>
     <sequence>

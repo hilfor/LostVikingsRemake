@@ -73,6 +73,19 @@ public class State
         }
     }
 
+    private bool canAttack = false;
+    public bool CanAttack
+    {
+        get
+        {
+            return canAttack;
+        }
+        set
+        {
+            canAttack = value;
+        }
+    }
+
     private bool climbingEnabled = false;
     public bool CanClimb
     {

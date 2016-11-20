@@ -5,5 +5,5 @@ public interface IEnemy: ICharacter {
     bool IsCollidedWithPlayer();
     //void AttackPlayer();
     void StopAttackPlayer();
-
+    
 }

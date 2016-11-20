@@ -1,17 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<type  name="RedDragon">
+﻿<sequence>
   <sequence>
+    <condition name="IfNotAlreadyAttacking"/>
     <sequence>
-      <condition name="IfNotAlreadyAttacking"/>
-      <sequence>
-        <condition name="IfArrivedAtNextWaypoint"/>
-        <action name="SetNextWaypoint"/>
-      </sequence>
-      <action name="WalkToNextWaypoint"/>
+      <condition name="IfArrivedAtNextWaypoint"/>
+      <action name="SetNextWaypoint"/>
     </sequence>
-    <sequence>
-      <condition name="IfCollidedWithPlayer"/>
-      <action name="AttackPlayer"/>
-    </sequence>
+    <action name="WalkToNextWaypoint"/>
   </sequence>
-</type>
+  <sequence>
+    <condition name="IfCollidedWithPlayer"/>
+    <action name="AttackPlayer"/>
+  </sequence>
+</sequence>

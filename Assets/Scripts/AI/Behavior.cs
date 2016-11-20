@@ -4,7 +4,7 @@ using System.Xml;
 using System.Reflection;
 using System.Collections;
 
-public class Behaviour : MonoBehaviour
+public class Behavior : MonoBehaviour
 {
 
     public enum BehaviorTypes
@@ -26,6 +26,18 @@ public class Behaviour : MonoBehaviour
         XmlDocument xml = ReadFile(Enum.GetName(typeof(BehaviorTypes), type));
         return CreateTreeFromXML(xml.ChildNodes);
         //return null;
+    }
+
+    private bool IsAcceptableNodeName(string nodeName)
+    {
+        switch (nodeName)
+        {
+            case "xml":
+                return false;
+            case "type":
+                return false;
+        }
+        return true;
     }
 
     private IBTNode CreateTreeFromXML(XmlNodeList xmlChildren)

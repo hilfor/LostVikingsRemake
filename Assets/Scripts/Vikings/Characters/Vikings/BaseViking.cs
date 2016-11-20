@@ -345,4 +345,17 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
     {
         return m_Transform.position;
     }
+
+    public abstract bool ReachedTopLadder();
+    public abstract bool ReachedBottomLadder();
+    public abstract void ExecuteAction1();
+    public abstract void ExecuteAction2();
+    public abstract InputState GetInputState();
+    public abstract void Attack();
+    public abstract State GetState();
+    public abstract AnimationState GetAnimationState();
+    public abstract Transform GetWalkerTransform();
+    public abstract FacingDirection GetFacingDirection();
+    public abstract float GetWalkerSpeed();
+    public abstract void ChangeDirection(FacingDirection newDirection);
 }

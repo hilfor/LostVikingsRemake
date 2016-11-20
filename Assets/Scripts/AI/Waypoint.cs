@@ -43,7 +43,8 @@ public class Waypoint : MonoBehaviour, IWaypoint
 
     public bool Reached(IWalker walker)
     {
-        if (Vector2.Distance(walker.GetWalkerPosition(), m_Transform.position) <= m_WaypointReachedRadius)
+        float distance = Vector2.Distance(walker.GetWalkerPosition(), m_Transform.position);
+        if (distance <= m_WaypointReachedRadius)
             return true;
         return false;
     }
