@@ -3,7 +3,7 @@
     public bool Act(IContext context)
     {
         IEnemy enemy = (IEnemy)context.GetVariable("IEnemy");
-        enemy.AttackPlayer();
+        enemy.Attack();
         return true;
     }
 
