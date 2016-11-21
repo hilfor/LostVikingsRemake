@@ -99,30 +99,30 @@ public class Behavior : MonoBehaviour
         string conditionClassName = node.Attributes["name"].Value;
         return (IBTCondition)CreateReflectionObject(conditionClassName);
     }
-    private IBTCondition CreateAction(XmlNode node)
+    private IBTAction CreateAction(XmlNode node)
     {
         string actionClassName = node.Attributes["name"].Value;
-        return (IBTCondition)CreateReflectionObject(actionClassName);
+        return (IBTAction)CreateReflectionObject(actionClassName);
     }
     private IBTSequencer CreateSequence(XmlNode node)
     {
-        string sequenceClassName = node.Attributes["name"].Value;
-        return (IBTSequencer)CreateReflectionObject(sequenceClassName);
+        //string sequenceClassName = node.Attributes["name"].Value;
+        return (IBTSequencer)CreateReflectionObject("BTSequencer");
     }
     private IBTPositiveSequencer CreatePositiveSequence(XmlNode node)
     {
-        string positiveSequencerClassName = node.Attributes["name"].Value;
-        return (IBTPositiveSequencer)CreateReflectionObject(positiveSequencerClassName);
+        //string positiveSequencerClassName = node.Attributes["name"].Value;
+        return (IBTPositiveSequencer)CreateReflectionObject("BTPositiveSequencer");
     }
     private IBTInvertor CreateInverter(XmlNode node)
     {
-        string inverterClassName = node.Attributes["name"].Value;
-        return (IBTInvertor)CreateReflectionObject(inverterClassName);
+        //string inverterClassName = node.Attributes["name"].Value;
+        return (IBTInvertor)CreateReflectionObject("BTInvertor");
     }
     private IBTSelector CreateSelector(XmlNode node)
     {
-        string selectorClassName = node.Attributes["name"].Value;
-        return (IBTSelector)CreateReflectionObject(selectorClassName);
+        //string selectorClassName = node.Attributes["name"].Value;
+        return (IBTSelector)CreateReflectionObject("BTSelector");
     }
 
     private object CreateReflectionObject(string clazz)

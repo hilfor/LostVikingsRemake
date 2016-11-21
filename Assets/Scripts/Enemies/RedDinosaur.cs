@@ -53,6 +53,9 @@ public class RedDinosaur : BaseEnemy, IWalker, IFollower
 
     private State m_State;
 
+    private IBTNode m_BehaviourTree = null;
+    private IContext m_Context;
+
     //void GroundCollidedCheck(Collider2D otherCollider)
     //{
     //    if (otherCollider.tag == "Ground")
@@ -147,7 +150,30 @@ public class RedDinosaur : BaseEnemy, IWalker, IFollower
         m_NextWaypoint = m_StartWaypoint;
         m_NextWaypointPosition = m_StartWaypoint.GetWaypointPosition();
 
-        GetNode();
+        m_BehaviourTree = GetNode();
+        m_State = new State();
+        m_Context = CreateClassContext();
+    }
+
+    public void Update()
+    {
+        m_BehaviourTree.Process(m_Context);
+    }
+
+    public IContext CreateClassContext()
+    {
+        IContext newContext = new Context();
+
+        Type t = this.GetType();
+        Type[] interfaces = t.GetInterfaces();
+        foreach (Type ti in interfaces)
+        {
+            newContext.SetVariable(ti.Name, this);
+        }
+
+        //newContext.SetVariable("ICharacter", this);
+
+        return newContext;
     }
 
     public IBTNode GetNode()
@@ -249,7 +275,7 @@ public class RedDinosaur : BaseEnemy, IWalker, IFollower
         Vector2 currentVelocity = m_RigidBody.velocity;
         currentVelocity.x = speed;
         m_RigidBody.velocity = currentVelocity;
-        
+
     }
 
     public void MoveUp(float speed)
