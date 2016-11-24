@@ -1,10 +1,10 @@
 ﻿<sequence>
   <sequence>
     <condition name="IfNotAlreadyAttacking"/>
-    <sequence>
+    <positiveSequence>
       <condition name="IfArrivedAtNextWaypoint"/>
       <action name="SetNextWaypoint"/>
-    </sequence>
+    </positiveSequence>
     <action name="WalkToNextWaypoint"/>
   </sequence>
   <sequence>

@@ -6,4 +6,5 @@ public interface IFollower
 
     void SetNextWaypoint(IWaypoint waypoint);
     IWaypoint GetNextWaypoint();
+    IWaypoint GetCurrentWaypoint();
 }

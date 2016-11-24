@@ -3,7 +3,7 @@
     public bool ConditionPassed(IContext context)
     {
         IFollower follower = (IFollower)context.GetVariable("IFollower");
-        return follower.GetNextWaypoint().Reached((IWalker)follower);
+        return follower.GetCurrentWaypoint().Reached((IWalker)follower);
     }
 
     public bool Process(IContext context)

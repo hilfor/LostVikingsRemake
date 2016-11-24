@@ -16,6 +16,7 @@ public class BTPositiveSequencer : IBTPositiveSequencer
 
     public IBTPositiveSequencer AppendNode(IBTNode node)
     {
+        this.childNodes.Add(node);
         return this;
     }
 

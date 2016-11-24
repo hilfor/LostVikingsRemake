@@ -28,7 +28,9 @@ public class RedDinosaur : BaseEnemy, IWalker, IFollower
     [SerializeField]
     private float m_TimeBetweenAttacks = 2f;
 
+    [SerializeField]
     private IWaypoint m_NextWaypoint;
+    [SerializeField]
     private Vector2 m_NextWaypointPosition;
 
     private Animator m_Animator;
@@ -230,8 +232,10 @@ public class RedDinosaur : BaseEnemy, IWalker, IFollower
 
     public IWaypoint GetNextWaypoint()
     {
-        return m_NextWaypoint;
+        return m_NextWaypoint.NextWaypoint(m_NextWaypoint);
     }
+
+    
 
     public override State GetState()
     {
@@ -324,5 +328,10 @@ public class RedDinosaur : BaseEnemy, IWalker, IFollower
         // TODO: check a timer if should attack (not every frame)
         m_PlayerToAttack.ReceiveDamage(m_AttackDamage);
         throw new NotImplementedException();
+    }
+
+    public IWaypoint GetCurrentWaypoint()
+    {
+        return m_NextWaypoint;
     }
 }

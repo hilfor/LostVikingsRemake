@@ -12,7 +12,7 @@ public class WalkToNextWaypoint : IBTAction
             //= (float)context.GetVariable("maxWalkingSpeed");
 
         Vector2 myPosition = walker.GetWalkerTransform().position;
-        Vector2 direction = follower.GetNextWaypoint().GetWaypointPosition() - myPosition;
+        Vector2 direction = follower.GetCurrentWaypoint().GetWaypointPosition() - myPosition;
         direction.Normalize();
 
         if (direction.x > 0)
