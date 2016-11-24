@@ -4,7 +4,7 @@ using System;
 
 public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
 {
-    
+
     [SerializeField]
     protected float m_MovementSpeed = 1.5f;
     [SerializeField]
@@ -51,311 +51,399 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
     private bool m_LadderTopReached;
     private bool m_LadderBottomReached;
 
-    public void MoveHorizontaly(float direction)
+    public bool ReachedTopLadder()
     {
-        if (!CheckHorizontalMovementEnabled())
-            return;
-        Vector2 vikingVelocity = m_RigidBody.velocity;
-        m_CurrentHorizontalSpeed = Math.Abs(direction);
-        vikingVelocity.x = direction * m_MovementSpeed;
-        m_RigidBody.velocity = vikingVelocity;
+        throw new NotImplementedException();
     }
 
-    public void MoveVertically(float direction)
+    public bool ReachedBottomLadder()
     {
-        Vector2 vikingVelocity = m_RigidBody.velocity;
-        m_CurrentVerticalSpeed = Math.Abs(direction);
-        vikingVelocity.y = direction * m_MovementSpeed;
-        m_RigidBody.velocity = vikingVelocity;
+        throw new NotImplementedException();
     }
 
-    #region ICharacter overrides
+    public abstract void ExecuteAction1();
+
+    public abstract void ExecuteAction2();
+
+    public InputState GetInputState()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Attack()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void ReceiveDamage(int damage)
+    {
+        throw new NotImplementedException();
+    }
+
+    public abstract void Action(InputState action);
 
     public void NoInput()
     {
-        m_CurrentHorizontalSpeed = 0;
-        m_CurrentVerticalSpeed = 0;
-
-        Vector2 currentVelocity = m_RigidBody.velocity;
-        currentVelocity.x = 0;
-        if (m_CanClimbUp || m_CanClimbDown)
-            currentVelocity.y = 0;
-        m_RigidBody.velocity = currentVelocity;
+        throw new NotImplementedException();
     }
 
-    public abstract void Action(InputState state);
-
-    public void MoveLeft(float speed)
+    public State GetState()
     {
-        if (m_FacingDirection == FacingDirection.RIGHT)
-        {
-            ChangeFacingDirection();
-            m_FacingDirection = FacingDirection.LEFT;
-        }
-        MoveHorizontaly(-speed);
+        throw new NotImplementedException();
+    }
+
+    public AnimationState GetAnimationState()
+    {
+        throw new NotImplementedException();
+    }
+
+    public Vector2 GetWalkerPosition()
+    {
+        throw new NotImplementedException();
+    }
+
+    public Transform GetWalkerTransform()
+    {
+        throw new NotImplementedException();
+    }
+
+    public FacingDirection GetFacingDirection()
+    {
+        throw new NotImplementedException();
+    }
+
+    public abstract float GetWalkerSpeed();
+
+    public void ChangeDirection(FacingDirection newDirection)
+    {
+        throw new NotImplementedException();
     }
 
     public void MoveRight(float speed)
     {
-        if (m_FacingDirection == FacingDirection.LEFT)
-        {
-            ChangeFacingDirection();
-            m_FacingDirection = FacingDirection.RIGHT;
-        }
-
-        MoveHorizontaly(speed);
+        throw new NotImplementedException();
     }
 
-    private bool CheckHorizontalMovementEnabled()
+    public void MoveLeft(float speed)
     {
-        return true;
+        throw new NotImplementedException();
     }
 
     public void MoveUp(float speed)
     {
-        if (m_CanClimbUp)
-        {
-            Debug.Log("Climbing up");
-            MoveVertically(speed);
-        }
+        throw new NotImplementedException();
     }
 
     public void MoveDown(float speed)
     {
-        if (m_CanClimbDown)
-        {
-            Debug.Log("Climbing down");
-            MoveVertically(-speed);
-        }
+        throw new NotImplementedException();
     }
 
-    public void Hit()
-    {
-        m_Animator.SetTrigger("Hit");
-    }
+    //public void MoveHorizontaly(float direction)
+    //{
+    //    if (!CheckHorizontalMovementEnabled())
+    //        return;
+    //    Vector2 vikingVelocity = m_RigidBody.velocity;
+    //    m_CurrentHorizontalSpeed = Math.Abs(direction);
+    //    vikingVelocity.x = direction * m_MovementSpeed;
+    //    m_RigidBody.velocity = vikingVelocity;
+    //}
 
-    #endregion
+    //public void MoveVertically(float direction)
+    //{
+    //    Vector2 vikingVelocity = m_RigidBody.velocity;
+    //    m_CurrentVerticalSpeed = Math.Abs(direction);
+    //    vikingVelocity.y = direction * m_MovementSpeed;
+    //    m_RigidBody.velocity = vikingVelocity;
+    //}
 
-    #region Collision Detection
+    //#region ICharacter overrides
 
-    void Grounded(Collider2D collider)
-    {
-        m_Falling = false;
-        m_FallBeganTimestamp = 0;
-        m_FallStartPosition = Vector2.zero;
-        m_FallingDistance = 0;
-    }
+    //public void NoInput()
+    //{
+    //    m_CurrentHorizontalSpeed = 0;
+    //    m_CurrentVerticalSpeed = 0;
 
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        switch (collision.tag)
-        {
-            case "Ladder":
-                m_LadderReached = true;
-                break;
-            case "LadderLeftTrigger":
-                if (m_LadderReached)
-                    m_LadderLeftTriggerReached = true;
-                break;
-            case "LadderRightTrigger":
-                if (m_LadderReached)
-                    m_LadderRightTriggerReached = true;
-                break;
-            case "LadderTopTrigger":
-                if (m_LadderReached)
-                {
-                    m_LadderTopReached = true;
-                    ResetVerticalVelocity();
-                }
-                break;
-            case "LadderBottomTrigger":
-                if (m_LadderReached)
-                {
-                    m_LadderBottomReached = true;
-                    ResetVerticalVelocity();
-                }
-                break;
-        }
-    }
+    //    Vector2 currentVelocity = m_RigidBody.velocity;
+    //    currentVelocity.x = 0;
+    //    if (m_CanClimbUp || m_CanClimbDown)
+    //        currentVelocity.y = 0;
+    //    m_RigidBody.velocity = currentVelocity;
+    //}
 
-    private void ResetVerticalVelocity()
-    {
-        Vector2 vel = m_RigidBody.velocity;
-        vel.y = 0;
-        m_RigidBody.velocity = vel;
-    }
+    //public abstract void Action(InputState state);
 
-    public void OnTriggerExit2D(Collider2D collision)
-    {
-        switch (collision.tag)
-        {
-            case "Ladder":
-                ResetLadderTriggers();
-                break;
-            case "LadderLeftTrigger":
-                m_LadderLeftTriggerReached = false;
-                break;
-            case "LadderRightTrigger":
-                m_LadderRightTriggerReached = false;
-                break;
-            case "LadderTopTrigger":
-                m_LadderTopReached = false;
-                break;
-            case "LadderBottomTrigger":
-                m_LadderBottomReached = false;
-                break;
-        }
-    }
+    //public void MoveLeft(float speed)
+    //{
+    //    if (m_FacingDirection == FacingDirection.RIGHT)
+    //    {
+    //        ChangeFacingDirection();
+    //        m_FacingDirection = FacingDirection.LEFT;
+    //    }
+    //    MoveHorizontaly(-speed);
+    //}
 
-    private void ResetLadderTriggers()
-    {
-        Debug.LogError("ResetLadderTriggers is not fully implemented Yet!");
-        m_RigidBody.isKinematic = false;
+    //public void MoveRight(float speed)
+    //{
+    //    if (m_FacingDirection == FacingDirection.LEFT)
+    //    {
+    //        ChangeFacingDirection();
+    //        m_FacingDirection = FacingDirection.RIGHT;
+    //    }
 
-        m_LadderReached = false;
-        m_LadderBottomReached = false;
-        m_LadderTopReached = false;
-        m_LadderRightTriggerReached = false;
-        m_LadderLeftTriggerReached = false;
-        m_CanClimbDown = false;
-        m_CanClimbUp = false;
-    }
+    //    MoveHorizontaly(speed);
+    //}
 
-    void Falling(Collider2D collider)
-    {
-        if (collider.tag == "Ground")
-            return;
-        m_Falling = true;
-        m_FallBeganTimestamp = Time.realtimeSinceStartup;
-        m_FallStartPosition = m_Transform.position;
-    }
-    #region abstract functions
-    protected abstract void TopHit(Collider2D collider);
-    protected abstract void FrontHit(Collider2D collider);
-    #endregion
+    //private bool CheckHorizontalMovementEnabled()
+    //{
+    //    return true;
+    //}
 
-    #endregion
+    //public void MoveUp(float speed)
+    //{
+    //    if (m_CanClimbUp)
+    //    {
+    //        Debug.Log("Climbing up");
+    //        MoveVertically(speed);
+    //    }
+    //}
 
-    void Awake()
-    {
-        m_Animator = GetComponent<Animator>();
-        m_Transform = gameObject.transform;
-        m_RigidBody = GetComponent<Rigidbody2D>();
+    //public void MoveDown(float speed)
+    //{
+    //    if (m_CanClimbDown)
+    //    {
+    //        Debug.Log("Climbing down");
+    //        MoveVertically(-speed);
+    //    }
+    //}
 
-        m_GroundCollider.OnTriggerEnter = Grounded;
-        m_GroundCollider.OnTriggerExit = Falling;
-        m_TopCollider.OnTriggerEnter = TopHit;
-        m_ForontCollider.OnTriggerEnter = FrontHit;
-    }
+    //public void Hit()
+    //{
+    //    m_Animator.SetTrigger("Hit");
+    //}
 
-    void ChangeFacingDirection()
-    {
-        Vector3 scale = m_Transform.localScale;
-        scale.x *= -1;
-        m_Transform.localScale = scale;
-    }
+    //#endregion
 
-    protected void Update()
-    {
-        CheckLadderClimbingState();
-        SetAnimationsParameters();
-    }
+    //#region Collision Detection
 
-    void CheckLadderClimbingState()
-    {
-        if (!m_LadderReached && !(m_LadderLeftTriggerReached && m_LadderRightTriggerReached))
-            return;
+    //void Grounded(Collider2D collider)
+    //{
+    //    m_Falling = false;
+    //    m_FallBeganTimestamp = 0;
+    //    m_FallStartPosition = Vector2.zero;
+    //    m_FallingDistance = 0;
+    //}
 
-        m_RigidBody.isKinematic = true;
+    //public void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    switch (collision.tag)
+    //    {
+    //        case "Ladder":
+    //            m_LadderReached = true;
+    //            break;
+    //        case "LadderLeftTrigger":
+    //            if (m_LadderReached)
+    //                m_LadderLeftTriggerReached = true;
+    //            break;
+    //        case "LadderRightTrigger":
+    //            if (m_LadderReached)
+    //                m_LadderRightTriggerReached = true;
+    //            break;
+    //        case "LadderTopTrigger":
+    //            if (m_LadderReached)
+    //            {
+    //                m_LadderTopReached = true;
+    //                ResetVerticalVelocity();
+    //            }
+    //            break;
+    //        case "LadderBottomTrigger":
+    //            if (m_LadderReached)
+    //            {
+    //                m_LadderBottomReached = true;
+    //                ResetVerticalVelocity();
+    //            }
+    //            break;
+    //    }
+    //}
 
-        if (m_LadderTopReached)
-        {
-            m_CanClimbDown = true;
-            m_CanClimbUp = false;
-        }
-        else if (m_LadderBottomReached)
-        {
-            m_CanClimbDown = false;
-            m_CanClimbUp = true;
-        }
-        else
-        {
-            m_CanClimbDown = true;
-            m_CanClimbUp = true;
-        }
-    }
+    //private void ResetVerticalVelocity()
+    //{
+    //    Vector2 vel = m_RigidBody.velocity;
+    //    vel.y = 0;
+    //    m_RigidBody.velocity = vel;
+    //}
 
-    void SetAnimationsParameters()
-    {
-        //Vector2 currentVelocity = m_RigidBody.velocity;
-        //if (m_CanClimbUp || m_CanClimbDown)
-        //{
-        //    m_Animator.SetBool("Climbing", true);
-        //    if (currentVelocity.y > 0)
-        //    {
-        //        Debug.Log("Climbing up animation");
-        //        m_Animator.StartPlayback();
+    //public void OnTriggerExit2D(Collider2D collision)
+    //{
+    //    switch (collision.tag)
+    //    {
+    //        case "Ladder":
+    //            ResetLadderTriggers();
+    //            break;
+    //        case "LadderLeftTrigger":
+    //            m_LadderLeftTriggerReached = false;
+    //            break;
+    //        case "LadderRightTrigger":
+    //            m_LadderRightTriggerReached = false;
+    //            break;
+    //        case "LadderTopTrigger":
+    //            m_LadderTopReached = false;
+    //            break;
+    //        case "LadderBottomTrigger":
+    //            m_LadderBottomReached = false;
+    //            break;
+    //    }
+    //}
 
-        //    }
-        //    else if (currentVelocity.y < 0)
-        //    {
-        //        Debug.Log("Climbing down animation");
-        //        m_Animator.StartPlayback();
-        //    }
-        //    else
-        //    {
-        //        Debug.Log("Stopping ");
+    //private void ResetLadderTriggers()
+    //{
+    //    Debug.LogError("ResetLadderTriggers is not fully implemented Yet!");
+    //    m_RigidBody.isKinematic = false;
 
-        //        m_Animator.StopPlayback();
-        //    }
-        //}
-        //else
-        //{
-        //    m_Animator.SetBool("Climbing", false);
+    //    m_LadderReached = false;
+    //    m_LadderBottomReached = false;
+    //    m_LadderTopReached = false;
+    //    m_LadderRightTriggerReached = false;
+    //    m_LadderLeftTriggerReached = false;
+    //    m_CanClimbDown = false;
+    //    m_CanClimbUp = false;
+    //}
 
-        //}
+    //void Falling(Collider2D collider)
+    //{
+    //    if (collider.tag == "Ground")
+    //        return;
+    //    m_Falling = true;
+    //    m_FallBeganTimestamp = Time.realtimeSinceStartup;
+    //    m_FallStartPosition = m_Transform.position;
+    //}
+    //#region abstract functions
+    //protected abstract void TopHit(Collider2D collider);
+    //protected abstract void FrontHit(Collider2D collider);
+    //#endregion
 
-        m_Animator.SetFloat("Speed", m_CurrentHorizontalSpeed);
+    //#endregion
 
-        m_Animator.SetBool("Grounded", !m_Falling);
+    //void Awake()
+    //{
+    //    m_Animator = GetComponent<Animator>();
+    //    m_Transform = gameObject.transform;
+    //    m_RigidBody = GetComponent<Rigidbody2D>();
 
-        if (m_FallingDistance >= m_MaxFallingDistance)
-        {
-            m_Animator.SetTrigger("Fall_Too_High");
-        }
-    }
+    //    m_GroundCollider.OnTriggerEnter = Grounded;
+    //    m_GroundCollider.OnTriggerExit = Falling;
+    //    m_TopCollider.OnTriggerEnter = TopHit;
+    //    m_ForontCollider.OnTriggerEnter = FrontHit;
+    //}
 
-    void FixedUpdate()
-    {
-        Vector2 currentVelocity = m_RigidBody.velocity;
+    //void ChangeFacingDirection()
+    //{
+    //    Vector3 scale = m_Transform.localScale;
+    //    scale.x *= -1;
+    //    m_Transform.localScale = scale;
+    //}
 
-        if (m_Falling)
-        {
-            m_FallingDistance = Vector2.Distance(m_FallStartPosition, m_Transform.position);
-        }
-        else
-        {
-            currentVelocity.y = 0;
-        }
-    }
+    //protected void Update()
+    //{
+    //    CheckLadderClimbingState();
+    //    SetAnimationsParameters();
+    //}
 
-    public abstract void ReceiveDamage(int damage);
+    //void CheckLadderClimbingState()
+    //{
+    //    if (!m_LadderReached && !(m_LadderLeftTriggerReached && m_LadderRightTriggerReached))
+    //        return;
 
-    Vector2 IWalker.GetWalkerPosition()
-    {
-        return m_Transform.position;
-    }
+    //    m_RigidBody.isKinematic = true;
 
-    public abstract bool ReachedTopLadder();
-    public abstract bool ReachedBottomLadder();
-    public abstract void ExecuteAction1();
-    public abstract void ExecuteAction2();
-    public abstract InputState GetInputState();
-    public abstract void Attack();
-    public abstract State GetState();
-    public abstract AnimationState GetAnimationState();
-    public abstract Transform GetWalkerTransform();
-    public abstract FacingDirection GetFacingDirection();
-    public abstract float GetWalkerSpeed();
-    public abstract void ChangeDirection(FacingDirection newDirection);
+    //    if (m_LadderTopReached)
+    //    {
+    //        m_CanClimbDown = true;
+    //        m_CanClimbUp = false;
+    //    }
+    //    else if (m_LadderBottomReached)
+    //    {
+    //        m_CanClimbDown = false;
+    //        m_CanClimbUp = true;
+    //    }
+    //    else
+    //    {
+    //        m_CanClimbDown = true;
+    //        m_CanClimbUp = true;
+    //    }
+    //}
+
+    //void SetAnimationsParameters()
+    //{
+    //    //Vector2 currentVelocity = m_RigidBody.velocity;
+    //    //if (m_CanClimbUp || m_CanClimbDown)
+    //    //{
+    //    //    m_Animator.SetBool("Climbing", true);
+    //    //    if (currentVelocity.y > 0)
+    //    //    {
+    //    //        Debug.Log("Climbing up animation");
+    //    //        m_Animator.StartPlayback();
+
+    //    //    }
+    //    //    else if (currentVelocity.y < 0)
+    //    //    {
+    //    //        Debug.Log("Climbing down animation");
+    //    //        m_Animator.StartPlayback();
+    //    //    }
+    //    //    else
+    //    //    {
+    //    //        Debug.Log("Stopping ");
+
+    //    //        m_Animator.StopPlayback();
+    //    //    }
+    //    //}
+    //    //else
+    //    //{
+    //    //    m_Animator.SetBool("Climbing", false);
+
+    //    //}
+
+    //    m_Animator.SetFloat("Speed", m_CurrentHorizontalSpeed);
+
+    //    m_Animator.SetBool("Grounded", !m_Falling);
+
+    //    if (m_FallingDistance >= m_MaxFallingDistance)
+    //    {
+    //        m_Animator.SetTrigger("Fall_Too_High");
+    //    }
+    //}
+
+    //void FixedUpdate()
+    //{
+    //    Vector2 currentVelocity = m_RigidBody.velocity;
+
+    //    if (m_Falling)
+    //    {
+    //        m_FallingDistance = Vector2.Distance(m_FallStartPosition, m_Transform.position);
+    //    }
+    //    else
+    //    {
+    //        currentVelocity.y = 0;
+    //    }
+    //}
+
+    //public abstract void ReceiveDamage(int damage);
+
+    //Vector2 IWalker.GetWalkerPosition()
+    //{
+    //    return m_Transform.position;
+    //}
+
+    //public abstract bool ReachedTopLadder();
+    //public abstract bool ReachedBottomLadder();
+    //public abstract void ExecuteAction1();
+    //public abstract void ExecuteAction2();
+    //public abstract InputState GetInputState();
+    //public abstract void Attack();
+    //public abstract State GetState();
+    //public abstract AnimationState GetAnimationState();
+    //public abstract Transform GetWalkerTransform();
+    //public abstract FacingDirection GetFacingDirection();
+    //public abstract float GetWalkerSpeed();
+    //public abstract void ChangeDirection(FacingDirection newDirection);
 }
