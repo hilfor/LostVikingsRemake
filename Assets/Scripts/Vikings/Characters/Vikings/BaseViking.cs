@@ -24,9 +24,11 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
     protected Transform m_Transform;
     protected Rigidbody2D m_RigidBody;
 
-    protected Vector2 m_CurrentVelocityVector;
-    protected float m_CurrentHorizontalSpeed = 0;
-    protected float m_CurrentVerticalSpeed = 0;
+    InputState m_InputState;
+
+    Vector2 m_CurrentVelocityVector;
+    float m_CurrentHorizontalSpeed = 0;
+    float m_CurrentVerticalSpeed = 0;
 
     private float m_FallBeganTimestamp;
 
@@ -46,10 +48,14 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
 
     Vector2 m_FallStartPosition = Vector2.zero;
 
-
-
     private bool m_LadderTopReached;
     private bool m_LadderBottomReached;
+
+    public abstract void ExecuteAction1();
+    public abstract void ExecuteAction2();
+    public abstract void Action(InputState action);
+    public abstract float GetWalkerSpeed();
+    public abstract void Attack();
 
     public bool ReachedTopLadder()
     {
@@ -61,26 +67,17 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
         throw new NotImplementedException();
     }
 
-    public abstract void ExecuteAction1();
-
-    public abstract void ExecuteAction2();
-
     public InputState GetInputState()
     {
-        throw new NotImplementedException();
+        return m_InputState;
     }
 
-    public void Attack()
-    {
-        throw new NotImplementedException();
-    }
+    
 
     public void ReceiveDamage(int damage)
     {
         throw new NotImplementedException();
     }
-
-    public abstract void Action(InputState action);
 
     public void NoInput()
     {
@@ -92,10 +89,7 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
         throw new NotImplementedException();
     }
 
-    public AnimationState GetAnimationState()
-    {
-        throw new NotImplementedException();
-    }
+    public abstract AnimationState GetAnimationState();
 
     public Vector2 GetWalkerPosition()
     {
@@ -104,15 +98,14 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
 
     public Transform GetWalkerTransform()
     {
-        throw new NotImplementedException();
+        return m_Transform;
     }
 
     public FacingDirection GetFacingDirection()
     {
-        throw new NotImplementedException();
+        return m_FacingDirection;
     }
 
-    public abstract float GetWalkerSpeed();
 
     public void ChangeDirection(FacingDirection newDirection)
     {
@@ -139,6 +132,8 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
         throw new NotImplementedException();
     }
 
+
+    #region commented out
     //public void MoveHorizontaly(float direction)
     //{
     //    if (!CheckHorizontalMovementEnabled())
@@ -433,17 +428,8 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
     //{
     //    return m_Transform.position;
     //}
+    #endregion
 
-    //public abstract bool ReachedTopLadder();
-    //public abstract bool ReachedBottomLadder();
-    //public abstract void ExecuteAction1();
-    //public abstract void ExecuteAction2();
-    //public abstract InputState GetInputState();
-    //public abstract void Attack();
-    //public abstract State GetState();
-    //public abstract AnimationState GetAnimationState();
-    //public abstract Transform GetWalkerTransform();
-    //public abstract FacingDirection GetFacingDirection();
     //public abstract float GetWalkerSpeed();
     //public abstract void ChangeDirection(FacingDirection newDirection);
 }
