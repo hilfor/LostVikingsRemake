@@ -9,5 +9,23 @@ public class Baelog : BaseViking
         //throw new NotImplementedException();
     }
 
-    
+    public override void Attack()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override void ExecuteAction1()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override void ExecuteAction2()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override void ReceiveDamage(int damage)
+    {
+        throw new NotImplementedException();
+    }
 }

@@ -42,6 +42,8 @@ public enum AnimationStates
     EndClimbingBottom
 }
 
+
+
 public enum ClimbingDirections
 {
     UP,
@@ -113,6 +115,19 @@ public class State
         }
     }
 
+    private bool climbing = false;
+    public bool Climbing
+    {
+        get
+        {
+            return climbing;
+        }
+        set
+        {
+            climbing = value;
+        }
+    }
+
     private bool canMoveDown = false;
     public bool CanMoveDown
     {
@@ -139,7 +154,7 @@ public class State
         }
     }
 
-    private ClimbingDirections climbingDirection;
+    private ClimbingDirections climbingDirection = ClimbingDirections.DOWN;
     public ClimbingDirections ClimbingDirection
     {
         get

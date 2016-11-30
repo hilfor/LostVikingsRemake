@@ -97,18 +97,20 @@ public class PlayerMotor : MonoBehaviour
         }
 
 
-        if (inputState.CheckPressed(InputAction.RIGHT) || inputState.CheckPressed(InputAction.LEFT))
-        {
-            MoveHorizontaly(inputState.CheckPressed(InputAction.RIGHT) ? 1 : -1);
-        }
-        else if (inputState.CheckPressed(InputAction.DOWN) || inputState.CheckPressed(InputAction.UP))
-        {
-            MoveVertically(inputState.CheckPressed(InputAction.UP) ? 1 : -1);
-        }
-        else
-        {
-            m_ActiveViking.Action(inputState);
-        }
+
+        //if (inputState.CheckPressed(InputAction.RIGHT) || inputState.CheckPressed(InputAction.LEFT))
+        //{
+        //    MoveHorizontaly(inputState.CheckPressed(InputAction.RIGHT) ? 1 : -1);
+        //}
+        //else if (inputState.CheckPressed(InputAction.DOWN) || inputState.CheckPressed(InputAction.UP))
+        //{
+        //    MoveVertically(inputState.CheckPressed(InputAction.UP) ? 1 : -1);
+        //}
+        //else
+        //{
+        //    m_ActiveViking.Action(inputState);
+        //}
+        m_ActiveViking.SetInputState(inputState);
 
     }
 

@@ -13,36 +13,45 @@ public class Eric : BaseViking
 
     public override void Action(InputState inputState)
     {
-        if (inputState.CheckPressed(InputAction.SPECIAL_ACTION1))
-        {
-            if (!m_ActivateSprint)
-                m_CurrentHorizontalSpeed = m_SprintSpeed;
-            m_ActivateSprint = true;
-        }
-        else
-        {
-            if (m_ActivateSprint)
-                m_CurrentHorizontalSpeed = m_MovementSpeed;
-            m_ActivateSprint = false;
-        }
-        if (inputState.CheckTriggered(InputAction.SPECIAL_ACTION2))
-        {
-            Vector2 currentVelocity = m_RigidBody.velocity;
-            currentVelocity.y = m_JumpForce;
-            m_RigidBody.velocity = currentVelocity;
-        }
+        //if (inputState.CheckPressed(InputAction.SPECIAL_ACTION1))
+        //{
+        //    if (!m_ActivateSprint)
+        //        m_CurrentHorizontalSpeed = m_SprintSpeed;
+        //    m_ActivateSprint = true;
+        //}
+        //else
+        //{
+        //    if (m_ActivateSprint)
+        //        m_CurrentHorizontalSpeed = m_MovementSpeed;
+        //    m_ActivateSprint = false;
+        //}
+        //if (inputState.CheckTriggered(InputAction.SPECIAL_ACTION2))
+        //{
+        //    Vector2 currentVelocity = m_RigidBody.velocity;
+        //    currentVelocity.y = m_JumpForce;
+        //    m_RigidBody.velocity = currentVelocity;
+        //}
     }
 
 
 
-    protected override void FrontHit(Collider2D collider)
+    public override void ExecuteAction1()
     {
-        base.Hit();
+        throw new NotImplementedException();
     }
 
-    protected override void TopHit(Collider2D collider)
+    public override void ExecuteAction2()
     {
-        base.Hit();
+        throw new NotImplementedException();
     }
-    
+
+    public override void Attack()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override void ReceiveDamage(int damage)
+    {
+        throw new NotImplementedException();
+    }
 }

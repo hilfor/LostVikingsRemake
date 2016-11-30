@@ -12,6 +12,7 @@ public class Olaf : BaseViking
     }
 
     ShieldPosition m_ShieldPosition = ShieldPosition.FORWARD;
+    
 
     public override void Action(InputState inputState)
     {
@@ -29,25 +30,29 @@ public class Olaf : BaseViking
     }
 
 
-    protected new void Update()
-    {
-        base.Update();
-        m_Animator.SetBool("ShieldForward", m_ShieldPosition == ShieldPosition.FORWARD);
-    }
+    //protected void Update()
+    //{
+        //m_Animator.SetBool("ShieldForward", m_ShieldPosition == ShieldPosition.FORWARD);
+    //}
 
-    protected override void TopHit(Collider2D collider)
+    
+
+    public override void TopReached(Collider2D collider)
     {
+        base.TopReached(collider);
         if (m_ShieldPosition == ShieldPosition.UP)
         {
             Debug.Log("Stopped something from hitting me from the top");
         }
+        
     }
 
-    protected override void FrontHit(Collider2D collider)
+    public override void FrontHit(Collider2D collider)
     {
+        base.FrontHit(collider);
         if (m_ShieldPosition == ShieldPosition.FORWARD)
         {
-            Debug.Log("Stopped something from hitting me from the front");
+            Debug.Log("Something hit me from the front!");
         }
     }
 
@@ -64,16 +69,6 @@ public class Olaf : BaseViking
         }
     }
 
-    public override bool ReachedTopLadder()
-    {
-        throw new NotImplementedException();
-    }
-
-    public override bool ReachedBottomLadder()
-    {
-        throw new NotImplementedException();
-    }
-
     public override void ExecuteAction1()
     {
         throw new NotImplementedException();
@@ -84,43 +79,12 @@ public class Olaf : BaseViking
         throw new NotImplementedException();
     }
 
-    public override InputState GetInputState()
-    {
-        throw new NotImplementedException();
-    }
+    
 
     public override void Attack()
     {
         throw new NotImplementedException();
     }
 
-    public override State GetState()
-    {
-        throw new NotImplementedException();
-    }
-
-    public override AnimationState GetAnimationState()
-    {
-        throw new NotImplementedException();
-    }
-
-    public override Transform GetWalkerTransform()
-    {
-        throw new NotImplementedException();
-    }
-
-    public override FacingDirection GetFacingDirection()
-    {
-        throw new NotImplementedException();
-    }
-
-    public override float GetWalkerSpeed()
-    {
-        throw new NotImplementedException();
-    }
-
-    public override void ChangeDirection(FacingDirection newDirection)
-    {
-        throw new NotImplementedException();
-    }
+    
 }

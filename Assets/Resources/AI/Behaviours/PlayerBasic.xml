@@ -1,5 +1,5 @@
 ﻿<sequence>
-  <sequence>
+  <positiveSequence>
     <condition name="IfWithin2HorizontalColliders"/>
     <action name="SetEnableClimbing"/>
     <sequence>
@@ -53,7 +53,7 @@
         </sequence>
       </positiveSequence>
     </sequence>
-  </sequence>
+  </positiveSequence>
   <action name="SetAnimationToStandingAnimation"/>
   <inverter>
     <sequence>

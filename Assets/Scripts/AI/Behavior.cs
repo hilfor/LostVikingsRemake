@@ -97,6 +97,7 @@ public class Behavior : MonoBehaviour
     private IBTCondition CreateCondition(XmlNode node)
     {
         string conditionClassName = node.Attributes["name"].Value;
+        Debug.Log("Creating condition " + conditionClassName);
         return (IBTCondition)CreateReflectionObject(conditionClassName);
     }
     private IBTAction CreateAction(XmlNode node)

@@ -15,7 +15,7 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
     [SerializeField]
     protected Generic2DBoxCollider m_TopCollider;
     [SerializeField]
-    protected Generic2DBoxCollider m_ForontCollider;
+    protected Generic2DBoxCollider m_FrontCollider;
 
     [SerializeField]
     protected int m_Health = 1;
@@ -36,9 +36,11 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
     bool m_CanClimbDown = false;
 
 
-    bool m_LadderReached = false;
+    //bool m_LadderReached = false;
     bool m_LadderLeftTriggerReached = false;
     bool m_LadderRightTriggerReached = false;
+
+    int m_LadderWallsCount = 0;
 
     bool m_Falling = false;
 
@@ -48,23 +50,147 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
 
     Vector2 m_FallStartPosition = Vector2.zero;
 
-    private bool m_LadderTopReached;
+    private bool m_LadderTopReached = false;
     private bool m_LadderBottomReached;
+
+    private State m_State;
+
+    private IBTNode m_BehaviourTree;
+    private IContext m_Context;
 
     public abstract void ExecuteAction1();
     public abstract void ExecuteAction2();
     public abstract void Action(InputState action);
-    public abstract float GetWalkerSpeed();
     public abstract void Attack();
+
+    public AnimationState m_AnimationState;
+    void Awake()
+    {
+        m_Animator = GetComponent<Animator>();
+        m_Transform = gameObject.transform;
+        m_RigidBody = GetComponent<Rigidbody2D>();
+
+        m_State = new State();
+
+        m_GroundCollider.OnTriggerEnter = GroundHit;
+        m_GroundCollider.OnTriggerExit = GroundExit;
+        m_TopCollider.OnTriggerEnter = TopReached;
+        m_TopCollider.OnTriggerExit = TopExit;
+        m_FrontCollider.OnTriggerEnter = FrontHit;
+        m_FrontCollider.OnTriggerExit = FrontExit;
+        m_Context = CreateClassContext();
+        m_BehaviourTree = GetNode();
+        m_AnimationState = new AnimationState(m_Animator);
+    }
+
+    public void SetInputState(InputState inputState)
+    {
+        m_InputState = inputState;
+    }
+
+    public void Update()
+    {
+        m_BehaviourTree.Process(m_Context);
+    }
+
+    public IBTNode GetNode()
+    {
+        Behavior behav = FindObjectOfType<Behavior>();
+        return behav.GetTree(Behavior.BehaviorTypes.PlayerBasic);
+    }
+    public AnimationState GetAnimationState()
+    {
+        return m_AnimationState;
+    }
+
+    public IContext CreateClassContext()
+    {
+        IContext newContext = new Context();
+
+        Type t = this.GetType();
+        Type[] interfaces = t.GetInterfaces();
+        foreach (Type ti in interfaces)
+        {
+            newContext.SetVariable(ti.Name, this);
+        }
+
+        //newContext.SetVariable("ICharacter", this);
+
+        return newContext;
+    }
+
+    public float GetWalkerSpeed()
+    {
+        return m_MovementSpeed;
+    }
+
+    public virtual void FrontHit(Collider2D collider)
+    {
+        switch (collider.tag)
+        {
+            case "LadderLeft":
+                m_LadderLeftTriggerReached = true;
+                break;
+            case "LadderRight":
+                m_LadderRightTriggerReached = true;
+                break;
+        }
+    }
+
+    public virtual void FrontExit(Collider2D collider)
+    {
+        switch (collider.tag)
+        {
+            case "LadderLeft":
+                m_LadderLeftTriggerReached = false;
+                break;
+            case "LadderRight":
+                m_LadderRightTriggerReached = false;
+                break;
+        }
+    }
+
+    public virtual void TopReached(Collider2D otherCollider)
+    {
+        if (otherCollider.tag == "LadderTop")
+        {
+            m_LadderTopReached = true;
+            m_State.CanMoveDown = true;
+        }
+    }
+
+    public void TopExit(Collider2D otherCollider)
+    {
+        if (otherCollider.tag == "LadderTop")
+        {
+            m_LadderTopReached = false;
+        }
+    }
 
     public bool ReachedTopLadder()
     {
-        throw new NotImplementedException();
+        return m_LadderTopReached;
+    }
+
+    public void GroundHit(Collider2D otherCollider)
+    {
+        if (otherCollider.tag == "LadderBottom")
+        {
+            m_LadderBottomReached = true;
+        }
+    }
+
+    public void GroundExit(Collider2D otherCollider)
+    {
+        if (otherCollider.tag == "LadderBottom")
+        {
+            m_LadderBottomReached = false;
+        }
     }
 
     public bool ReachedBottomLadder()
     {
-        throw new NotImplementedException();
+        return m_LadderBottomReached;
     }
 
     public InputState GetInputState()
@@ -72,24 +198,17 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
         return m_InputState;
     }
 
-    
-
-    public void ReceiveDamage(int damage)
-    {
-        throw new NotImplementedException();
-    }
+    public abstract void ReceiveDamage(int damage);
 
     public void NoInput()
     {
-        throw new NotImplementedException();
+        //throw new NotImplementedException();
     }
 
     public State GetState()
     {
-        throw new NotImplementedException();
+        return m_State;
     }
-
-    public abstract AnimationState GetAnimationState();
 
     public Vector2 GetWalkerPosition()
     {
@@ -106,51 +225,68 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
         return m_FacingDirection;
     }
 
-
-    public void ChangeDirection(FacingDirection newDirection)
+    public void MoveLeft(float speed)
     {
-        throw new NotImplementedException();
+        MoveHorizontaly(-speed);
     }
 
     public void MoveRight(float speed)
     {
-        throw new NotImplementedException();
-    }
-
-    public void MoveLeft(float speed)
-    {
-        throw new NotImplementedException();
+        MoveHorizontaly(speed);
     }
 
     public void MoveUp(float speed)
     {
-        throw new NotImplementedException();
+        if (m_CanClimbUp)
+        {
+            Debug.Log("Climbing up");
+            MoveVertically(speed);
+        }
     }
 
     public void MoveDown(float speed)
     {
-        throw new NotImplementedException();
+        if (m_CanClimbDown)
+        {
+            Debug.Log("Climbing down");
+            MoveVertically(-speed);
+        }
+    }
+
+    public void MoveHorizontaly(float direction)
+    {
+        Vector2 vikingVelocity = m_RigidBody.velocity;
+        m_CurrentHorizontalSpeed = Math.Abs(direction);
+        vikingVelocity.x = direction * m_MovementSpeed;
+        m_RigidBody.velocity = vikingVelocity;
+    }
+
+    public void MoveVertically(float direction)
+    {
+        Vector2 vikingVelocity = m_RigidBody.velocity;
+        m_CurrentVerticalSpeed = Math.Abs(direction);
+        vikingVelocity.y = direction * m_MovementSpeed;
+        m_RigidBody.velocity = vikingVelocity;
+    }
+
+    public void ChangeDirection(FacingDirection newDirection)
+    {
+        if (newDirection == FacingDirection.LEFT)
+        {
+            newDirection = FacingDirection.RIGHT;
+        }
+        else
+        {
+            newDirection = FacingDirection.LEFT;
+        }
+
+        Vector3 scale = m_Transform.localScale;
+        scale.x *= -1;
+        m_Transform.localScale = scale;
     }
 
 
     #region commented out
-    //public void MoveHorizontaly(float direction)
-    //{
-    //    if (!CheckHorizontalMovementEnabled())
-    //        return;
-    //    Vector2 vikingVelocity = m_RigidBody.velocity;
-    //    m_CurrentHorizontalSpeed = Math.Abs(direction);
-    //    vikingVelocity.x = direction * m_MovementSpeed;
-    //    m_RigidBody.velocity = vikingVelocity;
-    //}
-
-    //public void MoveVertically(float direction)
-    //{
-    //    Vector2 vikingVelocity = m_RigidBody.velocity;
-    //    m_CurrentVerticalSpeed = Math.Abs(direction);
-    //    vikingVelocity.y = direction * m_MovementSpeed;
-    //    m_RigidBody.velocity = vikingVelocity;
-    //}
 
     //#region ICharacter overrides
 
@@ -168,49 +304,6 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
 
     //public abstract void Action(InputState state);
 
-    //public void MoveLeft(float speed)
-    //{
-    //    if (m_FacingDirection == FacingDirection.RIGHT)
-    //    {
-    //        ChangeFacingDirection();
-    //        m_FacingDirection = FacingDirection.LEFT;
-    //    }
-    //    MoveHorizontaly(-speed);
-    //}
-
-    //public void MoveRight(float speed)
-    //{
-    //    if (m_FacingDirection == FacingDirection.LEFT)
-    //    {
-    //        ChangeFacingDirection();
-    //        m_FacingDirection = FacingDirection.RIGHT;
-    //    }
-
-    //    MoveHorizontaly(speed);
-    //}
-
-    //private bool CheckHorizontalMovementEnabled()
-    //{
-    //    return true;
-    //}
-
-    //public void MoveUp(float speed)
-    //{
-    //    if (m_CanClimbUp)
-    //    {
-    //        Debug.Log("Climbing up");
-    //        MoveVertically(speed);
-    //    }
-    //}
-
-    //public void MoveDown(float speed)
-    //{
-    //    if (m_CanClimbDown)
-    //    {
-    //        Debug.Log("Climbing down");
-    //        MoveVertically(-speed);
-    //    }
-    //}
 
     //public void Hit()
     //{
@@ -312,31 +405,13 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
     //    m_FallBeganTimestamp = Time.realtimeSinceStartup;
     //    m_FallStartPosition = m_Transform.position;
     //}
-    //#region abstract functions
+
     //protected abstract void TopHit(Collider2D collider);
     //protected abstract void FrontHit(Collider2D collider);
-    //#endregion
 
-    //#endregion
 
-    //void Awake()
-    //{
-    //    m_Animator = GetComponent<Animator>();
-    //    m_Transform = gameObject.transform;
-    //    m_RigidBody = GetComponent<Rigidbody2D>();
 
-    //    m_GroundCollider.OnTriggerEnter = Grounded;
-    //    m_GroundCollider.OnTriggerExit = Falling;
-    //    m_TopCollider.OnTriggerEnter = TopHit;
-    //    m_ForontCollider.OnTriggerEnter = FrontHit;
-    //}
 
-    //void ChangeFacingDirection()
-    //{
-    //    Vector3 scale = m_Transform.localScale;
-    //    scale.x *= -1;
-    //    m_Transform.localScale = scale;
-    //}
 
     //protected void Update()
     //{
@@ -430,6 +505,4 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
     //}
     #endregion
 
-    //public abstract float GetWalkerSpeed();
-    //public abstract void ChangeDirection(FacingDirection newDirection);
 }
