@@ -16,6 +16,8 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
     protected Generic2DBoxCollider m_TopCollider;
     [SerializeField]
     protected Generic2DBoxCollider m_FrontCollider;
+    [SerializeField]
+    protected Generic2DBoxCollider m_SingleCollider;
 
     [SerializeField]
     protected int m_Health = 1;
@@ -72,12 +74,16 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
 
         m_State = new State();
 
-        m_GroundCollider.OnTriggerEnter = GroundHit;
-        m_GroundCollider.OnTriggerExit = GroundExit;
-        m_TopCollider.OnTriggerEnter = TopReached;
-        m_TopCollider.OnTriggerExit = TopExit;
-        m_FrontCollider.OnTriggerEnter = FrontHit;
-        m_FrontCollider.OnTriggerExit = FrontExit;
+        m_SingleCollider.OnTriggerEnter = EnteredCollision;
+        m_SingleCollider.OnTriggerExit = ExitCollision;
+
+
+        //m_GroundCollider.OnTriggerEnter = GroundHit;
+        //m_GroundCollider.OnTriggerExit = GroundExit;
+        //m_TopCollider.OnTriggerEnter = TopReached;
+        //m_TopCollider.OnTriggerExit = TopExit;
+        //m_FrontCollider.OnTriggerEnter = FrontHit;
+        //m_FrontCollider.OnTriggerExit = FrontExit;
         m_Context = CreateClassContext();
         m_BehaviourTree = GetNode();
         m_AnimationState = new AnimationState(m_Animator);
@@ -124,6 +130,83 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
         return m_MovementSpeed;
     }
 
+    public virtual void EnteredCollision(Collider2D collider)
+    {
+        switch (collider.tag)
+        {
+            case "LadderLeft":
+                m_LadderLeftTriggerReached = true;
+                break;
+            case "LadderRight":
+                m_LadderRightTriggerReached = true;
+                break;
+            case "LadderTop":
+                m_LadderTopReached = true;
+                break;
+            case "LadderBottom":
+                m_LadderBottomReached = true;
+                break;
+            
+        }
+
+        if (m_LadderLeftTriggerReached && m_LadderRightTriggerReached)
+        {
+            m_State.CanClimb = true;
+            if (m_LadderTopReached)
+            {
+                m_State.CanMoveDown = true;
+                m_State.CanMoveUp = false;
+            }
+
+            if (m_LadderBottomReached)
+            {
+                m_State.CanMoveDown = false;
+                m_State.CanMoveUp = true;
+            }
+        }
+
+
+    }
+
+    public virtual void ExitCollision(Collider2D collider)
+    {
+        switch (collider.tag)
+        {
+            case "LadderLeft":
+                m_LadderLeftTriggerReached = false;
+                break;
+            case "LadderRight":
+                m_LadderRightTriggerReached = false;
+                break;
+            case "LadderTop":
+                m_LadderTopReached = false;
+                break;
+            case "LadderBottom":
+                m_LadderBottomReached = false;
+                break;
+
+        }
+
+        if (m_LadderTopReached == false && (m_LadderLeftTriggerReached && m_LadderRightTriggerReached))
+        {
+            m_State.CanMoveUp = true;
+        }
+
+        if (m_LadderBottomReached == false && (m_LadderLeftTriggerReached && m_LadderRightTriggerReached))
+        {
+            m_State.CanMoveDown = true;
+        }
+
+        if (!m_LadderLeftTriggerReached || !m_LadderRightTriggerReached)
+        {
+            m_State.CanClimb = false;
+            m_State.CanMoveDown = false;
+            m_State.CanMoveDown = false;
+        }
+    }
+
+    #region colliders (depricated)
+
     public virtual void FrontHit(Collider2D collider)
     {
         switch (collider.tag)
@@ -167,11 +250,6 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
         }
     }
 
-    public bool ReachedTopLadder()
-    {
-        return m_LadderTopReached;
-    }
-
     public void GroundHit(Collider2D otherCollider)
     {
         if (otherCollider.tag == "LadderBottom")
@@ -187,6 +265,15 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
             m_LadderBottomReached = false;
         }
     }
+
+    #endregion
+
+    public bool ReachedTopLadder()
+    {
+        return m_LadderTopReached;
+    }
+
+
 
     public bool ReachedBottomLadder()
     {

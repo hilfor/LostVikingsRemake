@@ -2,20 +2,18 @@
   <positiveSequence>
     <condition name="IfWithin2HorizontalColliders"/>
     <action name="SetEnableClimbing"/>
-    <sequence>
-      <positiveSequence>
-        <sequence>
-          <condition name="IfReachedTopCollider"/>
-          <action name="RestrictPlayerUpMovement"/>
-          <action name="SetAnimationToFinishClimbingTop"/>
-        </sequence>
-        <sequence>
-          <condition name="IfReachedBottomCollider"/>
-          <action name="RestrictPlayerDownMovement"/>
-          <action name="SetAnimationToFinishClimbingBottom"/>
-        </sequence>
-      </positiveSequence>
-    </sequence>
+    <positiveSequence>
+      <sequence>
+        <condition name="IfReachedTopCollider"/>
+        <action name="RestrictPlayerUpMovement"/>
+        <action name="SetAnimationToFinishClimbingTop"/>
+      </sequence>
+      <sequence>
+        <condition name="IfReachedBottomCollider"/>
+        <action name="RestrictPlayerDownMovement"/>
+        <action name="SetAnimationToFinishClimbingBottom"/>
+      </sequence>
+    </positiveSequence>
     <sequence>
       <positiveSequence>
         <sequence>
@@ -61,30 +59,35 @@
         <action name="ShootRaycastDown"/>
       </inverter>
       <action name="SetAnimationToFalling"/>
+      <action name="PlayerFalls"/>
     </sequence>
   </inverter>
   <inverter>
     <sequence>
       <condition name="IfLeftButtonPressed"/>
       <action name="SetAnimationToWalkingLeft"/>
+      <action name="MovePlayerLeft"/>
     </sequence>
   </inverter>
   <inverter>
     <sequence>
       <condition name="IfRightButtonPressed"/>
       <action name="SetAnimationToWalkingRight"/>
+      <action name="MovePlayerRight"/>
     </sequence>
   </inverter>
   <inverter>
     <sequence>
       <condition name="IfShiftButtonPressed"/>
       <action name="SetAnimationToAttacking1"/>
+      <action name="ExecuteAttacking1"/>
     </sequence>
   </inverter>
   <inverter>
     <sequence>
       <condition name="IfCtrlButtonPressed"/>
       <action name="SetAnimationToAttacking2"/>
+      <action name="ExecuteAttacking2"/>
     </sequence>
   </inverter>
 </sequence>
