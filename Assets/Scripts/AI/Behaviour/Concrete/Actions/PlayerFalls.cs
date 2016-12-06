@@ -4,9 +4,16 @@ using System;
 
 public class PlayerFalls : IBTAction
 {
+    private float gravity;
+
     public bool Act(IContext context)
     {
-        throw new NotImplementedException();
+        IWalker walker = ((IWalker)context.GetVariable("IWalker"));
+        Vector2 direction = walker.GetMovementDirection();
+
+        walker.MoveDown(direction.y + gravity);
+
+        return true;
     }
 
     public bool Process(IContext context)

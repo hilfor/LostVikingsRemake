@@ -2,6 +2,7 @@
 using System.Collections;
 
 public interface IPlayer : ICharacter {
+
     bool ReachedTopLadder();
     bool ReachedBottomLadder();
 
