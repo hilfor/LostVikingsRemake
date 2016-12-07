@@ -34,6 +34,13 @@ public class InputState
         this.m_InputMap = actionsMap;
     }
 
+    public InputState()
+    {
+        this.m_Triggered = new HashSet<KeyCode>();
+        this.m_Pressed = new HashSet<KeyCode>();
+        this.m_InputMap = new Hashtable();
+    }
+
     public void SetTriggered(KeyCode key)
     {
         m_Triggered.Add(key);

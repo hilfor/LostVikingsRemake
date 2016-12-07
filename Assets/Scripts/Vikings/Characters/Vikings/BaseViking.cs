@@ -87,6 +87,7 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
         m_Context = CreateClassContext();
         m_BehaviourTree = GetNode();
         m_AnimationState = new AnimationState(m_Animator);
+        m_InputState = new InputState();
     }
 
     public void SetInputState(InputState inputState)
@@ -146,7 +147,7 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
             case "LadderBottom":
                 m_LadderBottomReached = true;
                 break;
-            
+
         }
 
         if (m_LadderLeftTriggerReached && m_LadderRightTriggerReached)
@@ -273,8 +274,6 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
         return m_LadderTopReached;
     }
 
-
-
     public bool ReachedBottomLadder()
     {
         return m_LadderBottomReached;
@@ -289,7 +288,14 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
 
     public void NoInput()
     {
-        //throw new NotImplementedException();
+        //m_CurrentHorizontalSpeed = 0;
+        //m_CurrentVerticalSpeed = 0;
+
+        Vector2 currentVelocity = m_RigidBody.velocity;
+        currentVelocity.x = 0;
+        if (m_CanClimbUp || m_CanClimbDown)
+            currentVelocity.y = 0;
+        m_RigidBody.velocity = currentVelocity;
     }
 
     public State GetState()
@@ -299,7 +305,7 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
 
     public Vector2 GetWalkerPosition()
     {
-        throw new NotImplementedException();
+        return m_Transform.position;
     }
 
     public Transform GetWalkerTransform()
@@ -330,6 +336,8 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
             MoveVertically(speed);
         }
     }
+
+    
 
     public void MoveDown(float speed)
     {
@@ -370,6 +378,21 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
         Vector3 scale = m_Transform.localScale;
         scale.x *= -1;
         m_Transform.localScale = scale;
+    }
+
+    public float GetWalkerCurrentSpeed()
+    {
+        return Math.Abs(m_RigidBody.velocity.magnitude);
+    }
+
+    public Vector2 GetMovementDirection()
+    {
+        return m_RigidBody.velocity;
+    }
+
+    public void FallDown(float speed)
+    {
+        MoveVertically(-speed);
     }
 
 

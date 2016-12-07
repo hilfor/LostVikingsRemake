@@ -235,7 +235,7 @@ public class RedDinosaur : BaseEnemy, IWalker, IFollower
         return m_NextWaypoint.NextWaypoint(m_NextWaypoint);
     }
 
-    
+
 
     public override State GetState()
     {
@@ -333,5 +333,20 @@ public class RedDinosaur : BaseEnemy, IWalker, IFollower
     public IWaypoint GetCurrentWaypoint()
     {
         return m_NextWaypoint;
+    }
+
+    public float GetWalkerCurrentSpeed()
+    {
+        return Math.Abs(m_RigidBody.velocity.magnitude);
+    }
+
+    public Vector2 GetMovementDirection()
+    {
+        return m_RigidBody.velocity;
+    }
+
+    public void FallDown(float speed)
+    {
+        throw new NotImplementedException();
     }
 }

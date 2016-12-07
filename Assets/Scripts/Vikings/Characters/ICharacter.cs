@@ -24,7 +24,7 @@ public class AnimationState
 
     public void SetAnimationTrigger(AnimationStates state)
     {
-        m_Animator.SetTrigger(Enum.GetName(typeof(AnimationState), state));
+        //m_Animator.SetTrigger(Enum.GetName(typeof(AnimationState), state));
     }
 }
 
