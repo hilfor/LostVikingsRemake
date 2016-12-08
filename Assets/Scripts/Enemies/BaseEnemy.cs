@@ -13,11 +13,16 @@ public abstract class BaseEnemy: MonoBehaviour, IEnemy
         throw new NotImplementedException();
     }
 
-
+    
     public abstract void Attack();
     public abstract AnimationState GetAnimationState();
     public abstract State GetState();
     public abstract bool IsCollidedWithPlayer();
     public abstract void ReceiveDamage(int damage);
     public abstract void StopAttackPlayer();
+
+    public GameObject GetGameObject()
+    {
+        return gameObject;
+    }
 }

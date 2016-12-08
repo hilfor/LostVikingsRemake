@@ -121,6 +121,8 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
             newContext.SetVariable(ti.Name, this);
         }
 
+        // newContext.SetVariable("BaseViking", this);
+
         //newContext.SetVariable("ICharacter", this);
 
         return newContext;
@@ -364,6 +366,7 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
         m_RigidBody.velocity = vikingVelocity;
     }
 
+
     public void ChangeDirection(FacingDirection newDirection)
     {
         if (newDirection == FacingDirection.LEFT)
@@ -393,6 +396,11 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
     public void FallDown(float speed)
     {
         MoveVertically(-speed);
+    }
+
+    public GameObject GetGameObject()
+    {
+        return gameObject;
     }
 
 

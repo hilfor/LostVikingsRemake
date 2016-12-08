@@ -11,7 +11,7 @@ public class PlayerFalls : IBTAction
         IWalker walker = ((IWalker)context.GetVariable("IWalker"));
         Vector2 direction = walker.GetMovementDirection();
 
-        walker.FallDown(direction.y + gravity);
+        walker.FallDown(Math.Abs(direction.y) + gravity);
 
         return true;
     }

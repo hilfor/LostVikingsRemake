@@ -5,6 +5,7 @@ public interface ICharacter
 {
 
     //void Jump();
+    GameObject GetGameObject();
     void Attack();
     void ReceiveDamage(int damage);
     void Action(InputState action);
