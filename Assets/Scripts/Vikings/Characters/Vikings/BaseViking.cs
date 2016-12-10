@@ -360,10 +360,11 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
 
     public void MoveVertically(float direction)
     {
-        Vector2 vikingVelocity = m_RigidBody.velocity;
-        m_CurrentVerticalSpeed = Math.Abs(direction);
-        vikingVelocity.y = direction * m_MovementSpeed;
-        m_RigidBody.velocity = vikingVelocity;
+        m_Transform.Translate(Vector2.up * direction);
+        //Vector2 vikingVelocity = m_RigidBody.velocity;
+        //m_CurrentVerticalSpeed = Math.Abs(direction);
+        //vikingVelocity.y = direction * m_MovementSpeed;
+        //m_RigidBody.velocity = vikingVelocity;
     }
 
 

@@ -53,13 +53,26 @@
     </sequence>
   </positiveSequence>
   <action name="SetAnimationToStandingAnimation"/>
+  
   <inverter>
     <sequence>
       <inverter>
         <action name="ShootRaycastDown"/>
       </inverter>
+      <inverter>
+        <condition name="IfPlayerStateClimbing" />
+      </inverter>
       <action name="SetAnimationToFalling"/>
       <action name="PlayerFalls"/>
+    </sequence>
+  </inverter>
+  <inverter>
+    <sequence>
+      <condition name="ShootRaycastDown"/>
+      <inverter>
+        <condition name="IfPlayerStateClimbing" />
+      </inverter>
+      <action name="StopFalling"/>
     </sequence>
   </inverter>
   <inverter>
