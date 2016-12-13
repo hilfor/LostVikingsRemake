@@ -16,4 +16,5 @@ public interface IWalker
     void MoveUp(float speed);
     void MoveDown(float speed);
     void FallDown(float speed);
+    
 }
