@@ -1,3 +1,4 @@
-﻿public interface IBTInvertor: IBTNode {
+﻿public interface IBTInvertor: IBTNode
+{
     IBTInvertor SetNode(IBTNode node);
 }

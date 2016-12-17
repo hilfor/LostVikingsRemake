@@ -2,12 +2,12 @@
 using System.Collections;
 using System;
 
-public class ShootRaycastDown : IBTAction
+public class ShootRaycastDown : IBTCondition
 {
 
     private BoxCollider2D cachedCollider = null;
 
-    public bool Act(IContext context)
+    public bool ConditionPassed(IContext context)
     {
 
 
@@ -27,7 +27,7 @@ public class ShootRaycastDown : IBTAction
         }
         Vector2 direction = Vector2.down;
 
-        RaycastHit2D hit = Physics2D.Raycast(walkerPosition - (raycastOffset / 2), direction, 0.5f);
+        RaycastHit2D hit = Physics2D.Raycast(walkerPosition - (raycastOffset / 2), direction, 0.01f);
         //raycastOffset.x = 3;
         Debug.DrawRay(walkerPosition - (raycastOffset / 2), direction, Color.green, 0.01f);
         return hit.collider != null;
@@ -35,6 +35,6 @@ public class ShootRaycastDown : IBTAction
 
     public bool Process(IContext context)
     {
-        return Act(context);
+        return ConditionPassed(context);
     }
 }

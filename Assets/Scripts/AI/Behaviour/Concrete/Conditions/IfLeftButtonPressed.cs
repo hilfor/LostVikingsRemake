@@ -6,6 +6,7 @@ public class IfLeftButtonPressed : IBTCondition
 {
     public bool ConditionPassed(IContext context)
     {
+
         return ((IPlayer)context.GetVariable("IPlayer")).GetInputState().CheckPressedOrTriggered(InputAction.LEFT);
     }
 

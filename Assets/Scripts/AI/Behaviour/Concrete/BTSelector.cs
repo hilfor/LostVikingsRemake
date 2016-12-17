@@ -17,6 +17,19 @@ public class BTSelector : IBTSelector
         return this;
     }
 
+    public IExpectedBehavior ComposeBehavior(IContext context)
+    {
+        IExpectedBehavior expected = new ExpectedBehavior();
+        for (int i = 0; i < childNodes.Count; i++)
+        {
+            if (childNodes[i].Process(context))
+            {
+                return expected;
+            }
+        }
+        return expected;
+    }
+
     public bool Process(IContext context)
     {
         for (int i = 0; i < childNodes.Count; i++)
@@ -28,5 +41,8 @@ public class BTSelector : IBTSelector
         }
         return false;
     }
+
+
+
 
 }

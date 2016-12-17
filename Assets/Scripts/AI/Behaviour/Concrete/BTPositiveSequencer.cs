@@ -20,6 +20,25 @@ public class BTPositiveSequencer : IBTPositiveSequencer
         return this;
     }
 
+    public IExpectedBehavior ComposeBehavior(IContext context)
+    {
+        IExpectedBehavior expected = new ExpectedBehavior();
+
+        for (int i = 0; i<childNodes.Count; i++)
+        {
+            if (childNodes[i] is IBTComposeableBehavior)
+            {
+                expected.Join(((IBTComposeableBehavior)childNodes[i]).ComposeBehavior(context));
+            }else
+            {
+                childNodes[i].Process(context);
+            }
+        }
+
+        return expected;
+
+    }
+
     public bool Process(IContext context)
     {
         for (int i = 0; i < childNodes.Count; i++)

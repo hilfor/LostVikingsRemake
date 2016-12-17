@@ -53,11 +53,11 @@
     </sequence>
   </positiveSequence>
   <action name="SetAnimationToStandingAnimation"/>
-  
-  <inverter>
+
+  <positiveSequence>
     <sequence>
       <inverter>
-        <action name="ShootRaycastDown"/>
+        <condition name="ShootRaycastDown"/>
       </inverter>
       <inverter>
         <condition name="IfPlayerStateClimbing" />
@@ -65,8 +65,8 @@
       <action name="SetAnimationToFalling"/>
       <action name="PlayerFalls"/>
     </sequence>
-  </inverter>
-  <inverter>
+  </positiveSequence>
+  <positiveSequence>
     <sequence>
       <condition name="ShootRaycastDown"/>
       <inverter>
@@ -74,33 +74,34 @@
       </inverter>
       <action name="StopFalling"/>
     </sequence>
-  </inverter>
-  <inverter>
+  </positiveSequence>
+  <positiveSequence>
     <sequence>
       <condition name="IfLeftButtonPressed"/>
       <action name="SetAnimationToWalkingLeft"/>
       <action name="MovePlayerLeft"/>
     </sequence>
-  </inverter>
-  <inverter>
+  </positiveSequence>
+  <positiveSequence>
     <sequence>
       <condition name="IfRightButtonPressed"/>
       <action name="SetAnimationToWalkingRight"/>
       <action name="MovePlayerRight"/>
     </sequence>
-  </inverter>
-  <inverter>
+  </positiveSequence>
+  <positiveSequence>
     <sequence>
       <condition name="IfShiftButtonPressed"/>
       <action name="SetAnimationToAttacking1"/>
       <action name="ExecuteAttacking1"/>
     </sequence>
-  </inverter>
-  <inverter>
+  </positiveSequence>
+  <positiveSequence>
     <sequence>
       <condition name="IfCtrlButtonPressed"/>
       <action name="SetAnimationToAttacking2"/>
       <action name="ExecuteAttacking2"/>
     </sequence>
-  </inverter>
+  </positiveSequence>
+
 </sequence>

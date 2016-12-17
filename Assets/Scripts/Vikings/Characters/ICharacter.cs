@@ -17,10 +17,10 @@ public interface ICharacter
 
 public class AnimationState
 {
-    private Animator m_Animator;
+    //private Animator m_Animator;
     public AnimationState(Animator animator)
     {
-        m_Animator = animator;
+        //m_Animator = animator;
     }
 
     public void SetAnimationTrigger(AnimationStates state)

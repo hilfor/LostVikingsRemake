@@ -6,7 +6,6 @@ using System;
 public class Generic2DBoxCollider : MonoBehaviour
 {
 
-    private BoxCollider2D m_BoxCollider;
 
     private Action<Collider2D> m_OnTriggerEnter = delegate { };
     private Action<Collider2D> m_OnTriggerExit = delegate { };
@@ -39,7 +38,6 @@ public class Generic2DBoxCollider : MonoBehaviour
 
     void Awake()
     {
-        m_BoxCollider = GetComponent<BoxCollider2D>();
     }
 
 

@@ -20,4 +20,9 @@ public class BTAction : IBTAction
         return Act(context);
     }
 
+    public IExpectedBehavior ComposeBehavior(IContext context)
+    {
+        this.action.Invoke(context);
+        return new ExpectedBehavior();
+    }
 }

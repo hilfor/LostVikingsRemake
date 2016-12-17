@@ -37,9 +37,9 @@ public class Olaf : BaseViking
 
     
 
-    public override void TopReached(Collider2D collider)
+    public void TopReached(Collider2D collider)
     {
-        base.TopReached(collider);
+        //base.TopReached(collider);
         if (m_ShieldPosition == ShieldPosition.UP)
         {
             Debug.Log("Stopped something from hitting me from the top");
@@ -47,9 +47,9 @@ public class Olaf : BaseViking
         
     }
 
-    public override void FrontHit(Collider2D collider)
+    public void FrontHit(Collider2D collider)
     {
-        base.FrontHit(collider);
+        //base.FrontHit(collider);
         if (m_ShieldPosition == ShieldPosition.FORWARD)
         {
             Debug.Log("Something hit me from the front!");

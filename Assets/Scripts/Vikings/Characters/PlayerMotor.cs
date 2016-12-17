@@ -8,8 +8,8 @@ public class PlayerMotor : MonoBehaviour
     private Camera m_MainCamera;
 
     private Transform m_Olaf;
-    private Transform m_Eric;
-    private Transform m_Baelog;
+    //private Transform m_Eric;
+    //private Transform m_Baelog;
 
     private CameraFollowPlayer m_CameraFollow;
 
@@ -80,23 +80,22 @@ public class PlayerMotor : MonoBehaviour
             return;
         }
 
-        if (inputState.CheckTriggered(InputAction.SELECT_BAELOG))
-        {
-            ChangeCameraFollowViking(m_Baelog);
-            m_ActiveViking = m_Baelog.GetComponent<BaseViking>();
-        }
-        else if (inputState.CheckTriggered(InputAction.SELECT_ERIC))
-        {
-            ChangeCameraFollowViking(m_Eric);
-            m_ActiveViking = m_Eric.GetComponent<BaseViking>();
-        }
-        else if (inputState.CheckTriggered(InputAction.SELECT_OLAF))
+        //if (inputState.CheckTriggered(InputAction.SELECT_BAELOG))
+        //{
+        //    ChangeCameraFollowViking(m_Baelog);
+        //    m_ActiveViking = m_Baelog.GetComponent<BaseViking>();
+        //}
+        //else if (inputState.CheckTriggered(InputAction.SELECT_ERIC))
+        //{
+        //    ChangeCameraFollowViking(m_Eric);
+        //    m_ActiveViking = m_Eric.GetComponent<BaseViking>();
+        //}
+        //else
+        if (inputState.CheckTriggered(InputAction.SELECT_OLAF))
         {
             ChangeCameraFollowViking(m_Olaf);
             m_ActiveViking = m_Olaf.GetComponent<BaseViking>();
         }
-
-
 
         //if (inputState.CheckPressed(InputAction.RIGHT) || inputState.CheckPressed(InputAction.LEFT))
         //{

@@ -20,4 +20,18 @@ public class BTInvertor : IBTInvertor
         }
         return false;
     }
+
+    public IExpectedBehavior ComposeBehavior(IContext context)
+    {
+        if (childNode != null)
+        {
+            if (childNode is IBTComposeableBehavior)
+            {
+                return ((IBTComposeableBehavior)childNode).ComposeBehavior(context);
+            }
+            childNode.Process(context);
+        }
+        return new ExpectedBehavior();
+
+    }
 }

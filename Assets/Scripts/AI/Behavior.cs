@@ -97,12 +97,16 @@ public class Behavior : MonoBehaviour
     private IBTCondition CreateCondition(XmlNode node)
     {
         string conditionClassName = node.Attributes["name"].Value;
-        Debug.Log("Creating condition " + conditionClassName);
-        return (IBTCondition)CreateReflectionObject(conditionClassName);
+        //Debug.Log("Creating condition " + conditionClassName);
+        IBTNode btNode = (IBTNode) CreateReflectionObject(conditionClassName);
+        return (IBTCondition)btNode;
     }
     private IBTAction CreateAction(XmlNode node)
     {
         string actionClassName = node.Attributes["name"].Value;
+
+        //Debug.Log("Creating Action " + actionClassName);
+
         return (IBTAction)CreateReflectionObject(actionClassName);
     }
     private IBTSequencer CreateSequence(XmlNode node)

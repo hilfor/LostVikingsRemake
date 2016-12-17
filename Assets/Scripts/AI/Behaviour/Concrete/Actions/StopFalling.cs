@@ -6,7 +6,8 @@ public class StopFalling : IBTAction
 {
     public bool Act(IContext context)
     {
-        
+        ((IWalker)context.GetVariable("IWalker")).StopFalling();
+        return true;
     }
 
     public bool Process(IContext context)
