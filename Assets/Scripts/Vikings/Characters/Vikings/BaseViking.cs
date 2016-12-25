@@ -274,14 +274,16 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
 
     public void ChangeDirection(FacingDirection newDirection)
     {
-        if (newDirection == FacingDirection.LEFT)
-        {
-            newDirection = FacingDirection.RIGHT;
-        }
-        else
-        {
-            newDirection = FacingDirection.LEFT;
-        }
+        //if (newDirection == FacingDirection.LEFT)
+        //{
+        //    m_FacingDirection = FacingDirection.RIGHT;
+        //}
+        //else
+        //{
+        //    m_FacingDirection = FacingDirection.LEFT;
+        //}
+
+        m_FacingDirection = newDirection;
 
         Vector3 scale = m_Transform.localScale;
         scale.x *= -1;
