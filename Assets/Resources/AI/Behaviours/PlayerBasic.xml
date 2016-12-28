@@ -18,13 +18,13 @@
       <positiveSequence>
         <sequence>
           <condition name="IfDownArrowPressed"/>
-          <condition name="IfMovementNotRestricted"/>
+          <condition name="IfClimbingWasEnabled"/>
           <action name="SetPlayerStateToClimbing"/>
           <action name="SetPlayerClimbingDirectionToDown"/>
         </sequence>
         <sequence>
           <condition name="IfUpArrowPressed"/>
-          <condition name="IfMovementNotRestricted"/>
+          <condition name="IfClimbingWasEnabled"/>
           <action name="SetPlayerStateToClimbing"/>
           <action name="SetPlayerClimbingDirectionToUp"/>
         </sequence>

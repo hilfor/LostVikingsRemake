@@ -5,6 +5,8 @@ using System.Collections;
 public class InputState
 {
 
+    public static InputState Empty = new InputState();
+
     private Hashtable m_InputMap;
     private HashSet<KeyCode> m_Triggered;
     private HashSet<KeyCode> m_Pressed;

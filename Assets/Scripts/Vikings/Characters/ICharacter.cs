@@ -68,6 +68,20 @@ public class State
     }
 
     private int ladderBoundsCount = 0;
+    public int LadderBoundsCount
+    {
+        get
+        {
+            return ladderBoundsCount;
+        }
+        set
+        {
+            ladderBoundsCount = value;
+
+        }
+    }
+
+
     public bool WithinLadderBounds
     {
         get

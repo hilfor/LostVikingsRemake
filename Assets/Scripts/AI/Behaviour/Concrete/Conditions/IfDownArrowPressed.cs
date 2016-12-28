@@ -6,7 +6,12 @@ public class IfDownArrowPressed : IBTCondition
 {
     public bool ConditionPassed(IContext context)
     {
-        return ((IPlayer)context.GetVariable("IPlayer")).GetInputState().CheckPressedOrTriggered(InputAction.DOWN);
+        if (((IPlayer)context.GetVariable("IPlayer")).GetInputState().CheckPressedOrTriggered(InputAction.DOWN))
+        {
+            return true;
+        }
+        return false;
+        //return ((IPlayer)context.GetVariable("IPlayer")).GetInputState().CheckPressedOrTriggered(InputAction.DOWN);
     }
 
     public bool Process(IContext context)

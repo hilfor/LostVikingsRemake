@@ -112,16 +112,18 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
     {
         switch (collider.tag)
         {
-            case "LadderLeft":
+            case "LadderLeftTrigger":
                 m_LadderLeftTriggerReached = true;
+                m_State.LadderBoundsCount += 1;
                 break;
-            case "LadderRight":
+            case "LadderRightTrigger":
                 m_LadderRightTriggerReached = true;
+                m_State.LadderBoundsCount += 1;
                 break;
-            case "LadderTop":
+            case "LadderTopTrigger":
                 m_LadderTopReached = true;
                 break;
-            case "LadderBottom":
+            case "LadderBottomTrigger":
                 m_LadderBottomReached = true;
                 break;
 
@@ -150,16 +152,19 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
     {
         switch (collider.tag)
         {
-            case "LadderLeft":
+            case "LadderLeftTrigger":
                 m_LadderLeftTriggerReached = false;
+                m_State.LadderBoundsCount -= 1;
                 break;
-            case "LadderRight":
+            case "LadderRightTrigger":
                 m_LadderRightTriggerReached = false;
+                m_State.LadderBoundsCount -= 1;
+
                 break;
-            case "LadderTop":
+            case "LadderTopTrigger":
                 m_LadderTopReached = false;
                 break;
-            case "LadderBottom":
+            case "LadderBottomTrigger":
                 m_LadderBottomReached = false;
                 break;
 
@@ -203,6 +208,7 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
     public void NoInput()
     {
         Vector2 currentVelocity = m_RigidBody.velocity;
+        m_InputState = InputState.Empty;
         currentVelocity.x = 0;
         if (m_CanClimbUp || m_CanClimbDown)
             currentVelocity.y = 0;

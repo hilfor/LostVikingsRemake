@@ -2,7 +2,12 @@
 {
     public bool ConditionPassed(IContext context)
     {
-        return ((ICharacter)context.GetVariable("ICharacter")).GetState().WithinLadderBounds;
+        if (((ICharacter)context.GetVariable("ICharacter")).GetState().WithinLadderBounds)
+        {
+            return true;
+        }
+        return false;
+        //return ((ICharacter)context.GetVariable("ICharacter")).GetState().WithinLadderBounds;
     }
 
     public bool Process(IContext context)
