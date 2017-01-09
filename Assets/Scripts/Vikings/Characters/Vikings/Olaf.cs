@@ -13,30 +13,6 @@ public class Olaf : BaseViking
 
     ShieldPosition m_ShieldPosition = ShieldPosition.FORWARD;
     
-
-    public override void Action(InputState inputState)
-    {
-        if (inputState.CheckTriggered(InputAction.SPECIAL_ACTION1))
-        {
-            if (m_ShieldPosition == ShieldPosition.FORWARD)
-            {
-                m_ShieldPosition = ShieldPosition.UP;
-            }
-            else
-            {
-                m_ShieldPosition = ShieldPosition.FORWARD;
-            }
-        }
-    }
-
-
-    //protected void Update()
-    //{
-        //m_Animator.SetBool("ShieldForward", m_ShieldPosition == ShieldPosition.FORWARD);
-    //}
-
-    
-
     public void TopReached(Collider2D collider)
     {
         //base.TopReached(collider);
@@ -71,7 +47,14 @@ public class Olaf : BaseViking
 
     public override void ExecuteAction1()
     {
-        throw new NotImplementedException();
+        if (m_ShieldPosition == ShieldPosition.FORWARD)
+        {
+            m_ShieldPosition = ShieldPosition.UP;
+        }
+        else
+        {
+            m_ShieldPosition = ShieldPosition.FORWARD;
+        }
     }
 
     public override void ExecuteAction2()
@@ -79,7 +62,13 @@ public class Olaf : BaseViking
         throw new NotImplementedException();
     }
 
-    
+
+    public override void Update()
+    {
+        base.Update();
+
+    }
+
 
     public override void Attack()
     {

@@ -8,9 +8,9 @@ public class Eric : BaseViking
     public float m_SprintSpeed = 5f;
     public float m_JumpForce = 5f;
 
-    public override void Action(InputState inputState)
-    {
-    }
+    //public override void Action(InputState inputState)
+    //{
+    //}
 
     public override void ExecuteAction1()
     {

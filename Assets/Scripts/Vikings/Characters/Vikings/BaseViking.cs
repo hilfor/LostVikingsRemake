@@ -2,8 +2,7 @@
 using System.Collections;
 using System;
 
-public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
-{
+public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker{
 
     [SerializeField]
     protected float m_MovementSpeed = 1.5f;
@@ -48,10 +47,10 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
 
     public abstract void ExecuteAction1();
     public abstract void ExecuteAction2();
-    public abstract void Action(InputState action);
     public abstract void Attack();
 
     public AnimationState m_AnimationState;
+
     void Awake()
     {
         m_Animator = GetComponent<Animator>();
@@ -74,7 +73,7 @@ public abstract class BaseViking : MonoBehaviour, IPlayer, IWalker
         m_InputState = inputState;
     }
 
-    public void Update()
+    public virtual void Update()
     {
         m_BehaviourTree.Process(m_Context);
     }

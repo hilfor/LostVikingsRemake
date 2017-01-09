@@ -8,7 +8,7 @@ public interface ICharacter
     GameObject GetGameObject();
     void Attack();
     void ReceiveDamage(int damage);
-    void Action(InputState action);
+    //void Action(InputState action);
     void NoInput();
     State GetState();
     AnimationState GetAnimationState();

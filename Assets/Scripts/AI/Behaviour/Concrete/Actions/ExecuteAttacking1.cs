@@ -7,7 +7,8 @@ public class ExecuteAttacking1 : IBTAction
 
     public bool Act(IContext context)
     {
-        throw new NotImplementedException();
+        ((IPlayer)context.GetVariable("IPlayer")).ExecuteAction1();
+        return true;
     }
 
     public bool Process(IContext context)

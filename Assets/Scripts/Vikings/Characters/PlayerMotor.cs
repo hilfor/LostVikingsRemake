@@ -3,13 +3,23 @@ using System.Collections;
 
 public class PlayerMotor : MonoBehaviour
 {
+    public enum ActiveViking
+    {
+        Olaf,
+        Baelog,
+        Eric
+    }
+
+    [SerializeField]
+    private ActiveViking defaultActiveViking = ActiveViking.Olaf;
+    [SerializeField]
     private BaseViking m_ActiveViking = null;
 
     private Camera m_MainCamera;
 
     private Transform m_Olaf;
-    //private Transform m_Eric;
-    //private Transform m_Baelog;
+    private Transform m_Eric;
+    private Transform m_Baelog;
 
     private CameraFollowPlayer m_CameraFollow;
 
@@ -21,15 +31,29 @@ public class PlayerMotor : MonoBehaviour
         m_CameraFollow = m_MainCamera.GetComponent<CameraFollowPlayer>();
 
         m_Olaf = GameObject.Find("Olaf").GetComponent<Transform>();
-        //m_Eric = GameObject.Find("Eric").GetComponent<Transform>();
-        //m_Baelog = GameObject.Find("Baelog").GetComponent<Transform>();
+        m_Eric = GameObject.Find("Eric").GetComponent<Transform>();
+        m_Baelog = GameObject.Find("Baelog").GetComponent<Transform>();
 
 
         if (m_CameraFollow)
         {
             //Debug.Log("Setting default viking to Olaf");
-            m_CameraFollow.ActiveViking = m_Olaf;
-            m_ActiveViking = m_Olaf.GetComponent<BaseViking>();
+            switch (defaultActiveViking)
+            {
+                case ActiveViking.Olaf:
+                    m_CameraFollow.ActiveViking = m_Olaf;
+                    m_ActiveViking = m_Olaf.GetComponent<BaseViking>();
+                    break;
+                case ActiveViking.Eric:
+                    m_CameraFollow.ActiveViking = m_Eric;
+                    m_ActiveViking = m_Eric.GetComponent<BaseViking>();
+                    break;
+                case ActiveViking.Baelog:
+                    m_CameraFollow.ActiveViking = m_Baelog;
+                    m_ActiveViking = m_Baelog.GetComponent<BaseViking>();
+                    break;
+            }
+
         }
     }
 
@@ -80,18 +104,17 @@ public class PlayerMotor : MonoBehaviour
             return;
         }
 
-        //if (inputState.CheckTriggered(InputAction.SELECT_BAELOG))
-        //{
-        //    ChangeCameraFollowViking(m_Baelog);
-        //    m_ActiveViking = m_Baelog.GetComponent<BaseViking>();
-        //}
-        //else if (inputState.CheckTriggered(InputAction.SELECT_ERIC))
-        //{
-        //    ChangeCameraFollowViking(m_Eric);
-        //    m_ActiveViking = m_Eric.GetComponent<BaseViking>();
-        //}
-        //else
-        if (inputState.CheckTriggered(InputAction.SELECT_OLAF))
+        if (inputState.CheckTriggered(InputAction.SELECT_BAELOG))
+        {
+            ChangeCameraFollowViking(m_Baelog);
+            m_ActiveViking = m_Baelog.GetComponent<BaseViking>();
+        }
+        else if (inputState.CheckTriggered(InputAction.SELECT_ERIC))
+        {
+            ChangeCameraFollowViking(m_Eric);
+            m_ActiveViking = m_Eric.GetComponent<BaseViking>();
+        }
+        else if (inputState.CheckTriggered(InputAction.SELECT_OLAF))
         {
             ChangeCameraFollowViking(m_Olaf);
             m_ActiveViking = m_Olaf.GetComponent<BaseViking>();
