@@ -15,6 +15,8 @@ public class PlayerMotor : MonoBehaviour
     [SerializeField]
     private BaseViking m_ActiveViking = null;
 
+
+
     private Camera m_MainCamera;
 
     private Transform m_Olaf;
@@ -22,6 +24,7 @@ public class PlayerMotor : MonoBehaviour
     private Transform m_Baelog;
 
     private CameraFollowPlayer m_CameraFollow;
+    private SelectedViking m_SelectedViking;
 
     void Start()
     {
@@ -29,6 +32,9 @@ public class PlayerMotor : MonoBehaviour
 
         m_MainCamera = Camera.main;
         m_CameraFollow = m_MainCamera.GetComponent<CameraFollowPlayer>();
+
+        // TODO: There will be a bug here, if there is more than one canvas in the scene!
+        m_SelectedViking = GameObject.Find("Canvas").GetComponentInChildren<SelectedViking>();
 
         m_Olaf = GameObject.Find("Olaf").GetComponent<Transform>();
         m_Eric = GameObject.Find("Eric").GetComponent<Transform>();
@@ -144,5 +150,19 @@ public class PlayerMotor : MonoBehaviour
             m_CameraFollow.ActiveViking = activeViking;
         }
     }
+
+    void ChangeViking(Transform newViking)
+    {
+        ChangeCameraFollowViking(newViking);
+
+        // TODO: Create members with base viking in them (no need to get the component every time)
+        m_ActiveViking = newViking.GetComponent<BaseViking>();
+
+        // TODO: Replace this with INotifyPropertyChanged inteface (notification on change)
+        if (m_SelectedViking)
+            m_SelectedViking.SelectionChanged(m_ActiveViking);
+
+    }
+
 
 }
