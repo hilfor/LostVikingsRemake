@@ -13,7 +13,7 @@ public class PlayerMotor : MonoBehaviour
     [SerializeField]
     private ActiveViking defaultActiveViking = ActiveViking.Olaf;
     [SerializeField]
-    private BaseViking m_ActiveViking = null;
+    private Vkng m_ActiveViking = null;
 
 
 
@@ -48,15 +48,15 @@ public class PlayerMotor : MonoBehaviour
             {
                 case ActiveViking.Olaf:
                     m_CameraFollow.ActiveViking = m_Olaf;
-                    m_ActiveViking = m_Olaf.GetComponent<BaseViking>();
+                    m_ActiveViking = m_Olaf.GetComponent<Vkng>();
                     break;
                 case ActiveViking.Eric:
                     m_CameraFollow.ActiveViking = m_Eric;
-                    m_ActiveViking = m_Eric.GetComponent<BaseViking>();
+                    m_ActiveViking = m_Eric.GetComponent<Vkng>();
                     break;
                 case ActiveViking.Baelog:
                     m_CameraFollow.ActiveViking = m_Baelog;
-                    m_ActiveViking = m_Baelog.GetComponent<BaseViking>();
+                    m_ActiveViking = m_Baelog.GetComponent<Vkng>();
                     break;
             }
 
@@ -139,6 +139,11 @@ public class PlayerMotor : MonoBehaviour
         //    m_ActiveViking.Action(inputState);
         //}
         m_ActiveViking.SetInputState(inputState);
+
+    }
+
+    public void ExecuteFixedAction(InputState inputState)
+    {
 
     }
 

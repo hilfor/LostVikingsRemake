@@ -43,6 +43,13 @@ public class PlayerInputManager : MonoBehaviour
         //}
     }
 
+    void FixedUpdate()
+    {
+        InputState state = GetInputState();
+        if (m_PlayerMotor)
+            m_PlayerMotor.ExecuteFixedAction(state);
+    }
+
     InputState GetInputState()
     {
         InputState inputState = new InputState(m_InputMap);
