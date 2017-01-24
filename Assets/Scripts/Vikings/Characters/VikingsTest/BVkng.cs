@@ -139,15 +139,18 @@ public class BVkng : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            myAnimator.SetTrigger("jump");
             //jump = true;// removed for refactoring
         }
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
+            myAnimator.SetTrigger("attack");
             //attack = true;// removed for refactoring
             //jumpAttack = true;// removed for refactoring
         }
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
+            myAnimator.SetTrigger("slide");
             //slide = true;// removed for refactoring
         }
     }
